@@ -1,0 +1,39 @@
+// HELX Colors SASS
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #fff !default;
+$oranged:						              #F8AF1E !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$grey: 														#8398A7 !default;
+$dark:                            #444 !default;
+$dark-blue:                       rgba(0, 19, 27, 0.8) !default;
+$pink-background:                 #B4005B !default;
+$blue-background:                 #B4005B !default;
+$orange-background:               #2BA3BB !default;
+$text-blue: 											#005679 !default;
+$text-orange: 										#F5851F !default;
+$text-pink: 											#E40073 !default;
+
+/*-- HELX Colors --*/
+
+		/*-- backgrounds--*/
+		.black { background: #444; }
+		.pink { background: #B4005B; }
+		.button-pink {background: #600639; }
+		.blue { background: #2BA3BB; }
+		.button-blue { background: #005679;}
+		.button-orange { background: #F5851F; }
+
+		/*-- Text colors --*/
+		.text-black { color: #444 !important; }
+		.text-pink { color: #B4005B; }
+		.text-blue { color: #005679; }
+		.text-dark-blue { color: #005679; }
+		.text-orange { color: #F5851F; }
+		.text-grey{ color: $grey;}
+
+		.energized, a.energized {   color: #FAAB18; }

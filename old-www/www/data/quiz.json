@@ -1,0 +1,1273 @@
+{
+    "quiz": {
+        "Id": 1,
+        "name": "Sales Quiz",
+        "description": "HELX Evolution Sales Quiz"
+    },
+    "questions": [
+      {
+        "Id": 100,
+        "Name": "Which feature for the ACUSON S3000 ultrasound system is NOT included as standard?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Wireless DICOM Reporting", "Answer": "Wrong();"  },
+            { "Id": 1056, "QuestionId": 1010, "Name": "eSieImage™ multiparametric optimization", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Native TEQ™ ultrasound technology", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "eSieFusion™ imaging", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Fusion imaging is an option, not included as standard"
+    },
+    {
+        "Id": 101,
+        "Name": "Virtual Touch™ IQ is supported on which of the following transducers?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "18L6 HD transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "12L4 transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "9L4 transducer", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "9L4 supports VTIQ for breast & thyroid indications"
+    },
+    {
+        "Id": 102,
+        "Name": "eSieFusion™ imaging is supported on which of the following transducers?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "6C1 HD transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "6C2 transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "4C1 transducer", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "4V1 transducer", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "6C1, 6C2, 4C1, and 4V1 support abdominal exams for kidney or liver indications"
+    },
+    {
+        "Id": 103,
+        "Name": "eSieFusion™ imaging is supported on which of the following transducers?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "6C1 HD transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "6C2 transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "4C1 transducer", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "4V1 transducer", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "6C1, 6C2, 4C1, and 4V1 support abdominal exams for kidney or liver indications"
+    },
+    {
+        "Id": 104,
+        "Name": "3D Total Breast Ultrasound incorporates which of the following cornerstones?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "2D Ultrasound", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "3D Ultrasound", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Pioneering technologies", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "sUSBA", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "All of these elements are cornerstones"
+    },
+    {
+        "Id": 105,
+        "Name": "There is a direct upgrade pathway for ACUSON S2000™ ultrasound system (VC25X) to ACUSON S2000 ultrasound system, HELX™ Evolution with Touch Control (VD10A)?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "There is no direct upgrade path from a classic S Family™ Ultrasound System to HELX Evolution with Touch Control"
+    },
+    {
+        "Id": 106,
+        "Name": "ASCEND for HELX™ Evolution with Touch Control includes how much of a discount with a qualifying service contract?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "5%", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "10%", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "15%", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the Above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "15% Please check your local business unit for participation details"
+    },
+    {
+        "Id": 107,
+        "Name": "Which of the following competitor products were NOT compared with HELX™ Evolution with Touch Control in a third party usability study?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Toshiba APLIO 500™ ultrasound system", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "GE LOGIQ E9™ Ultrasound System", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Philips EPIQ7™ Ultrasound System", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The third party usability study compared LOGIQE9 and EPIQ7 vs HELX with Touch Control"
+    },
+    {
+        "Id": 108,
+        "Name": "Virtual Touch™ quantification provides shear wave elastography values characterizing tissue in which unit of measure?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Meters per second", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Kilo Pascal", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "VTQ does not support kPa unit of measure"
+    },
+    {
+        "Id": 109,
+        "Name": "The 6C1 HD transducer is supported on the ACUSON S1000™ ultrasound system.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "the 6C1HD transducer is supported on the ACUSON S2000™ Ultrasound System and ACUSON S3000™ Ultrasound system only"
+    },
+    {
+        "Id": 110,
+        "Name": "The tag line for the ACUSON S3000™ ultrasound system is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": " Premium Performance. Extraordinary Technology.", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Premium Performance. Expanded Insights.", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Premium Performance. Exceptional Value.", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S3000™ ultrasound system is ultimate and has extraordinary technologies called pioneering technology"
+    },
+    {
+        "Id": 111,
+        "Name": "The Tag Line for the ACUSON S2000™ Ultrasound System is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Premium Performance. Extraordinary Technology.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Premium Performance. Expanded Insights", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Premium Performance. Exceptional Value.", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the Above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S2000™ Ultrasound System is all-purpose and even provides expanded insights for Women’s Health with 3D Total Breast Ultrasound"
+    },
+    {
+        "Id": 112,
+        "Name": "The Tag Line for the ACUSON S1000™ Ultrasound System is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Premium Performance. Extraordinary Technology.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Premium Performance. Expanded Insights.", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Premium Performance. Exceptional Value.", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the Above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S1000™ Ultrasound System is affordable and provides M1 imaging at exceptional value"
+    },
+    {
+        "Id": 113,
+        "Name": "The Tag Line for the ACUSON S Family™ Ultrasound System Classic (VC25X) is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Present Smart. Future Ready.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Premium Performance. Experience Excellence.", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Feel the Innovation.", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Expand. Excite. Evolve.", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : " ACUSON S Family Systems provide an excellent imaging experience"
+    },
+    {
+        "Id": 114,
+        "Name": "The Tag Line for the ACUSON S Family™ Ultrasound System HELX Evolution (VC30X) is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": " Present Smart. Future Ready.", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Premium Performance. Experience Excellence.", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": " Feel the Innovation.", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Expand. Excite. Evolve.", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution (VC30X) address your needs in a smart way but prepares you for the future"
+    },
+    {
+        "Id": 115,
+        "Name": "The Tag Line for the ACUSON S Family™ Ultrasound System HELX Evolution Linear Release(VC31X) is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Present Smart. Future Ready.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": " Premium Performance. Experience Excellence.", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Feel the Innovation.", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Expand. Excite. Evolve.", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Expanded capabilities on the 9L4, Excite customers with imaging on 12L4, and Evolve your clinical capabilities with the 18L6HD transducer"
+    },
+    {
+        "Id": 116,
+        "Name": "The Tag Line for the ACUSON S Family™ Ultrasound System HELX Evolution (VD10X) is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Present Smart. Future Ready.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": " Premium Performance. Experience Excellence.", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Feel the Innovation.", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Expand. Excite. Evolve.", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Touch Control will reinvent, reimagine, and revolutionize ultrasound usability"
+    },
+    {
+        "Id": 117,
+        "Name": "The 8C3 HD Transducer is indicated for clinical use in which of the following areas?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "OB/GYN", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Small Adult Abdomen", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Pediatric", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "All of the above"
+    },
+    {
+        "Id": 118,
+        "Name": "The 8C3 HD Transducer has how many number of elements?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "192", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "384", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "576", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 8C3 HD Transducer has 384 number of elements"
+    },
+    {
+        "Id": 119,
+        "Name": " The 18L6 HD Transducer has how many number of elements?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "192", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "384", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "576", "Answer": "Correct();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 18L6 HD Transducer has 576 number of elements"
+    },
+    {
+        "Id": 120,
+        "Name": "The 6C1 HD transducer has how many number of elements?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "192", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "384", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "576", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 6C1 HD transducer has 192 number of elements"
+    },
+    {
+        "Id": 121,
+        "Name": "What clinical applications deliver contrast enhanced ultrasound to the ACUSON S Family™ of ultrasound systems?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Contrast Harmonic Imaging", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Contrast Pulse Sequencing", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Agent Destructive Imaging", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "A and B only", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "A and B only"
+    },
+    {
+        "Id": 122,
+        "Name": "Virtual Touch™ IQ has an minimum and maximum adjustable scale for shear wave elastography color maps covering the following:",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "0m/s to 10m/s", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2m/s to 12m/s", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "100 miles/h", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "VTIQ supports a qualitative color map scale from 0 to 10 m/s"
+    },
+    {
+        "Id": 123,
+        "Name": "Does HELX™ Evolution with Touch Control support wireless DICOM reporting as standard or an option?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Standard on S3000 and Option on S2000 and S1000"
+    },
+    {
+        "Id": 124,
+        "Name": "eSieImage™ multiparametric optimization is supported on which of the following transducers?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "6C1HD transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "8C3HD transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "18L6HD transducer", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "9L4 transducer", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "A, B, & C only", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieImage is supported on 5 probes: 6C1, 8C3, 18L6, 12L4, and MC9-4"
+    },
+    {
+        "Id": 125,
+        "Name": "eSieImage™ multiparametric optimization is supported on the which of the following Women’s Health transducers?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "12L4 transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "MC9-4 transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "14L5 transducer", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": " All of the above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Both A and B", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieImage is supported on 5 probes: 6C1, 8C3, 18L6, 12L4, and MC9-4"
+    },
+    {
+        "Id": 126,
+        "Name": "eSieImage™ multiparametric optimization supports which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Post processing", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Toggle On / Off", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Fusion alignment pixel by pixel", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Both A and B", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieImage works in post-processing and can be turned off or on"
+    },
+    {
+        "Id": 127,
+        "Name": "The tagline for eSieImage™ multiparametric optimization is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Present Smart. Future Ready.", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Innovation is the Core of Our DNA", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The Best User Interface is One You Don’t Have to Touch", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Feel the Innovation", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieImage real-time optimizes key image parameters so well some customers won’t even know it’s there."
+    },
+    {
+        "Id": 128,
+        "Name": "Please fill in the blank: “Innovation is Core in our ______?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Image Quality", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Workflow", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Sustainability", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "DNA", "Answer": "Correct();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Our legacy as ACUSON-Siemens is that innovation is foundational in our DNA hence the name HELX"
+    },
+    {
+        "Id": 129,
+        "Name": "Please fill in the blank “We are the Ultrasound ______”",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Pioneers", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Innovators", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Enthusiasts", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "True Believers", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the Above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "We are the “true” ultrasound pioneers"
+    },
+    {
+        "Id": 130,
+        "Name": " eSieFusion™ imaging supports which of the following alternative modalities?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "CT", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "MRI", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Mammography", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Both A and B only", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieFusion™ Imaging supports CT with auto-alignment but also MRI without auto-alignment"
+    },
+    {
+        "Id": 131,
+        "Name": "eSieFusion™ imaging supports fusion auto-alignment for MRI.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieFusion™ Imaging supports CT with auto-alignment but also MRI without auto-alignment"
+    },
+    {
+        "Id": 132,
+        "Name": "Does eSieFusion™ imaging support eSieGuide needle tracking as an additional option?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": " False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieGuide Needle Tracking is an option for eSieFusion™ Imaging"
+    },
+    {
+        "Id": 133,
+        "Name": "The tagline for eSieFusion™ imaging is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "One-Click Auto-Registration", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Technology Made Practical", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "The Gateway to Pioneering Technology", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieFusion™ Imaging introduces workflow optimization tools for alignment we should not refer to alignment as one-click as it is not that easy for all exams and auto-registration could be confused with patient registration."
+    },
+    {
+        "Id": 134,
+        "Name": "Siemens partner manufacturers for ancillaries related to eSieFusion™ imaging are which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "CIVCO", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "ASCENSION", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "General Electric", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the Above", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Both A and B only", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "CIVCO manufactures eTrax needle tracking and biopsy guides and Ascension makes our magnetic field generator"
+    },
+    {
+        "Id": 135,
+        "Name": "Please fill in the blank: Multi-modality Review provides a ________view for on-system reference imaging?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Comparative", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Full", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Clear", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the Above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Multi-modality review should not be confused with Fusion as it only is a comparative view of real-time imaging and historic modalities"
+    },
+    {
+        "Id": 136,
+        "Name": "Multi-modality Review is the same thing as Query & Retrieve…",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Query & Retrieve refers only to finding and referencing patient exams but Multi-modality review provides a comparative view"
+    },
+    {
+        "Id": 137,
+        "Name": "Multi-modality Review provides the import of which of the following types of modalities?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "CT", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "MRI", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Historic ultrasound", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Mammography", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "ABVS", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Multi-modality review allows import of all modalities excluding PET-CT or DYNA-CT"
+    },
+    {
+        "Id": 138,
+        "Name": "Multi-modality Review is a vendor-neutral solution.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Multi-modality review supports any DICOM file regardless of manufacturer"
+    },
+    {
+        "Id": 139,
+        "Name": "The 7CF1 transducer has which maximum field of view?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "75 degree sweep angle", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "95 degree sweep angle", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "180 degree sweep angle", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "7CF1 has a 75 degree sweep angle for max FOV"
+    },
+    {
+        "Id": 140,
+        "Name": "The 6C2 Transducer supports eSieTouch™ elasticity imaging.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "6C2 transducer supports the use of manual compression elastography"
+    },
+    {
+        "Id": 141,
+        "Name": "The maximum display depth for the 6C1 HD transducer is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "3 mm", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "30 mm", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "300 mm", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "3,000 mm", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 6C1 HD transducer is our workhorse abdominal imaging probe with a maximum display depth of 300mm"
+    },
+    {
+        "Id": 142,
+        "Name": "The 4C1 transducer supports which of the following Contrast-Enhanced Ultrasound applications*?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Cadence™ contrast pulse sequencing technology (CPS)", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Cadence™ coherent contrast imaging technology (CHI)", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Cadence ™ agent detection imaging technology (ADI)", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "4C1 transducer is indicated for abdominal, fetal echo, obstetrics and gynecology, pelvis, and renal including CEUS application CPS, CHI, & ADI)"
+    },
+    {
+        "Id": 143,
+        "Name": "The 8C3 HD transducer has an expanded field of view with which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "50 degrees", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "70 degrees", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "90 degrees", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 8C3 HD Transducer has the widest field of view for a curved transducer in our portfolio with 70 degrees of freedom"
+    },
+    {
+        "Id": 144,
+        "Name": "The MC9-4 transducer supports all three of the following pioneering technologies: eSieImage™ multiparametric optimization, Cadence CPS and eSieTouch™ elasticity imaging.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "MC9-4 supports a variety of pioneering technologies such as eSieImage, CPS, or eSieTouch"
+    },
+    {
+        "Id": 145,
+        "Name": "The MC9-4 and 7CF1 transducers are 99% recyclable.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The MC9-4 and 7CF1 launched with 1st generation HELX Evolution and are both 99% recyclable and RoHS complaint"
+    },
+    {
+        "Id": 146,
+        "Name": "The acronym RoHS stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Rate of Heart Wall Shift", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Right operations in Home Supervision", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Restrictions on Hazardous Substances", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution and 7CF1 and MC9-4 transducers are RoHS compliant and environmentally friendly"
+    },
+    {
+        "Id": 147,
+        "Name": "The acronym M290 stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Made 29th in Omission", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Milestone 290 (limited launch)", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Full product production", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "M290 is a product life cycle process standing for limited launch which requires monitoring of a limited number of commercial issues"
+    },
+    {
+        "Id": 148,
+        "Name": "The HELX™ Evolution Linear Release (VC31A) supports Windows® 7.",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Only HELX Evolution with Touch Control VD10A supports WIN7"
+    },
+    {
+        "Id": 149,
+        "Name": "The HELX™ Evolution with Touch Control supports Windows® 8.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution with Touch Control VD10A supports WIN7"
+    },
+    {
+        "Id": 150,
+        "Name": "Windows® 7 is available for installed base customers with HELX™ Evolution Linear Release (VC31X).",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "There is a software only upgrade for VC31X customers to VD10A which includes Windows 7"
+    },
+    {
+        "Id": 151,
+        "Name": "The HELX™ Evolution with Touch Control simplified control panel reduces software keys by 44%.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX TC simplified control panel reduces software keys by 44%, tactile keys by 33%, and home-base controls by 22%"
+    },
+    {
+        "Id": 152,
+        "Name": "The HELX™ Evolution with Touch Control simplified control panel reduces tactile keys by 33%.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX TC simplified control panel reduces software keys by 44%, tactile keys by 33%, and home-base controls by 22%"
+    },
+    {
+        "Id": 153,
+        "Name": "The HELX Evolution with Touch Control simplified control panel reduces home base controls by 22%.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX TC simplified control panel reduces software keys by 44%, tactile keys by 33%, and home-base controls by 22%"
+    },
+    {
+        "Id": 154,
+        "Name": " The 4V1c transducer for limited cardiology use benefits from image optimization on HELX™ Evolution with Touch Control.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "4V1C on HELX Evolution with Touch Control benefited from an improvement in Color Doppler and Detail Resolution"
+    },
+    {
+        "Id": 155,
+        "Name": "The 6C1 HD transducer for abdominal imaging benefits from reduction in intercostal rib shadows on HELX™ Evolution with Touch Control.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "6C1 HD on HELX Evolution with Touch Control benefited from an improvement in Detail Resolution, Intercostal Rib Shadowing, and Penetration"
+    },
+    {
+        "Id": 156,
+        "Name": "The 18L6 HD Transducer for breast, vascular, and MSK imaging benefits from improved visualization of skin lines on HELX™ Evolution with Touch Control.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "18L6 HD on HELX Evolution with Touch Control benefited from an improvement in Detail Resolution and 2mm of skin line visualization"
+    },
+    {
+        "Id": 157,
+        "Name": "The acronym WXGA stands for Wide Energy Graphics Array.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Wide Extended Graphics Array"
+    },
+    {
+        "Id": 158,
+        "Name": " The HELX™ Evolution with Touch Control touch display does not support the use of latex and nitrile gloves.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution with Touch Control touch display does support latex & nitrile gloves"
+    },
+    {
+        "Id": 159,
+        "Name": "The acronym SS stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Strain and shear wave", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Shared Service", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "General Imaging only", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Shared Service ultrasonography is general imaging including limited cardiology utilization"
+    },
+    {
+        "Id": 160,
+        "Name": "The acronym M300 stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Limited Launch", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "End of life", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": " Full product production", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : " M300 in product life cycle process means full production)"
+    },
+    {
+        "Id": 161,
+        "Name": "HELX™ Evolution with Touch Control supports both a digital and tactile keyboard.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution with Touch Control has a pull-out keyboard and a digital QWERTY that is selectable in the touch display"
+    },
+    {
+        "Id": 162,
+        "Name": "HELX™ Evolution with Touch Control does not support instant response technology?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution with Touch Control supports a touch display with instant response technology"
+    },
+    {
+        "Id": 163,
+        "Name": "The accent color for ACUSON S3000™ ultrasound system is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Orange", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Blue", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Purple", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S3000 System cup-holders & screensaver have orange accent colors"
+    },
+    {
+        "Id": 164,
+        "Name": "The accent color for ACUSON S2000™ ultrasound system is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Orange", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "Blue", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Purple", "Answer": "Wrong();"  },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Magenta", "Answer": "Wrong();"  },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Both B and D", "Answer": "Correct();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S2000 system cup-holders & screen saver have accent colors blue or magenta if configured with ABVS"
+    },
+    {
+        "Id": 165,
+        "Name": "The accent color for ACUSON S1000™ ultrasound system is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Orange", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "Blue", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Purple", "Answer": "Correct();"  },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Pink", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S1000 system cup-holders & screen saver has a purple accent color that in pre-M300 release systems appeared pink"
+    },
+    {
+        "Id": 166,
+        "Name": "Your favorite HELX™ Evolution with Touch Control accent color is which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Orange", "Answer": "Correct();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Blue", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "Purple", "Answer": "Wrong();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "Magenta", "Answer": "Correct();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "No one will ever agree on accent colors but hopefully one of the HELX Evolution with Touch Control colors will be favorite to all” – Douglas Younger"
+    },
+    {
+        "Id": 167,
+        "Name": "The software license name VC25X corresponds to which ACUSON S Family™ ultrasound system configuration?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Classic Systems", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "HELX™ Evolution", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "HELX™ Evolution Linear Release", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "HELX™ Evolution with Touch Control", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S Family Systems classic configuration supports VC25X"
+    },
+    {
+        "Id": 168,
+        "Name": "The software license name VC30X corresponds to which ACUSON S Family™ ultrasound system configuration?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Classic Systems", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "HELX™ Evolution", "Answer": "Correct();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "HELX™ Evolution Linear Release", "Answer": "Wrong();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "HELX™ Evolution with Touch Control", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S Family Systems HELX Evolution configuration supports VC30X"
+    },
+    {
+        "Id": 169,
+        "Name": "The software license name VC31X corresponds to which ACUSON S Family™ ultrasound system configuration?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Classic Systems", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "HELX™ Evolution", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "HELX™ Evolution Linear Release", "Answer": "Correct();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "HELX™ Evolution with Touch Control", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S Family Systems HELX Evolution Linear Release configuration supports VC31X"
+    },
+    {
+        "Id": 170,
+        "Name": "The software license name VD10X corresponds to which ACUSON S Family™ ultrasound system configuration?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Classic Systems", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "HELX™ Evolution", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "HELX™ Evolution Linear Release", "Answer": "Wrong();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "HELX™ Evolution with Touch Control", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S Family Systems HELX Evolution with Touch Control configuration supports VD10X"
+    },
+    {
+        "Id": 171,
+        "Name": "The 18L6 HD transducer has which of the following foot print size?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "25 mm", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "35 mm", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "55 mm", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": " 57 mm", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 18L6 HD transducer has a 57 mm footprint"
+    },
+    {
+        "Id": 172,
+        "Name": "Which of the following transducer has an ElastoGrip™ ergonomic grip coating?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "9L4 transducer", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "6C2 transducer", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "6C1 HD transducer", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "4V1 transducer", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "All HD transducers support ElastoGrip™ coating"
+    },
+    {
+        "Id": 173,
+        "Name": "The 14L5 transducer supports the SG-4 Needle Guide Kit.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 14L5 transducer supports a SG-4 needle guide with 53 degree angle for biopsy"
+    },
+    {
+        "Id": 174,
+        "Name": "The 9L4 transducer on the ACUSON S2000™ ultrasound system and ACUSON S3000™ ultrasound system supports which of the following pioneering technologies?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Virtual Touch™ technologies", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Cadence™ contrast pulse sequencing technology", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Cadence™ contrast harmonic imaging (CHI)", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "9L4 supports both VT and CPS / CHI on the ACUSON S2000 systems and ACUSON S3000 systems"
+    },
+    {
+        "Id": 175,
+        "Name": "The 12L4 transducer has which of the following foot print size?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "20 mm", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "30 mm", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "50 mm", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "51 mm", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The 12L4 transducer has a 51.3 mm footprint"
+    },
+    {
+        "Id": 176,
+        "Name": "The ACUSON AcuNav™ 8F or 10F ultrasound catheter is supported on the ACUSON S Family™ ultrasound systems.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "AcuNav 8F or 10F Ultrasound Catheter is supported on ACUSON S Family Systems but requires cardiac configuration and SwiftLink™ Catheter connector"
+    },
+    {
+        "Id": 177,
+        "Name": "The ACUSON AcuNav™ 8F or 10F ultrasound catheter is not required on the ACUSON S Family™ ultrasound systems.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON AcuNav 8F or 10F Ultrasound Catheter is supported on ACUSON S Family Systems but requires cardiac configuration and SwiftLink™ Catheter connector"
+    },
+    {
+        "Id": 178,
+        "Name": "Contrast-enhanced Ultrasound is cleared for use in General Imaging worldwide?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The FDA has cleared ultrasound contrast agents only for use in LVO cardiology"
+    },
+    {
+        "Id": 179,
+        "Name": "The acronym LVO as related to Contrast-enhanced ultrasound stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Left Volumetric Oxygen", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Left ventricular opacification", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Left ventricular oncology", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The FDA has cleared ultrasound contrast agents only for use in Left Ventricular Opacification cardiology"
+    },
+    {
+        "Id": 180,
+        "Name": "The Liver Tissue Analysis package includes Virtual Touch™ IQ.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Liver Tissue Analysis includes Virtual Touch™ Imaging and Virtual Touch™ Quantification only. VTIQ is a separate option"
+    },
+    {
+        "Id": 181,
+        "Name": "Clarify™ vascular enhancement (VE) technology is included as standard on the ACUSON S1000™ ultrasound system.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Clarify VE is included as standard on the ACUSON S3000™ Ultrasound System"
+    },
+    {
+        "Id": 182,
+        "Name": "eSieTouch™ elasticity imaging is included as standard on the ACUSON S3000™ ultrasound system.",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "True", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "False", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieTouch™ Elasticity Imaging is a separate option on any ACUSON S Family™ Ultrasound System"
+    },
+    {
+        "Id": 183,
+        "Name": "eSieFusion™ imaging is contra-indicated for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Pace makers", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Implantable Cardioverter Defibrillators (ICDs)", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Cardiac Resynchronization Therapy Defibrillators (CRT-D)", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "eSieFusion™ Imaging has a magnetic field generator that is contra-indicated with any type of pacemaker"
+    },
+    {
+        "Id": 184,
+        "Name": "Recurrent changes to the ACUSON S Family™ ultrasound systems can occur in the global price book in which of the following months?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "April", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "July", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "October", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "December", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Pricebook changes for any Siemens Ultrasound product can occur in the month of April, July, October, or December. It is possible as well in interim-pricebook in the month of February"
+    },
+    {
+        "Id": 185,
+        "Name": "The acronym HMK stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Healthcare Modality Kick Off", "Answer": "Correct();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Healthcare Marketing", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "High Modality Kinetics", "Answer": "Wrong();"  }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HMK stands for Healthcare Modality Kick Off and it takes the place of HSK Healthcare Sales Kick Off)"
+    },
+    {
+        "Id": 186,
+        "Name": "The ACUSON S2000™ ultrasound system was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "2000", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2008", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2009", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "2010", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S2000 System was released in 2008"
+    },
+    {
+        "Id": 187,
+        "Name": "The ACUSON S1000™ ultrasound system was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "1000", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2010", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2011", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "2012", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S1000 System was released in 2011"
+    },
+    {
+        "Id": 188,
+        "Name": "The ACUSON S3000™ ultrasound system was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "3000", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2010", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2011", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "2012", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S3000 System was released in 2012"
+    },
+    {
+        "Id": 189,
+        "Name": "The HELX™ Evolution (VC30X) was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "1984", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2012", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2013", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "2014", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution was released in 2013"
+    },
+    {
+        "Id": 190,
+        "Name": "The HELX™ Evolution (VC31X) was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "1984", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2013", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2014", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "2015", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution Linear Release was released in 2014"
+    },
+    {
+        "Id": 191,
+        "Name": "The HELX™ Evolution with Touch Control (VD10A) was released in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "1984", "Answer":  "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "2015", "Answer":  "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "2020", "Answer":  "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Never", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "HELX Evolution with Touch Control was released in 2015"
+    },
+    {
+        "Id": 192,
+        "Name": "Siemens’ Worldwide Ultrasound Headquarters is based in which of the following cities?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Issaquah, Washington", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Princeton, New Jersey", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Mountain View, California", "Answer": "Correct();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Seoul, South Korea", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Erlangen, Germany", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Siemens Worldwide Headquarters is based in USA at 685 East Middlefield Road Mountain View California 94043"
+    },
+    {
+        "Id": 193,
+        "Name": "At Siemens the acronym SCR in stands for which of the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Siemens Clinical Research", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Siemens Corporate Research", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Sonography Clinical Research", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Siemens Corporate Register", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Siemens Corporate Research conducted usability surveys and studies to develop the new user-interface on HELX Evolution with Touch Control"
+    },
+    {
+        "Id": 194,
+        "Name": "Siemens Ultrasound’s worldwide transducer manufacturing is based in which of the following cities?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Issaquah, Washington", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "Princeton, New Jersey", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Mountain View, California", "Answer": "Wrong();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "Seoul, South Korea", "Answer": "Correct();" },
+          { "Id": 1058, "QuestionId": 1010, "Name": "Erlangen, Germany", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Transducer Manufacturing Worldwide is conducted in Seoul Korea at the SUSKO facility"
+    },
+    {
+        "Id": 195,
+        "Name": "Siemens’ Healthcare Headquarters is based in which of the following cities?",
+        "QuestionTypeId": 1,
+        "Options": [
+          { "Id": 1055, "QuestionId": 1010, "Name": "Issaquah, Washington", "Answer": "Wrong();" },
+          { "Id": 1057, "QuestionId": 1010, "Name": "Miami, Florida", "Answer": "Wrong();" },
+          { "Id": 1056, "QuestionId": 1010, "Name": "Berlin, Germany", "Answer": "Wrong();"  },
+          { "Id": 1058, "QuestionId": 1010, "Name": "Seoul, South Korea", "Answer": "Wrong();" },
+          { "Id": 1058, "QuestionId": 1010, "Name": "Erlangen, Germany", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Siemens Healthcare Headquarters is based Germany at Henkestraße 127, 91052 Erlangen, Germany"
+    },
+    {
+        "Id": 196,
+        "Name": "Siemens Ultrasound’s Software and Hardware engineering is based in which of the following cities?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Seoul, South Korea", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Tokyo, Japan", "Answer": "Wrong();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Palo Alto, California", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Princeton, New Jersey", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Issaquah, Washington", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Siemens Ultrasound Engineering is based in Washington at 22010 SE 51st St, Issaquah, WA 98029"
+    },
+    {
+        "Id": 197,
+        "Name": "ACUSON Corporation was founded in which of the following years?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "1970", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "1979", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "1984", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "None of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON Corporation was founded by Sam Maslak, Rob Younge, and Amin Hanafy in 1979 and later acquired by Siemens Medical Engineering Group in 2000 for $700 million"
+    },
+    {
+        "Id": 198,
+        "Name": "The acronym VTIQ stands for the following?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Virtual Touch™ imaging and quantification", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Virtual Touch™ IQ", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Virtual Touch™ imaging", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Virtual Touch™ quantification", "Answer": "Wrong();" },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Correct();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "The acronym for VTIQ actually stands for intelligent quotient (IQ) as it grants a smarter elastography clinical result although many incorrectly mistake this for Imaging and Quantification."
+    },
+    {
+        "Id": 199,
+        "Name": "HELX™ Evolution with Touch Control was “officially” announced at which of the following cities?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "Orlando, Florida", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "Istanbul, Turkey", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "Online only", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "Berlin, Germany", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "Although HELX Evolution with Touch Control was discussed in an NDA room at RSNA 2014 and demonstrated live in a feedback room at ECR 2015 the official internal announcement was at HMK Istanbul Turkey 2015"
+    },
+    {
+        "Id": 200,
+        "Name": " The Automated Breast Volume Scanner (ABVS) is compatible with which of the following ACUSON S Family™ ultrasound systems?",
+        "QuestionTypeId": 1,
+        "Options": [
+            { "Id": 1055, "QuestionId": 1010, "Name": "ACUSON S3000™ ultrasound system", "Answer": "Wrong();" },
+            { "Id": 1057, "QuestionId": 1010, "Name": "ACUSON S2000™ ultrasound system", "Answer": "Correct();" },
+            { "Id": 1056, "QuestionId": 1010, "Name": "ACUSON S1000™ ultrasound system", "Answer": "Wrong();"  },
+            { "Id": 1058, "QuestionId": 1010, "Name": "All of the above", "Answer": "Wrong();" }
+        ],
+        "QuestionType": { "Id": 1, "Name": "Multiple Choice", "IsActive": true },
+        "correctAnswer" : "ACUSON S2000 Ultrasound System is only compatible with ABVS"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<!-- The nav bar that will be updated as we navigate -->
+   <ion-nav-bar class="bar-dark dark" >
+   		 <ion-nav-buttons  side="left">
+         <a href="{{main_menu}}"> <button class="button button-icon dark headline" >
+             <span class="siemens"> <strong> Siemens </strong>  </span>
+             <strong class="app-title"> Ultrasound Sales Companion </strong>
+           </button>
+         </a>
+        	<a href="{{main_menu}}"> <button class="button button-icon button-clear sub-headline"> HELX Evolution with Touch Control <span class="italic"> Feel the Innovation.</span> </button> </a>
+         </ion-nav-buttons>
+
+      <ion-nav-buttons side="right" >
+         <a class="button button-icon button-clear ion-ios-information-outline"  href="{{contact_information}}"> </a>
+         <a class="button button-icon button-clear ion-home" href="{{main_menu}}"> </a>
+
+             <div class="helx-menu"  ng-hide="isMainMenu">
+            	<button class="button button-icon ion-android-menu" ng-click="subMenu($event)"> </button>
+          	</div>
+
+       </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-nav-view name="singleproductsContent" >  </ion-nav-view>

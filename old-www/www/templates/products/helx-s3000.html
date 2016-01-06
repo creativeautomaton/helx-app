@@ -1,0 +1,258 @@
+<ion-view view-title="HELX - ACUSON S3000" hide-footer-bar="true" has-footer="false">
+   <ion-content >
+     <div class="full-bg gray-gradient" id="acuson-S3000" ng-controller="SlideController">
+
+     		<div class="description" >
+            	<button class="button button-icon ion-plus" ng-click="Description()"> </button>
+                <h3 class="text-black" > Description </h3>
+          	</div>
+
+            <script id="templates/description.html" type="text/ng-template" >
+        				<ion-popover-view  class="description-popover acuson-S3000-popover" >
+        				<button class="close button button-clear icon icon-left ion-close" ng-click="closeDescription($descriptionEvent)"> </button>
+        				  <ion-content class="content">
+          					<h1 class="text-orange"> The ACUSON S3000 System </h1>
+            					<p> TThe ACUSON S3000 system is the premier ultrasound system for Siemens’
+                      pioneering technology in advanced General Imaging and Interventional Radiology.
+                      Along with all the features in the ACUSON S Family ultrasound systems,
+                      the ACUSON S3000 system offers high-quality, high-resolution imaging
+                      optimized for fusion with 3D volumes from CT and MRI. With a Microsoft®
+                      Windows® 7 operating system and a fully upgradeable design, it is a
+                      flexible platform that can evolve with your needs. With intuitive options
+                      that optimize workflow and industry-leading analysis capabilities, the
+                      ACUSON S3000 system promotes a high-quality ultrasound experience.
+            					</p>
+        				  </ion-content>
+        				</ion-popover-view>
+            </script>
+
+
+            <div class="ultrasound-tool" ng-controller="ultrasoundToolCtrl" >
+                  <button class="button button-icon " ng-click="ultrasoundTool($ultrasoundToolEvent)">
+                     <img src="../img/tool-icon.png" />
+                  </button>
+            </div>
+
+                <script id="templates/ultrasound-tool.html" type="text/ng-template">
+                  <ion-popover-view  class="ultrasound-tool-popover">
+                  <h1 class="transducers text-orange"> Transducers </h1>
+                    <div class="text-right">
+                     <p class="close-text"> Close </p>
+                     <button class="close button button-clear icon icon-right ion-close" ng-click="closeultrasoundTool($ultrasoundToolEvent)"> </button>
+                    </div>
+
+                    <div class="arrows">
+                      <button class="circle button icon-left ion-ios-arrow-left" ng-class="{ 'visibility' : hide.LeftArrow }"   ng-click="prevAccessorySlide()"> </button>
+                      <button class="circle button icon-right ion-ios-arrow-right" ng-class="{ 'visibility' : hide.RightArrow }" ng-click="nextAccessorySlide()"> </button>
+                    </div>
+
+                    <ion-content class="content">
+                    <ion-slide-box delegate-handle="accessorySlider" active-slide="activeSlide" on-slide-changed="slideChanged($index)" show-pager="false" does-continue="false"  ng-click="updateSlide()" >
+                       <ion-slide>
+                         <ion-list>
+                            <ion-item>
+                                <img src="../img/accessories/6c1hd.png" />
+                                <h2 class="text-orange heavy"> 6C1 HD </h2>
+                                  <pre>Clinical application transducer specializing in abdominal, fetal echo, obstetrics, gynecology, pelvis, and renal exams.
+                                  </pre>
+                            </ion-item>
+                            <ion-item>
+                                <img src="../img/accessories/8c3hd.png" />
+                                  <h2 class="text-orange heavy"> 8C3 HD </h2>
+                                    <pre> Clinical application transducer specializing in abdominal, obstetrics, gynecology, and pediatric exams.
+                                    </pre>
+                            </ion-item>
+                            <ion-item>
+                                <img src="../img/accessories/18L6.png" />
+                                <h2 class="text-orange heavy"> 18L6 HD </h2>
+                                  <pre>Clinical application transducer specializing in breast, cerebrovascular, musculoskeletal, penile, peripheral vascular, testicle, and thyroid exams. </pre>
+                            </ion-item>
+                          </ion-list>
+                        </ion-slide>
+
+                        <ion-slide>
+                          <ion-list>
+                             <ion-item>
+                                 <img src="../img/accessories/9l4.png" />
+                                 <h2 class="text-orange heavy"> 9L4 </h2>
+                                   <pre>Clinical application transducer specializing in Breast, cerebrovascular, fetal echo, musculoskeletal, obstetrics and gynecology, pediatric abdomen and hip, pelvis, penile, and peripheral exams. </pre>
+                             </ion-item>
+                             <ion-item>
+                                 <img src="../img/accessories/4v1c.png" />
+                                   <h2 class="text-orange heavy"> 4V1C </h2>
+                                     <pre>Clinical application transducer specializing in breast, cerebrovascular, musculoskeletal, penile, peripheral vascular, testicle, and thyroid exams. </pre>
+                             </ion-item>
+                           </ion-list>
+                         </ion-slide>
+
+                     </ion-slide-box>
+                    </ion-content>
+                  </ion-popover-view>
+               </script>
+
+        <!-- Basic Information on the S3000 -->
+        <div class="row basics">
+            <div class="col col-50" ></div>
+            <div class="col col-50 feature-slides" animation="slide-left-right-ios7" >
+
+                <!-- Features slider and content -->
+                <div class="row slide-ctrl" ng-class="{ 'hide' : featureSlide.Ctrl }">
+                        <div class="col col-50 text-left flush-left" >
+                          <button class="circle button icon-left ion-ios-arrow-left" ng-click="prevSlide();" ng-class="{ 'hide-button' : prevButton.Ctrl }"> </button>
+                          <button class="circle button icon-right ion-ios-arrow-right " ng-click="nextSlide();" ng-class="{ 'hide-button' : nextButton.Ctrl }"> </button>
+                        </div>
+                        <div class="col col-50 text-right flush-right" >
+                            <button class="button button-clear close-button" ng-click="closeSlide()"> <i class="icon ion-ios-close-empty text-orange"> </i> </button>
+                        </div>
+                        <div class="border oranged"></div>
+                </div>
+                <ion-slide-box
+                      active-slide="activeSlide" on-slide-changed="slideChanged(index)"
+                      show-pager="false" does-continue="true" ng-init="lockSlide()"
+                >
+                      <ion-slide >
+                        <div class="box">
+                          <h1 class="text-orange"> Premium performance. Extraordinary technology. </h1>
+                          <p class="text-black">
+                            The ACUSON S3000™ ultrasound system is the most advanced member of the
+                            ACUSON S Family™ ultrasound systems, combining top-of-the-line performance
+                            with user-friendly technology.
+                          </p>
+                            <p class="text-black">
+                              <strong> Explore the following hotspots to learn more
+                                       about the unique features of the ACUSON S3000 system.
+                              </strong>
+                            </p>
+                        </div>
+                      </ion-slide>
+                      <ion-slide>
+                        <div class="row">
+                          <div class="col col-100">
+                            <h1 class="text-orange inner"><span class="lowercase">e</span>S<span class="lowercase">ie</span> Fusion Imaging Technology </h1>
+                            <p class="text-black">
+                              A pioneering technology from Siemens, eSie Fusion™ technology allows for the
+                              precise alignment of 3D topographies from MRI or CT with real-time ultrasound
+                              imagery. The combination of these two technologies represents new strides in
+                              providing more complete and comprehensive diagnostic imagery.
+                            </p>
+                            <img src="../img/helx-details/S3000_eSieFusion.jpg" class="full-image" />
+                          </div>
+                        </div>
+                      </ion-slide>
+                      <ion-slide>
+                        <div class="row">
+                          <div class="col col-100">
+                            <h1 class="text-orange inner"> <span class="lowercase">e</span>S<span class="lowercase">ie</span> Guide Needle Tracking </h1>
+                            <p class="text-black">
+                              This innovative feature provides real-time 3D ultrasound navigational guidance
+                              using segmentation tools, needle-trajectory markers, and 3D markers for regions
+                              of interest. Along with eSie Fusion imaging, it can reduce the risk associated
+                              with biopsies or ablation procedures.
+                            </p>
+                            <img src="../img/helx-details/S2000_eSieTouchElastography.jpg" class="full-image" />
+                          </div>
+                        </div>
+                      </ion-slide>
+                      <ion-slide>
+                        <div class="row">
+                          <div class="col col-100">
+                            <h1 class="text-orange inner"> Workflow Innovations </h1>
+                            <p class="text-black">
+                              The ACUSON S3000 system offers no-look operation and user-automated protocols. It also
+                               features multi-modality review, which provides side-by-side review of mammography,
+                               CT, or MRI with live ultrasound for improved exam efficiency. The ACUSON S3000
+                               further streamlines your workflow with Nuance PowerScribe® 360 Reporting, which
+                               supports seamless data transfer into high-quality reports.
+                            </p>
+                            <img src="../img/helx-details/S3000_WorkflowInnovations.jpg"  class="full-image" />
+                          </div>
+                        </div>
+                      </ion-slide>
+                      <ion-slide>
+                        <div class="row">
+                          <div class="col col-100">
+                            <h1 class="text-orange inner"> HD Transducers </h1>
+                            <p class="text-black">
+                              The ACUSON S3000 system offers a variety of high-density transducers, including
+                              advanced transducers for General Imaging and Interventional Radiology. These tools
+                              feature superior penetration, increased resolution, and an expanded view for a
+                              wide variety of parts. They are also designed for usability and comfort.
+                            </p>
+                            <img src="../img/helx-details/S3000_Tranducer.jpg"  class="full-image" />
+                          </div>
+                        </div>
+                      </ion-slide>
+                  </ion-slide-box>
+
+
+            </div>
+      </div>
+
+      <!-- Features Icons  -->
+          <a class="s3000-features-1 features-icon orange-icon" ng-click="feature1()" >
+            <div class="title-right text-left">
+              <span class="title right-bar"> <span class="lowercase">e</span>S<span class="lowercase">ie</span> Fusion Imaging Technology </span>
+            </div>
+          </a>
+          <a class="s3000-features-2 features-icon orange-icon" ng-click="feature2()" >
+            <div class="title-center text-center">
+              <span class="title center-bar"> <span class="lowercase">e</span>S<span class="lowercase">ie</span> Guide NEEDLE TRACKING </span>
+            </div>
+          </a>
+          <a class="s3000-features-3 features-icon orange-icon" ng-click="feature3()" >
+            <div class="title-center text-center">
+              <span class="title center-bar"> Workflow Innovations </span>
+            </div>
+          </a>
+          <a class="s3000-features-4 features-icon orange-icon" ng-click="feature4()" >
+            <div class="title-left text-right">
+              <span class="title left-bar"> HD Transducers </span>
+            </div>
+          </a>
+
+   </div>
+
+
+   <ion-footer-bar align-title="center" class="bar darkest single-product" ng-hide="{{isUrl}}" on-drag-up="onDragUp()" >
+
+     <div class="row single-product-select-footer">
+
+               <!-- Left column -->
+                 <div class="col col-50 footer-focus">
+                  <span class="focus-bg orange-bg"> </span>
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> <span class="s">S</span>3000</h2>
+                           <p> Ultrasound System</p>
+                       </div>
+                 </div>
+
+               <!-- Center Column -->
+                 <div class="col col-25 footer-acuson-s2000" >
+                   <a href="{{acuson_s2000}}" ng-click="closeSlide()" nav-transition="none">
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> S2000</h2>
+                           <p> Ultrasound System</p>
+                               <button class="button button-blue icon-right ion-chevron-right"> Learn more </button>
+                        </div>
+                    </a>
+                 </div>
+
+                <!-- Right Column -->
+                 <div class="col col-25 footer-acuson-s1000">
+                   <a href="{{acuson_s1000}}" ng-click="closeSlide()" nav-transition="none">
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> S1000</h2>
+                           <p> Ultrasound System</p>
+                               <button class="button button-pink icon-right ion-chevron-right"> Learn more </button>
+                       </div>
+                    </a>
+                 </div>
+           </div><!-- end of row -->
+   </ion-footer-bar>
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,258 @@
+<ion-view view-title="HELX library Simulation Literature" >
+   <ion-content >
+     <div class="full-bg" id="library-literature" >
+
+       <div class="icon-link clinical-link2"  >
+           <a href="{{library_clinical}}">
+             <button class="button button-icon"  >
+                <img src="../img/clinical-icon-black.png" alt="HELX Evolution Clinical Images" />
+             </button>
+           </a>
+              <h3> Images </h3>
+       </div>
+
+          <div class="icon-link video-link"  >
+              <a href="{{library_videos}}">
+                <button class="button button-icon"  >
+                   <img src="../img/media-icon.png" alt="HELX Evolution Clinical Videos" />
+                </button>
+              </a>
+                 <h3> Videos </h3>
+          </div>
+
+
+          <ion-slide-box delegate-handle="ClinicalSlider" active-slide="activeSlide" on-slide-changed="clinicalSlideChanged(index)" does-continue="true"  ng-click="updateClinicalSlide()">
+            <ion-slide >
+                <div class="row responsive-sm text-center">
+
+                  <div class="col col-20">
+                    <a href="#" >
+                        <img class="full-image" src="../img/library/clinical/1.jpg"
+                        alt="HELX Evolution Clinical Images" />
+                    </a>
+                  </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/2.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/3.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/4.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/5.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                  </div><!-- End of row -->
+
+                  <div class="row responsive-sm text-center">
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/6.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/7.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/8.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/9.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/10.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                  </div> <!-- End of Row -->
+
+                  <div class="row responsive-sm text-center">
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/11.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/12.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/13.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/14.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/15.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                </div><!-- end of row -->
+            </ion-slide><!-- end of Slide -->
+
+            <ion-slide repeat-done="repeatDone()">
+                <div class="row responsive-sm text-center">
+
+                  <div class="col col-20">
+                    <a href="#" >
+                        <img class="full-image" src="../img/library/clinical/1.jpg"
+                        alt="HELX Evolution Clinical Images" />
+                    </a>
+                  </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/2.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/3.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/4.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/5.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                  </div><!-- End of row -->
+
+                  <div class="row responsive-sm text-center">
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/6.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/7.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/8.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/9.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/10.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                  </div> <!-- End of Row -->
+
+                  <div class="row responsive-sm text-center">
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/11.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/12.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/13.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/14.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+
+                    <div class="col col-20">
+                      <a href="#" >
+                          <img class="full-image" src="../img/library/clinical/15.jpg"
+                          alt="HELX Evolution Clinical Images" />
+                      </a>
+                    </div>
+                </div><!-- end of row -->
+            </ion-slide><!-- end of Slide -->
+    </div>
+  </ion-content>
+</ion-view>

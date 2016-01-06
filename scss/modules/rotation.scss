@@ -1,0 +1,9 @@
+// Rotation Classes
+
+@mixin -transform-rotate($rotate) {
+  -ms-transform:  rotate($rotate);
+  -webkit-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+
+.rotate-180::before {  @include -transform-rotate(180deg) }

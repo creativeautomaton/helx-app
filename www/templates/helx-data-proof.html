@@ -1,0 +1,139 @@
+<ion-view view-title="Data Proof" >
+
+  <ion-content>
+
+   <div id="data-proof"class="full-bg" ng-controller="DataSlideController" >
+
+     <div class="arrows hide" ng-class="{ 'show' : close.Modal }">
+       <button class="circle button icon-left ion-ios-arrow-left" ng-click="prevSlide();"> </button>
+       <button class="circle button icon-right ion-ios-arrow-right " ng-click="nextSlide();"> </button>
+     </div>
+
+     <!-- Hide wrapper for slidebox -->
+   	<ion-slide-box  active-slide="activeSlide" on-slide-changed="slideChanged(index)" does-continue="true" ng-class="{ 'hide' : hide.Dataslider }">
+
+          <ion-slide>
+            <div class="box ">
+            	<h1>SYSTEM USABILITY SCALE (SUS)  QUESTIONNAIRE </h1>
+            	<div class="row">
+                    <!-- Left Column -->
+                      <div class="col col-67">
+                      	<img src="../img/data-proof-1.png"  />
+                      </div>
+
+                     <!-- RIght Column -->
+                      <div class=" col-33 v-bar text-side text-left">
+                      	<p> Broadly interpreted, </p>
+                        <h3> scores over 80 would be considered above average; </h3>
+                        <h3> scores under 60 represent systems with poor usability<sup>2</sup>. </h3>
+                        <a href="#" class="learn-more text-orange heavy">Learn more about the System Usability Scale used in our test.</a>
+
+                      </div>
+                </div>
+
+				<cite> 1. GE Healthcare LOGIQ E9 and Philips EPIQ 7 ultrasound systems.
+              <br />
+              2. Tullis, T. & Albert, W. [2008]. Measuring the User Experience. Burlington, MA: Morgan Kaufman (p. 149). </cite>
+           </div>
+          </ion-slide>
+
+             <ion-slide>
+            <div class="box ">
+            		<h1>SYSTEM USABILITY SCALE QUESTIONNAIRE</h1>
+                    <div class="row">
+                    <!-- Left Column -->
+                      <div class="col col-67">
+                      	<img src="../img/usability-scale.png"  />
+                      </div>
+
+                     <!-- RIght Column -->
+                      <div class="col col-33 v-bar text-left">
+                      	<p> These scores are best interpreted as a percentile rank through a process
+                        	called normalizing. The graph shows how the percentile ranks associate with
+                            SUS scores and letter grades.
+                        </p>
+                        <p> A raw SUS score of 83 converts to a percentile rank of </p>
+
+                        	<h3> <span class="energized flush"> ~95% for Siemens. </span> </h3>
+                        </p>
+
+                        <p> A raw SUS score of 58 converts to a percentile rank of
+                        	<h3> <span class="text-grey flush"> ~25% for the competitors. </span></h3>
+                        </p>
+
+                      </div>
+                 </div>
+				<cite> </cite>
+           </div>
+          </ion-slide>
+
+           <ion-slide>
+            <div class="box ">
+            		<h1> SATISFACTION </h1>
+                    <div class="row">
+                    <!-- Left Column -->
+                      <div class="col col-67">
+                      	<img src="../img/satisfaction-rating.png"  />
+                      </div>
+
+                     <!-- RIght Column -->
+                      <div class="col col-33 v-bar text-side text-left">
+                      	<p> At the end of a test task, sonographers rated the ease of use of completing that task.</p>
+                        <h3> For all but one task*, the <span class="energized"> task-by-task ease-of-use ratings for Siemens scored the same or higher</span><br />
+                        	 than the competitors.</h3>
+                      </div>
+                  </div>
+				<cite> *TASK 4A was rated lower than the competitors due to difficulties using the dual screen. </cite>
+           </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="box ">
+            		<h1> EFFECTIVENESS </h1>
+                    <div class="row">
+                    <!-- Left Column -->
+                      <div class="col col-67 effectiveness-img">
+                      	<img src="../img/effectiveness.png"  />
+                      </div>
+
+                     <!-- RIght Column -->
+                      <div class="col col-33 v-bar text-left" >
+                      	<p> For all tasks except one*,</p>
+                        <h3> <span class="flush energized">  SIEMENS’ usability tests outperformed the competition, consistently scoring lower than or equal to competitors’ usability tests regarding the rate observed errors.</span> </h3>
+
+                           <p>Across all tasks, </p>
+                        <h3> <span class="flush energized">SIEMENS' usability tests were the only tests that showed no notable differences regarding number of observed deviations.</span></h3>
+                      </div>
+                   </div>
+				           <cite> *TASK 4A was rated lower than the competitors due to difficulties using the dual screen. </cite>
+           </div>
+          </ion-slide>
+
+           <ion-slide>
+            <div class="box">
+            		<h1> PREFERENCE </h1>
+                    <div class="row">
+                    <!-- Left Column -->
+                      <div class="col col-50">
+                      	<img src="../img/preference-chart.png"  />
+                      </div>
+
+                     <!-- RIght Column -->
+                      <div class="col col-33 v-bar text-side text-left">
+                      	<p> When asked to provide their preference between systems at the end of the test sessions,
+                        	<strong class="energized uppercase">15 out of 20 sonographers preferred the SIEMENS system. </strong>
+                       </p>
+                       <p>
+
+                        <a href="#" class="text-orange heavy"> See the results of study. </a>
+                       </p>
+                    </div>
+                   </div>
+           </div>
+          </ion-slide>
+    </ion-slide-box>
+
+   </div>
+
+  </ion-content>
+</ion-view>

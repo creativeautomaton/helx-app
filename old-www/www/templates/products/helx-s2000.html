@@ -1,0 +1,252 @@
+<ion-view view-title="HELX - ACUSON S2000" hide-footer-bar="true" has-footer="false">
+   <ion-content >
+     <div class="full-bg gray-gradient" id="acuson-S2000" ng-controller="SlideController">
+
+            <div class="description"  >
+                  	<button class="button button-icon ion-plus" ng-click="Description($descriptionEvent)"> </button>
+                      <h3 class="text-black" > Description </h3>
+                	</div>
+
+                  <script id="templates/description.html" type="text/ng-template" >
+      				<ion-popover-view  class="description-popover acuson-S2000-popover" >
+      				<button class="close button button-clear icon icon-left ion-close" ng-click="closeDescription($descriptionEvent)"> </button>
+      				  <ion-content class="content">
+        					<h1 class="text-blue blue-text-transducer"> ACUSON S2000 System </h1>
+          					<p>
+                        The ACUSON S2000 system is an all-purpose, high-end ultrasound system built to deliver exceptional
+                         performance in General Imaging and Women’s Health. Designed to be fully upgradeable and forward
+                         compatible, the system provides the flexibility to add new technologies as they become available.
+                         Powered by Microsoft® Windows® 7, the ACUSON S2000 system can easily incorporate your existing
+                         electronic medical systems into its architecture, deliver outstanding clarity, and includes a
+                         complete portfolio of intuitive imaging technologies.
+          					</p>
+      				  </ion-content>
+      				</ion-popover-view>
+                  </script>
+
+
+            <div class="ultrasound-tool" ng-controller="ultrasoundToolCtrl" >
+                  <button class="button button-icon " ng-click="ultrasoundTool($ultrasoundToolEvent)">
+                     <img src="../img/tool-icon.png" />
+                  </button>
+            </div>
+
+                <script id="templates/ultrasound-tool.html" type="text/ng-template">
+                  <ion-popover-view  class="ultrasound-tool-popover">
+                  <h1 class="transducers text-blue blue-text-transducer"> Transducers </h1>
+                    <div class="text-right">
+                     <p class="close-text"> Close </p>
+                     <button class="close button button-clear icon icon-right ion-close" ng-click="closeultrasoundTool($ultrasoundToolEvent)"> </button>
+                    </div>
+
+                    <div class="arrows">
+                      <button class="circle button icon-left ion-ios-arrow-left" ng-class="{ 'visibility' : hide.LeftArrow }"   ng-click="prevAccessorySlide()"> </button>
+                      <button class="circle button icon-right ion-ios-arrow-right" ng-class="{ 'visibility' : hide.RightArrow }" ng-click="nextAccessorySlide()"> </button>
+                    </div>
+
+                    <ion-content class="content">
+                    <ion-slide-box delegate-handle="accessorySlider" active-slide="activeSlide" on-slide-changed="slideChanged($index)" show-pager="false" does-continue="false"  ng-click="updateSlide()" >
+                       <ion-slide>
+                         <ion-list>
+                            <ion-item>
+                                <img src="../img/accessories/6c1hd.png" />
+                                <h2 class="text-blue heavy"> 6C1 HD </h2>
+                                  <pre>Clinical application transducer specializing in abdominal, fetal echo, obstetrics, gynecology, pelvis, and renal exams.  </pre>
+                            </ion-item>
+                            <ion-item>
+                                <img src="../img/accessories/8c3hd.png" />
+                                  <h2 class="text-blue heavy"> 8C3 HD </h2>
+                                    <pre>Clinical application transducer specializing in abdominal, obstetrics, gynecology, and pediatric exams. </pre>
+                            </ion-item>
+                            <ion-item>
+                                <img src="../img/accessories/18L6.png" />
+                                <h2 class="text-blue heavy"> 18L6 HD </h2>
+                                  <pre>Clinical application transducer specializing in breast, cerebrovascular, musculoskeletal, penile, peripheral vascular, testicle, and thyroid exams. </pre>
+                            </ion-item>
+                          </ion-list>
+                        </ion-slide>
+
+                        <ion-slide>
+                          <ion-list>
+                             <ion-item>
+                                 <img src="../img/accessories/7cf1.png" />
+                                 <h2 class="text-blue heavy"> 7CF1 </h2>
+                                   <pre>Clinical application transducer specializing in abdominal, fetal echo, obstetrics and gynecology, pelvis, and renal exams. </pre>
+                             </ion-item>
+                             <ion-item>
+                                 <img src="../img/accessories/mc9-4.png" />
+                                   <h2 class="text-blue heavy"> MC9-4 </h2>
+                                     <pre>Clinical application transducer specializing in neonatal head, obstetrics, gynecology, and prostate exams. </pre>
+                             </ion-item>
+                             <ion-item>
+                                 <img src="../img/accessories/14l5.png" />
+                                 <h2 class="text-blue heavy"> 14L5 </h2>
+                                   <pre>Clinical application transducer specializing in breast, cerebrovascular, musculoskeletal, penile, peripheral vascular, testicle, and thyroid exams.
+                                   </pre>
+                            </ion-item>
+                           </ion-list>
+                         </ion-slide>
+
+                     </ion-slide-box>
+                    </ion-content>
+                  </ion-popover-view>
+               </script>
+
+  <!-- Basic Information on the S3000 -->
+   <div class="row basics">
+       <div class="col col-50" ></div>
+       <div class="col col-50 feature-slides" animation="slide-left-right-ios7" >
+
+           <!-- Features slider and content -->
+           <div class="row slide-ctrl" ng-class="{ 'hide' : featureSlide.Ctrl }">
+                   <div class="col col-50 text-left flush-left" >
+                     <button class="circle button icon-left ion-ios-arrow-left" ng-click="prevSlide();" ng-class="{ 'hide-button' : prevButton.Ctrl }"> </button>
+                     <button class="circle button icon-right ion-ios-arrow-right " ng-click="nextSlide();" ng-class="{ 'hide-button' : nextButton.Ctrl }"> </button>
+                   </div>
+                   <div class="col col-50 text-right flush-right" >
+                       <button class="button button-clear close-button" ng-click="closeSlide()"> <i class="icon ion-ios-close-empty text-blue"> </i> </button>
+                   </div>
+                   <div class="border blue"></div>
+           </div>
+           <ion-slide-box ng-init="lockSlide()" active-slide="activeSlide" on-slide-changed="slideChanged(index)" show-pager="false" does-continue="true" >
+                 <ion-slide>
+                   <div class="box">
+                     <h1 class="text-dark-blue"> Premium performance. Expanded insights. </h1>
+                     <p class="text-black"> The ACUSON S2000™ ultrasound system is designed with
+                       versatility in mind, offering exceptional imaging and performance across a
+                       variety of imaging applications.
+                     </p>
+                   </p>
+                     <p class="text-black">
+                       <strong> Explore the following hotspots to learn more
+                                about the unique features of the ACUSON S2000 system.
+                       </strong>
+                     </p>
+                   </div>
+                 </ion-slide>
+                 <ion-slide>
+                   <div class="row">
+                     <div class="col col-100">
+                       <h1 class="text-blue inner"> ABVS </h1>
+                       <p class="text-black">
+                         The ACUSON S2000™ Automated Breast Volume Scanner (ABVS) is designed to deliver
+                         superior care for women, especially those with heterogeneously or radiographically
+                         dense breast tissue. The system provides consistent ultrasound results and offers
+                         tissue strain analytics and insights into dense breast tissue.
+                       </p>
+                       <img src="../img/helx-details/S2000_ABVS.jpg" class="full-image" />
+                     </div>
+                   </div>
+                 </ion-slide>
+                 <ion-slide>
+                   <div class="row">
+                     <div class="col col-100">
+                       <h1 class="text-blue inner" > Virtual Touch: Virtual Touch IQ </h1>
+                       <p class="text-black">
+                          The ACUSON S2000 system comes equipped with Virtual Touch™ IQ, a complementary application
+                          of Acoustic Radiation Force Impulse (ARFI) technology and quantitative measurement. Designed
+                          to provide highly sensitive and specific high-resolution imaging and quantitative analysis
+                          of tissue stiffness, this technology provides a new dimension of diagnostic imaging.
+                       </p>
+                       <img src="../img/helx-details/S2000_eSieTouchElastography.jpg" class="full-image" />
+                     </div>
+                   </div>
+                 </ion-slide>
+                 <ion-slide>
+                   <div class="row">
+                     <div class="col col-100">
+                       <h1 class="text-blue inner"> Workflow Innovations </h1>
+                       <p class="text-black">
+                         The ACUSON S2000 system features Nuance PowerScribe® 360 Reporting, which supports
+                         seamless data transfer into high-quality reports, eliminating all manual transcription
+                         by allowing measurement-value dictation. In addition, <span class="italic">syngo®</span> technology reduces exam
+                         time with automated tracing, landmarks, and measurements.
+                       </p>
+                       <img src="../img/helx-details/S1000_WorkflowInnovations.jpg"  class="full-image" />
+                     </div>
+                   </div>
+                 </ion-slide>
+                 <ion-slide>
+                   <div class="row">
+                     <div class="col col-100">
+                       <h1 class="text-blue inner"> Transducers </h1>
+                       <p class="text-black">
+                         The ACUSON S2000 system includes high-density transducers that deliver more ultrasound
+                         data, color sensitivity, and the highest detail resolution. Insights are displayed on
+                         a 1080p high-definition monitor powered by SieStream™ HD Architecture, which promotes
+                         optimal image clarity.
+                       </p>
+                       <img src="../img/helx-details/S2000_TransducerToDisplay.jpg"  class="full-image" />
+                     </div>
+                   </div>
+                 </ion-slide>
+             </ion-slide-box>
+       </div>
+ </div>
+
+ <!-- Features Icons  -->
+     <a class="s2000-features-4 features-icon blue-icon" ng-click="feature1()" >
+       <div class="title-left text-right">
+         <span class="title left-bar"> ABVS </span>
+       </div>
+    </a>
+     <a class="s2000-features-1 features-icon blue-icon" ng-click="feature2()" >
+       <div class="title-center text-center">
+         <span class="title center-bar"> Virtual Touch </span>
+     </div>
+     </a>
+     <a class="s2000-features-2 features-icon blue-icon" ng-click="feature3()" >
+       <div class="title-right text-left">
+         <span class="title right-bar"> Workflow Innovations </span>
+       </div>
+     </a>
+     <a class="s2000-features-3 features-icon blue-icon" ng-click="feature4()" >
+       <div class="title-center text-center">
+         <span class="title center-bar"> Transducers </span>
+       </div>
+     </a>
+
+
+   <ion-footer-bar align-title="center" class="bar darkest single-product" ng-hide="{{isUrl}}" on-drag-up="onDragUp()" >
+
+     <div class="row single-product-select-footer">
+
+               <!-- Left column -->
+                 <div class="col col-50 footer-focus">
+                   <span class="focus-bg blue-bg"> </span>
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> <span class="s">S</span>2000</h2>
+                           <p> Ultrasound System</p>
+                       </div>
+                 </div>
+
+               <!-- Center Column -->
+                 <div class="col col-25 footer-acuson-s3000">
+                   <a href="{{acuson_s3000}}" ng-click="closeSlide()" nav-transition="none">
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> S3000</h2>
+                           <p> Ultrasound System</p>
+                               <button class="button button-orange icon-right ion-chevron-right"> Learn more </button>
+                        </div>
+                   </a>
+                 </div>
+
+                <!-- Right Column -->
+                 <div class="col col-25 footer-acuson-s1000">
+                   <a href="{{acuson_s1000}}" ng-click="closeSlide()" nav-transition="none">
+                     <div class="content">
+                           <p> Acuson </p>
+                           <h2> S1000</h2>
+                           <p> Ultrasound System</p>
+                               <button class="button button-pink icon-right ion-chevron-right"> Learn more </button>
+                       </div>
+                    </a>
+                 </div>
+           </div><!-- end of row -->
+   </ion-footer-bar>
+
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,94 @@
+{
+  "Clinical": [
+                {
+                    "Id": 1,
+                    "Image": "../img/library/clinical/1.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 2,
+                    "Image": "../img/library/clinical/2.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 3,
+                    "Image": "../img/library/clinical/3.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 4,
+                    "Image": "../img/library/clinical/4.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 5,
+                    "Image": "../img/library/clinical/5.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 6,
+                    "Image": "../img/library/clinical/6.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 7,
+                    "Image": "../img/library/clinical/7.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 8,
+                    "Image": "../img/library/clinical/8.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 9,
+                    "Image": "../img/library/clinical/9.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+                {
+                    "Id": 10,
+                    "Image": "../img/library/clinical/10.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                },
+              {
+                  "Id": 11,
+                  "Image": "../img/library/clinical/11.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              },
+              {
+                  "Id": 12,
+                  "Image": "../img/library/clinical/12.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              },
+              {
+                  "Id": 13,
+                  "Image": "../img/library/clinical/13.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              },
+              {
+                  "Id": 14,
+                  "Image": "../img/library/clinical/14.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              },
+              {
+                  "Id": 15,
+                  "Image": "../img/library/clinical/15.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              }
+      ]
+}

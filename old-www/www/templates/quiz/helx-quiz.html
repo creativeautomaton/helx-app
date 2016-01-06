@@ -1,0 +1,146 @@
+<ion-view view-title="Sales Quiz " >
+  <ion-content>
+   <div class="full-bg" id="quiz" >
+     <div class="row" ng-class="{ 'hide' : helx.Hero }">
+
+       <div class="row">
+         <!-- Left column -->
+           <div class="col col-25">
+              <div class="ranking uppercase">
+                  <span> Star Level </span>
+                  <div class="stars" >
+                    <ion-list>
+                          <ion-item class="star" ng-repeat="star in stars">
+                            <img ng-src="{{star.src}}" />
+                          </ion-item>
+                    </ion-list>
+                  </div>
+                </div>
+            </div>
+        </div> <!-- End of row -->
+
+        <div class="row">
+          <div class="col col-20"></div>
+          <div class="score current uppercase" >
+              <div> Your Current Streak
+                  <span class="streak orange" ng-model="current_streak" >
+                    {{current_streak}}
+                  </span>
+              </div>
+          </div>
+          <div class="score highest uppercase" >
+              <div> Your Longest Streak
+                  <span class="streak blue" ng-model="current_streak"  >
+                    {{highest_streak}}
+                  </span>
+              </div>
+          </div>
+
+      </div>
+  </div> <!-- End of row -->
+
+        <div class="row">
+          <div class="col col-20"></div>
+          <div class="col col-67 text-center" >
+            <!-- Start of Questions -->
+            <div class="question" ng-show="mode=='quiz'">
+              <div ng-class="{ 'hide' : hide.Question }">
+                 <div ng-repeat="question in filteredQuestions" ng-class="{ 'hide' : show.question, 'hide' : reached.Star}">
+                      <img src="{{question.Image}}" />
+                      <h2> {{question.Name}}
+                      </h2>
+                      <div class="options">
+                         <ion-list class="answers uppercase col col-80" >
+                            <ion-item ng-click="{{Option.Answer}}" ng-class="getClass($index)" ng-repeat="Option in question.Options">
+                                <a id="{{Option.Id}}"  ng-model="Option.Selected" class="answer-block">
+                                  <pre> {{Option.Name}} </pre>
+                                    <!-- {{Option.Answer}} -->
+                                </a>
+                            </ion-item>
+                          </ion-list>
+                      </div> <!-- End of Question Options -->
+                  </div>
+                </div>
+
+
+                <!-- Correct Answer -->
+                  <div class="text-center uppercase wrong col col-67 hide"  ng-class="{ 'show' : show.Correct }">
+                      <div ng-class="{ 'hide' : reached.Star}">
+                         <img src="/img/quiz-correct.png" />
+                         <p>Correct!</p>
+                       </div>
+
+                       <div class="hide" ng-class="{ 'show' : reached.Star }">
+                         <img src="/img/quiz-rank-star.png" />
+                         <p>Correct!</p>
+                         <p>
+                           CONGRATULATIONS!
+                           <br/>
+                          YOU EARNED A STAR, AND ARE ONE STEP CLOSER
+                          <br />
+                          TO BECOMING A HELX HERO </p>
+                         <p>
+                           <a ng-click="continue();" class="button button-assertive icon-right ion-chevron-right " nav-transition="none">
+                              Continue
+                           </a>
+                         </p>
+                       </div>
+                  </div>
+
+                <!-- Wrong Answer -->
+                  <div class="text-center uppercase wrong col col-67 hide" ng-class="{ 'show' : show.Wrong }" >
+                       <img src="/img/quiz-wrong.png" />
+                       <p>Sorry, that was incorrect.</p>
+                       <p>The correct answer is:
+                         <br />
+                           <span class="streak text-orange" ng-repeat="question in filteredQuestions" >
+                             <strong> {{question.correctAnswer}} </strong>
+                           </span>
+                       </p>
+
+                       <p class="unique-answers">
+                         YOU ARE ONLY <span class="streak text-orange"> {{remaining_Answers}} </span> UNIQUE CORRECT ANSWERS AWAY FROM YOUR NEXT STAR.
+                       </p>
+                       <p>
+                          <a ng-click="try_again();" class="button button-assertive icon-right ion-chevron-right " nav-transition="none">
+                    						Try Again
+                    			</a>
+                       </p>
+                  </div>
+
+                  <!-- Reached a Star -->
+                    <div class="text-center uppercase wrong col col-67 hide" ng-class="{ 'show' : reached.Star }" >
+                         <img src="/img/quiz-rank-star.png" />
+                         <p>Correct!</p>
+                         <p>
+                           CONGRATULATIONS!
+                           <br/>
+                          YOU EARNED A STAR, AND ARE ONE STEP CLOSER
+                          <br />
+                          TO BECOMING A HELX HERO </p>
+                         <p>
+                           <a ng-click="continue();" class="button button-assertive icon-right ion-chevron-right " nav-transition="none">
+                              Continue
+                           </a>
+                         </p>
+                    </div>
+
+                    <!-- Reached a Star -->
+                      <div class="text-center uppercase wrong col col-67 hide" ng-class="{ 'show' : reached.Hundred }" >
+                           <img src="/img/quiz-hero.png" />
+                           <p>
+                             CONGRATULATIONS!
+                             <br/>
+                            You are truly a HELX Hero
+                          </p>
+                      </div>
+
+             </div>
+             </div>
+           </div><!-- end of row -->
+
+
+     </div><!-- end of row -->
+   </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,17 @@
+{
+  "name": "Helx-app",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "templatecache",
+    "ng_annotate",
+    "useref",
+    "uglify",
+    "watch"
+  ],
+
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

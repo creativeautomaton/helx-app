@@ -1,0 +1,77 @@
+<!-- The nav bar that will be updated as we navigate -->
+   <ion-nav-bar class="bar-dark dark" >
+   		 <ion-nav-buttons  side="left">
+         <a href="{{main_menu}}"> <button class="button button-icon dark headline" >
+             <span class="siemens"> <strong> Siemens </strong>  </span>
+             <strong class="app-title"> Ultrasound Sales Companion </strong>
+           </button>
+         </a>
+          <a href="{{main_menu}}"> <button class="button button-icon button-clear sub-headline"> HELX Evolution with Touch Control <span class="italic"> Feel the Innovation.</span> </button> </a>
+         </ion-nav-buttons>
+
+      <ion-nav-buttons side="right" >
+        <a class="button button-icon button-clear ion-ios-information-outline"  href="{{contact_information}}"> </a>  
+        <a class="button button-icon button-clear ion-home" href="{{main_menu}}"> </a>
+
+        <div class="helx-menu"  >
+           <button class="button button-icon ion-android-menu" ng-click="subMenu($event)"> </button>
+       </div>
+
+       </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-nav-view name="productsContent" >  </ion-nav-view>
+
+    <div ng-class=" {}">
+    <ion-footer-bar align-title="center" class="bar darkest product animated slideInUp _1-second "
+                    ng-class=" {'full' : slide.Up, 'rise' : show.Products }"
+                    on-tap="onTap()"
+                    on-double-tap="onDoubleTap()"
+                    on-swipe-left="onSwipeLeft()"
+                    on-swipe-right="onSwipeRight()"
+                    on-swipe-up="onSwipeUp()"
+                    on-drag-down="onDragDown()"
+      >
+    	<div class="title" on-touch="onTouch()" on-tap="onTap()" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()" on-swipe-up="onSwipeUp()" on-drag-down="onDragDown()" ng-class="{ 'rotate-180' : rotate.Flip }"> Select A Product </div>
+
+    	<div class="row product-select-footer">
+
+                <!-- Left column -->
+                  <div class="col col-33 footer-acuson-s3000">
+                    <a href="{{acuson_s3000}}" >
+                  		<div class="content">
+                            <p> Acuson </p>
+                            <h2> S3000</h2>
+                            <p> Ultrasound System</p>
+                                <button class="button button-orange icon-right ion-chevron-right"> Learn more </button>
+                        </div>
+                      </a>
+                  </div>
+
+                <!-- Center Column -->
+                  <div class="col col-33 footer-acuson-s2000">
+                    <a href="{{acuson_s2000}}" >
+                  		<div class="content">
+                            <p> Acuson </p>
+                            <h2> S2000</h2>
+                            <p> Ultrasound System</p>
+                                <button class="button button-blue icon-right ion-chevron-right"> Learn more </button>
+                         </div>
+                    </a>
+                  </div>
+
+                 <!-- Right Column -->
+                  <div class="col col-33 footer-acuson-s1000">
+                    <a href="{{acuson_s1000}}" >
+                  		<div class="content">
+                            <p> Acuson </p>
+                            <h2> S1000</h2>
+                            <p> Ultrasound System</p>
+                                <button class="button button-pink icon-right ion-chevron-right"> Learn more </button>
+                        </div>
+                      </a>
+                  </div>
+
+            </div><!-- end of row -->
+    </ion-footer-bar>
+  </div>

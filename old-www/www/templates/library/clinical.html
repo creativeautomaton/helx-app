@@ -1,0 +1,77 @@
+<ion-view view-title="HELX library Simulation Main Menu" >
+   <ion-content>
+     <div class="full-bg" id="library-clinical" ng-controller="ClinicalImagesCtrl">
+
+          <div class="icon-link video-link" >
+              <a href="{{library_videos}}">
+                <button class="button button-icon"  >
+                   <img src="../img/media-icon.png" alt="HELX Evolution Clinical Videos" />
+                </button>
+              </a>
+                 <h3> Videos </h3>
+          </div>
+          <div class="icon-link literature-link" >
+              <a href="{{library_literature}}">
+                <button class="button button-icon" >
+                   <img src="../img/literature-dark-icon.png" alt="HELX Evolution Literature" />
+                </button>
+              </a>
+                  <h3> Literature </h3>
+         </div>
+
+         <div class="arrows">
+           <button class="circle button icon-left ion-ios-arrow-left clinical-left-arrow" ng-click="prevSlide();"> </button>
+           <button class="circle button icon-right ion-ios-arrow-right " ng-click="nextSlide();"> </button>
+         </div>
+
+          <ion-slide-box delegate-handle="ClinicalSlider" active-slide="activeSlide" on-slide-changed="slideChanged(index)"  ng-click="updateSlide()">
+            <ion-slide >
+                <div class="row responsive-sm text-center" >
+                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(0,5)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                      <a id="{{Clinical.Id}}" >
+                        <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                      </a>
+                  </div>
+                  </div><!-- end of row -->
+                  <div class="row responsive-sm text-center" >
+                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(6,11)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                        <a id="{{Clinical.Id}}" >
+                          <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                        </a>
+                    </div>
+                    </div><!-- end of row -->
+                    <div class="row responsive-sm text-center" >
+                      <div class="col col-20" ng-repeat="Clinical in Clinical.slice(10,16)" ng-click="image1(); clinicalImageModal($clinicalImageModalEvent);" >
+                          <a id="{{Clinical.Id}}" >
+                            <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                          </a>
+                      </div>
+                </div><!-- end of row -->
+            </ion-slide><!-- end of Slide -->
+            <ion-slide >
+                <div class="row responsive-sm text-center" >
+                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(0,5)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                      <a id="{{Clinical.Id}}" >
+                        <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                      </a>
+                  </div>
+                  </div><!-- end of row -->
+                  <div class="row responsive-sm text-center" >
+                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(6,11)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                        <a id="{{Clinical.Id}}" >
+                          <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                        </a>
+                    </div>
+                    </div><!-- end of row -->
+                    <div class="row responsive-sm text-center" >
+                      <div class="col col-20" ng-repeat="Clinical in Clinical.slice(10,16)" ng-click="image1(); clinicalImageModal($clinicalImageModalEvent);" >
+                          <a id="{{Clinical.Id}}" >
+                            <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                          </a>
+                      </div>
+                </div><!-- end of row -->
+            </ion-slide><!-- end of Slide -->
+          </ion-slide-box>
+    </div>
+  </ion-content>
+</ion-view>

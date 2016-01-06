@@ -1,0 +1,3159 @@
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Your SASS
+@import "www/lib/ionic/scss/ionic";
+@import "modules/*";
+@import "partials/*";
+@import "vendor/*";
+
+body, html {
+	font-size: 100%;
+	font-family: "SiemensSans-Roman";
+	background: url(../img/bg.jpg) no-repeat center center;
+}
+h1, h2 {
+	color: #fff;
+}
+p {
+	font-size:14px;
+	color: #fff;
+}
+a {
+    text-decoration: none;
+}
+pre {
+	font-size: 100%;
+	font-family: "SiemensSans-Roman";
+}
+.app-offline{
+	border-color: transparent;
+	background: transparent !important;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 1rem 2rem;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+}
+.app-offline:before{
+		content: " Section not available Offline. " ;
+    border-color: transparent;
+    background: #63839B none repeat scroll 0% 0% !important;
+    position: absolute;
+		top: 50%;
+		left: 35%;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 10px;
+		width: 300px;
+		height: auto;
+		z-index: 999;
+}
+.heavy {
+	font-family: SiemensSans-Black !important;
+}
+.ion-ios-information-outline::before {
+    font-weight: bold !important;
+}
+.ion-ios-arrow-right {
+}
+.bar.bar-dark {
+    border-color: transparent;
+}
+.close-button {
+	width: 125px;
+	font-size: 13px;
+}
+.transducers {
+	font-size: 24px;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-family: SiemensSerif-Roman;
+}
+.transducers .text-blue {
+		color: #29A8C0 !important;
+}
+.close-button .icon {
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+    border-radius: 0px !important;
+    color: rgb(51, 51, 51) !important;
+		text-transform: uppercase;
+		padding: 0px 12px;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+}
+.close-button:after{
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	content: "Close";
+	text-transform: uppercase;
+}
+.full-bg {
+	position:relative;
+	width: 100%;
+	height: 100vh;
+}
+.overlay:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: rgba(3, 12, 15, 0.7) none repeat scroll 0% 0%;
+	width: 100%;
+	height:100%;
+	z-index: 5;
+}
+.gray-gradient {
+	position:relative;
+}
+.gray-gradient:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/gray-gradient.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: 1;
+}
+.bar.bar-dark .title {
+    color: #FFF;
+    display: none;
+}
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.bold { font-weight: 600; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase !important; }
+.italic { font-style: italic; }
+.flush-left { padding-left: 0px !important; margin-left: -4px;}
+
+.disabled{
+	opacity: 0.35;
+
+		button.circle::before {
+		    background-color: #fff;
+		    border-width: 0px medium medium;
+		    border-style: solid none none;
+		    -moz-border-top-colors: none;
+		    -moz-border-right-colors: none;
+		    -moz-border-bottom-colors: none;
+		    -moz-border-left-colors: none;
+		    border-image: none;
+		    border-color: #fff;
+		    color: #fff;
+		    box-shadow: none;
+	 }
+	 button.circle:hover:before{
+		 	background-color: #000;
+	 }
+}
+
+/*-- Vertical Content Seperator --*/
+.v-bar { position:relative; }
+.v-bar::before {
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: -15px;
+	width: 6px;
+	min-height: 95%;
+	background: rgba(117, 125, 127, 0.5) none repeat scroll 0% 0%;
+}
+
+/*-- Ionic Framework Overwrites --*/
+.popover * { border-radius: 0px !important;}
+.popover .scroll-content { top: 0px !important;  margin: 0px !important; }
+.scroll-content { top: 0px !important; }
+.transparent { background: transparent !important; border:none; }
+.dark { background: rgba(45, 65, 72, 0.3) none repeat scroll 0% 0% !important; }
+.darkest { background: rgba(12, 25, 33, 0.49) none repeat scroll 0% 0% !important; }
+.button.button-assertive, .button.button-assertive:focus, .button.button-assertive:active{ background-color: #F5851F; border-color: #F5851F; }
+
+/*-- Header --*/
+.headline {
+	font-size: 1em;
+	height: 44px;
+	margin: -5px 15px 0px -5px;
+	padding: 0px 10px !important;
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0% !important!important;
+	min-width: 350px !important;
+}
+.headline .siemens {
+	position: relative;
+	top: 1px;
+	left: -15px;
+	font-family: SiemensSans-Black;
+}
+.headline .app-title {
+	position: relative;
+	top: 2px;
+	left: 10px;
+	font-family: SiemensSans-Black;
+}
+.siemens::before {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+		content: " ";
+		width: 1px;
+		height: 25px;
+		background: #fff;
+}
+.headline strong {
+    font-weight: 400;
+		font-size: 16px !important;
+}
+.sub-headline {
+	float: left;
+	margin: 3px -4px;
+	color: #fff;
+	font-size: 14px !important;
+	width: 370px;
+	text-align: left;
+	font-weight: 400 !important;
+	font-family: SiemensSans-Bold;
+}
+.sub-headline span {
+    position: absolute;
+    top: 0px;
+    right: -20px;
+		font-weight: 300 !important;
+}
+.sub-headline span::before {
+	position: absolute;
+	top: 5px;
+	left: -12px;
+	content: " ";
+	width: 1px;
+	height: 25px;
+	background: #fff;
+}
+/*
+.ion-ios-information-outline::before {
+    font-weight: 600;
+}
+*/
+
+/*-- Nav --*/
+.helx-menu {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+}
+.helx-menu .button {
+    color: #444;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 3px 6px;
+    background: #fff !important;
+    border: 1px solid rgb(51, 51, 51);
+    margin: 5px;
+		border-radius: 0px !important;
+}
+.helx-menu .button.button-icon {
+    font-size: 17px;
+    border-radius: 0px !important;
+}
+
+.helx-menu .button:hover,
+.helx-menu .button:active,
+.helx-menu .button:focus {
+	color: #FFF;
+	background: #333 !important;
+	border-radius: 0px !important;
+}
+/*-- Circle Button --*/
+button.circle {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #eee;
+    color: #FFF;
+		line-height: 16px;
+		font-size: 12px;
+		text-align: left;
+		padding: 10px 0 0 0 ;
+		width: 100%;
+}
+button.circle:hover, button.circle:focus {
+	background-color: transparent;
+	border: none;
+	border-top: 1px solid #fff;
+	border-color: #fff;
+	color: #fff;
+	box-shadow: none;
+}
+button.circle.button.icon-left::before,
+button.circle.button.icon-right::before {
+	padding-right: 8px;
+	padding-left: 12px;
+	border-radius: 1em;
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+	font-size: 24px;
+	line-height: 29px;
+}
+button.circle.button.icon-left:hover::before,
+button.circle.button.icon-left:active::before,
+button.circle.button.icon-left:focus::before,
+button.circle.button.icon-right:hover::before,
+button.circle.button.icon-right:active::before,
+button.circle.button.icon-right:focus::before {
+		color: #333;
+		background: #fff;
+}
+
+button.circle_active.button.icon-right::before {
+		color: #333;
+		background: #fff;
+}
+.top{
+	position: absolute;
+	top: 0px;
+}
+
+button.disabled.circle_active.button.icon-right::before {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+}
+.blue-text-transducer{
+	 color: rgb(41, 168, 192) !important;
+}
+
+
+/*-- Splash Page --*/
+.splash {
+	position: relative;
+	background: #eee;
+}
+.splash:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/splash-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+.siemens-logo {
+	position: absolute;
+	width: 100%;
+	min-height: 90px;
+	max-width: 150px;
+	max-height: 100px;
+	z-index: 9;
+	top: 0px;
+	left: 5%;
+	-moz-animation-duration: 2s;
+}
+.siemens-logo:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/siemens.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+
+.splash .caption {
+	display: block;
+	width: 60vw;
+	height: auto;
+	padding: 2rem;
+	position: absolute;
+	right: 0px;
+	bottom: 15%;
+	background: rgba(0, 33, 51, 0.79) none repeat scroll 0% 0%;
+	color: #fff;
+	-moz-animation-duration: 2s;
+  -moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-animation-delay: 3s;
+  -animation-iteration-count: infinite;
+}
+.splash .caption h1 {
+	width:	60vw;
+	font-weight: 300;
+	font-family: "SiemensSerif-Roman" !important;
+}
+.splash .caption p {
+	font-size: 1.1rem;
+	color: #fff;
+	font-family: "SiemensSerif-Roman" !important;
+}
+
+.launch {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	text-align: center;
+	height: 100vh;
+	vertical-align: middle;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+.launch .caption {
+	position: relative;
+	margin: 0px auto;
+	display: block;
+	padding: 2rem;
+	color: #fff;
+	padding-top: 30%;
+	z-index: 6;
+	max-width: 670px;
+}
+.launch h1, .launch p {
+	color:#fff;
+	display: block;
+}
+.launch h1 {
+	font-family: "SiemensSerif-Roman" !important;
+	font-size: 4rem;
+	font-weight: 300;
+}
+
+.launch .button {
+	font-weight:bold;
+	min-height: 25px !important;
+	padding: 0px 20px;
+	line-height: 25px;
+	opacity: 0.9;
+	border-radius: 5px;
+}
+.launch .button:hover { opacity: 1; }
+
+.launch .button.icon-right::before{
+		font-size: 16px;
+		line-height: 20px;
+		padding-left: 7px;
+}
+
+
+/*-- HELX Main Menu --*/
+.main-menu-bg {
+	position: relative;
+}
+.main-menu-bg:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+#main-menu {
+	width: 90vw;
+	margin: 0em auto;
+	display: block;
+	position: relative;
+	height: 90vh;
+	top: 50px;
+	color:#fff;
+	text-align: center;
+	max-width: 1000px;
+}
+
+#main-menu .col {
+    margin-bottom: 4px;
+		padding: 3px 2px ;
+}
+/*-- Navigation Item padding --*/
+#main-menu .helx-info { padding: 16vh 10vw; }
+
+#main-menu .sales-quiz { padding: 4vh 8vw 2vh 8vw;  }
+#main-menu .sales-quiz img { width: 100%; }
+
+#main-menu .workflow,
+#main-menu .data-proof,
+#main-menu .ultrasound,
+#main-menu .resource-lib,
+#main-menu .family-tree {
+	padding: 3vh 2vw 2vh 2vw;
+}
+#main-menu .small-square {
+	min-height: 225px;
+	max-height: 225px;
+}
+#main-menu .large-square {
+	max-height: 454px;
+	min-height: 454px;
+}
+#main-menu img.square-icon {
+	max-width: 60px;
+	min-width: 45px;
+}
+#main-menu h3 {
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+}
+
+/*-- Generic Modal Styles --*/
+.modal {
+	color: #fff;
+	padding: 1em;
+	background: $dark-blue !important;
+	max-height: 450px;
+}
+.modal img {
+	margin: 1em auto;
+}
+.modal p { font-size: 13px;}
+
+/*-- HELX Information Modal --*/
+.helx-modal {
+	color: #fff;
+	padding: 1em;
+	background: $dark-blue !important;
+}
+.helx-modal img {
+	margin: 1em auto;
+	max-width: 150px;
+}
+.helx-modal p { font-size: 13px;}
+
+.helx-info-slide{
+    text-align: center;
+    padding: 4rem 3rem;
+		h3 {
+				font-family: "SiemensSerif-Roman" !important;
+		}
+}
+.helx-info-slide img {
+    padding-bottom: 2rem;
+		max-width: 200px;
+}
+
+/*-- Overview Modal --*/
+.overview-modal {
+	color: #fff;
+	padding: 3rem 1rem;
+	background: $dark-blue !important;
+	p {
+		color:#fff !important;
+		font-size: 14px;
+		text-align: left;
+		line-height: 18px;
+	}
+	img {
+		margin: 0px auto;
+	}
+	img.windows-7 {
+		margin: 0px 1rem;
+		max-width: 225px;
+	}
+	.button {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		z-index: 2;
+	}
+	.row{
+	    margin: 4rem 0rem;
+	    padding: 1rem;
+	}
+}
+
+.usability-modal,
+.family-tree-modal {
+	margin-top: 4rem;
+	padding: 1rem 3rem;
+	max-height: 300px;
+
+	h1 {
+		font-size: 2.25rem;
+		font-weight: 200;
+		font-family: "SiemensSerif-Roman";
+	}
+	p {
+	    font-size: 15px;
+			margin-bottom: 2rem;
+	}
+	 h4 {
+			font-size: 20px;
+	    font-weight: 400;
+	}
+}
+.family-tree-instructions-modal {
+	margin-top: -1rem;
+	padding: 1rem 3rem;
+
+		h2{
+			font-family: SiemensSerif-Roman !important;
+		}
+}
+
+
+/*-- Popovers ( like modals but no overlay on the screen ) --*/
+.popover.sub-menu {
+	top: 5px !important;
+	left: auto !important;
+	right: 0px;
+	width: 275px !important;
+	height: 500px;
+	background: $dark-blue !important;
+	padding-top: 0em;
+	-moz-animation-duration: 3s;
+ 	-moz-animation-delay: 2s;
+  -moz-animation-iteration-count: infinite;
+	border-radius: 0px !important;
+	margin: 50px 20px;
+}
+.popover { border-radius: none;}
+.popover.description-popover .popover-arrow,
+.popover.sub-menu .popover-arrow,
+.popover.ultrasound-tool-popover .popover-arrow,
+ { display: none; }
+
+.popover.description-popover,
+.popover.sub-menu {
+	border-radius: 0px;
+}
+.popover .sub-menu .scroll {
+}
+.popover.sub-menu .button {
+	color: #000;
+	background: #fff;
+	border-radius: 0px;
+	right: 0px;
+	padding: 0px 10px;
+	top: 0px;
+	position: absolute;
+	z-index: 2;
+	min-width: 45px;
+	min-height: 43px;
+	margin: 0px;
+}
+.popover.sub-menu .button.icon-right::before {
+    float: none;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.popover.sub-menu .list {
+	padding-top: 2em;
+}
+.popover.sub-menu .item {
+	  padding-top: 0.3rem;
+    border-color: transparent;
+    background-color: transparent;
+}
+.popover.sub-menu .item .item-content {
+	border-color: transparent;
+    background-color: transparent;
+	text-transform: uppercase;
+	text-align: right;
+	color: rgb(255, 255, 255);
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: 300;
+	float: right;
+	width: 215px;
+	display: block;
+}
+
+/*-- Decription Popover --*/
+		.description {
+			position: absolute;
+			top: 45px;
+			left: 10px;
+		}
+		.description h3 {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 12px;
+			font-weight: bold;
+			display: inline-block;
+		}
+		.description .button {
+			color: #444;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 0px 8px;
+			background: #FFF none repeat scroll 0% 0% !important;
+			margin: 10px;
+			border-radius: 0px;
+			min-height: auto !important;
+			display: inline-block;
+			height: 35px !important;
+			min-height: 35px !important;
+			line-height: 0px;
+		}
+		.description-popover {
+			position: absolute;
+			z-index: 9;
+			width: 50vw;
+			height: 350px;
+			display: block;
+			top: 43px;
+			left: 130px;
+			opacity: 1;
+			padding: 1em 2em;
+			background: $dark-blue !important;
+		}
+		.description-popover .close {
+			color: #000;
+			background: #FFF none repeat scroll 0% 0%;
+			border-radius: 0px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			min-width: 33px !important;
+			padding: 0px 6px 0px 10px;
+			min-height: 23px !important;
+			z-index: 2;
+		}
+		.description-popover .content {
+			padding: 2.5em;
+			margin: 0px;
+			float: left;
+			display: block;
+		}
+		.description-popover .content h1 {
+			font-size: 32px;
+		}
+		.description-popover .content h3 {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			width: 92.5%;
+		}
+		.description .button:hover,
+		.description .button:active,
+		.description .button:focus {
+			color: #FFF;
+			background: #333 !important;
+		}
+
+
+	/*-- Ultrasound Tool Popover --*/
+				.ultrasound-tool {
+					position: absolute;
+					top: 90px;
+					left: 12px;
+				}
+				.ultrasound-tool h3 {
+					text-transform: uppercase;
+					color: #fff;
+					font-size: 12px;
+					font-weight: bold;
+					display: inline-block;
+				}
+				.ultrasound-tool .button {
+					color: #444;
+					font-size: 1.5em;
+					font-weight: bold;
+					padding: 0px 8px;
+					background: #FFF none repeat scroll 0% 0% !important;
+					margin: 10px;
+					border-radius: 0px;
+					min-height: auto !important;
+					display: inline-block;
+					height: 35px !important;
+					min-height: 35px !important;
+					line-height: 0px;
+				}
+				.ultrasound-tool-popover {
+					position: absolute;
+					z-index: 9;
+					width: 60vw;
+					height: 50vh;
+					display: block;
+					top: 25vh;
+					left: 30vw;
+					opacity: 1;
+					padding: 1em 2em;
+					background: $dark-blue !important;
+						.visibility {
+							visibility: hidden;
+						}
+				}
+				.ultrasound-tool-popover .close {
+					color: #000;
+					background: #FFF none repeat scroll 0% 0%;
+					border-radius: 0px;
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					min-width: 33px !important;
+					padding: 0px 6px 0px 10px;
+					min-height: 23px !important;
+					z-index: 2;
+				}
+				.ultrasound-tool-popover .content {
+					padding: 2.5em;
+					margin: 0px;
+					float: left;
+					display: block;
+				}
+				.ultrasound-tool-popover .content h1 {
+					font-size: 32px;
+				}
+				.ultrasound-tool-popover .content h3 {
+					text-transform: uppercase;
+					color: #fff;
+					font-size: 14px;
+					font-weight: bold;
+					width: 92.5%;
+				}
+				.ultrasound-tool-popover .button:hover,
+				.ultrasound-tool-popover .button:active,
+				.ultrasound-tool-popover .button:focus {
+					color: #FFF;
+					background: #333 !important;
+				}
+				.ultrasound-tool-popover .close {
+					right: 0px !important;
+					min-width: 40px !important;
+					padding: 0px 11px 0px 10px;
+					min-height: 23px !important;
+					left: 100%;
+					margin-left: -46px;
+				}
+				.ultrasound-tool-popover .close-text {
+					margin-right: 20px;
+					display: block;
+					margin-top: -3px;
+				}
+
+				.ultrasound-tool-popover .content .list {
+					text-align: center;
+				}
+				.ultrasound-tool-popover .content .item {
+					display: inline-block;
+					text-align: center;
+					background: transparent;
+					padding: 1rem 0.75rem;
+					border: 0px;
+					color: #fff !important;
+					max-width: 175px;
+					min-height: 300px;
+					position: relative;
+					top: 0rem;
+			 			pre{
+							text-align: left;
+							font-size: 11px;
+							line-height: 15px;
+						}
+						img{
+							height: 125px;
+							margin-bottom: 1.5rem;
+						}
+				 		h2 {
+							text-align: left;
+							border-bottom: 1px solid #fff;
+						}
+				    p {
+							color: #fff !important;
+							position: relative;
+							padding-left: 6px;
+							text-align: left;
+						}
+				   p:before {
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							content: "";
+						}
+						.text-blue {
+							color: #29A8C0 !important;
+						}
+				}
+.ultrasound-tool-popover .arrows {
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		padding: 0px 2%;
+		z-index: 2;
+		top: 10rem;
+		.button:hover,
+		.ultrasound-tool-popover .button:active,
+		.ultrasound-tool-popover .button:focus {
+			color: #000;
+			background-color: transparent !important;
+		}
+}
+.ultrasound-tool-popover .arrows button.circle {
+		color: #000;
+	  border: none;
+	  border-top: none;
+		width: 50%;
+		float: left;
+		z-index: 1;
+		position: relative;
+		opacity: 0.6;
+}
+.ultrasound-tool-popover .arrows button.circle.button.icon-left::before,
+.ultrasound-tool-popover .arrows button.circle.button.icon-right::before {
+	background-color: #fff;
+}
+.ultrasound-tool-popover .arrows button.circle.button.icon-left:hover::before,
+.ultrasound-tool-popover .arrows button.circle.button.icon-right:hover::before {
+	opacity: 1;
+}
+.ultrasound-tool-popover .arrows button.circle.button.icon-left::before {
+	padding-right:11px;
+	padding-left: 9px;
+}
+.ultrasound-tool-popover .arrows button.circle.button.icon-right::before {
+	padding-right: 9px;
+	padding-left: 11px;
+}
+
+
+/*-- Single Product Pages
+	acuson-S3000 - acuson-S2000 - acuson-S1000
+--*/
+	.basics {
+		padding-top: 8rem;
+	}
+
+		#acuson-S3000, #acuson-S2000, #acuson-S1000 {
+			position: relative;
+			padding: 3rem 5rem;
+				h1{
+					font-family: "SiemensSerif-Roman";
+				}
+				.flush-right {
+					padding-right: 0px !important;
+					margin-right: 0px;
+					position: relative;
+					right: -20px;
+				}
+				.close-button {
+					background: transparent;
+					width: 100px;
+					font-size: 13px;
+					color: #333;
+					font-weight: 500;
+					.icon{
+						background: transparent !important;
+					}
+					.icon::before {
+    				font-size: 50px;
+						background: transparent;
+					}
+				}
+				.slider-slide:first-child{
+					padding-top: 7rem;
+				}
+		}
+
+		#acuson-S3000::before, #acuson-S2000::before, #acuson-S1000::before {
+			position:absolute;
+			top:0px;
+			left:0px;
+			content: "";
+			width: 100%;
+			height:100%;
+			z-index: -1;
+		}
+		#acuson-S3000::after, #acuson-S2000::after, #acuson-S1000::after   {
+			position:absolute;
+			top:0px;
+			left:0px;
+			content: "";
+			width: 100%;
+			height:100%;
+			z-index: -1;
+		}
+
+		#acuson-S3000 {
+			.close-button .icon {
+					color: $text-orange !important;
+					background: transparent;
+			}
+		}
+		#acuson-S2000 {
+			.close-button .icon {
+					color: $text-blue !important;
+					background: transparent;
+			}
+		}
+		#acuson-S1000{
+			.close-button .icon {
+					color: $text-pink !important;
+					background: transparent;
+			}
+			.text-pink{
+				color: $text-pink !important;
+			}
+			small {
+			 margin-top: 5px !important;
+				font-size: 11px;
+				line-height: 5px !important;
+			}
+		}
+
+		#acuson-S3000, #acuson-S2000, #acuson-S1000 {
+		}
+
+		.acuson-S1000-popover {
+				height: 320px;
+				.text-pink{
+					color: #E40073;
+				}
+				.content {
+					padding-top: 4em !important;
+					h1 {
+						font-size: 2rem !important;
+						font-family: "SiemensSerif-Roman";
+					}
+				}
+		}
+		.acuson-S2000-popover {
+				height: 320px;
+				.content {
+					padding-top: 3.5em !important;
+					h1 {
+						font-size: 2rem !important;
+						font-family: "SiemensSerif-Roman";
+					}
+				}
+		}
+		.acuson-S3000-popover {
+				height: 340px;
+				.content {
+					padding-top: 3.75em !important;
+					h1 {
+						font-size: 2rem !important;
+						font-family: "SiemensSerif-Roman";
+					}
+				}
+		}
+
+		#acuson-S3000::after{
+			background:	transparent url("../img/acuson-S3000-large.png") no-repeat scroll 2.5rem 2rem / 44.5% auto;
+		}
+		#acuson-S2000::after {
+			background:	transparent url("../img/acuson-S2000-large.png") no-repeat scroll 2.5rem 2rem / 44.5% auto;
+		}
+		#acuson-S1000::after {
+			background: transparent url("../img/acuson-S1000-large.png") no-repeat scroll 2.5rem 2rem / 44.5% auto;
+		}
+		#acuson-S3000 .full-image, #acuson-S2000 .full-image, #acuson-S1000 .full-image{
+			max-height: 175px;
+			width: auto;
+			display: block;
+		}
+
+
+/*-- Helx Evolution - Siemens Ultrasound --*/
+
+#ultrasound {
+	position: relative;
+	padding: 10em 2em;
+}
+#ultrasound:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:  url(../img/helix-machine-bg.jpg) no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#ultrasound h1 {
+	letter-spacing: 1px;
+	font-size: 3.5em;
+	line-height: 1em;
+}
+#ultrasound p {
+	letter-spacing: 1px;
+	width: 92.5%;
+	color: #fff;
+	line-height: 20px;
+}
+#ultrasound .description-popover .content {
+    padding: 3rem 2.5rem !important;
+    margin: 0px;
+    float: left;
+    display: block;
+}
+.helx-description {
+    font-size: 23px !important;
+    text-transform: uppercase !important;
+}
+.hide-button { display: none !important;}
+
+/*-- Product Features --*/
+
+.features-icon {
+	position: absolute;
+	opacity: 0.85;
+	width: 45px;
+	height: 45px;
+}
+.features-icon:hover,
+.features-icon:focus,
+.features-icon:active {
+	opacity: 1;
+}
+
+.features-icon::before {
+	position: absolute;
+	content: "";
+	top:0px;
+	left:0px;
+	background: url(../img/orange-icon.png) no-repeat;
+	background-size: cover;
+	width: 45px;
+	height: 45px;
+	z-index: 2;
+}
+.features-icon.blue-icon::before { background: url(../img/blue-icon.png) no-repeat center center; background-size: cover; }
+.features-icon.pink-icon::before { background: url(../img/pink-icon.png) no-repeat center center; background-size: cover; }
+
+
+.features-icon .title-left {
+    position: relative;
+		top: -25px;
+		width: 250px;
+		left: 50%;
+margin-left: -250px;
+}
+.features-icon .title-center {
+    position: relative;
+    top: -30px;
+    width: 250px;
+    left: 50%;
+    margin-left: -126px;
+}
+.features-icon .title-right {
+    position: relative;
+		top: -27px;
+		width: 250px;
+		right: 50%;
+		margin-left: 45px;
+}
+
+.features-icon .title {
+	padding: 5px 7px;
+	background: rgba(13, 20, 23, 0.6) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	font-size: 11px;
+	position: relative;
+	text-transform: uppercase;
+}
+.features-icon .title.left-bar::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 2px;
+	width: 1px;
+	height: 26px;
+	background: rgba(13, 20, 23, 0.6) none repeat scroll 0% 0%;
+}
+.features-icon .title.center-bar::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: 50%;
+    width: 1px;
+    height: 7px;
+    background: rgba(13, 20, 23, 0.6) none repeat scroll 0% 0%;
+}
+.features-icon .title.right-bar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 1px;
+    height: 28px;
+    background: rgba(13, 20, 23, 0.6) none repeat scroll 0% 0%;
+}
+
+.features-icon .title-left.chi { left: -60px; }
+.features-icon .title-left.hd-transducers { left: -83px; }
+
+.features-icon .title-left.s2000-workflow { left: -120px; }
+
+.features-icon .title-left.s3000-workflow { left: -122px; }
+.features-icon .title-left.s3000-transducers{ left: -83px; }
+
+/*-- For the main Ultrasound page --*/
+.features-icon .title-left.featured-workflow{ left: -120px; }
+.features-icon .title-left.featured-display{ left: -120px; }
+
+/*
+.features-icon .title.flag-left {	margin-left: -102%;}
+.features-icon .title.flag-left::before {	left: 98% !important;}
+*/
+
+/*-- Fits tablets at 1024 X 768 --*/
+.features-1 { top: 20vh; left: 35vw; }
+.features-2 { top: 37vh; left: 50vw; }
+.features-3 { top: 58vh; left: 38vw; }
+.features-4 { top: 53vh; left: 60vw; }
+.features-5 { top: 25vh; left: 70vw; }
+.features-6 { top: 16vh; left: 53vw; }
+
+/*-- Fits tablets at 1024 X 768 --*/
+.s1000-features-1 { top: 11vh; left: 33vw; }
+.s1000-features-2 { top: 22vh; left: 20vw; }
+.s1000-features-3 { top: 35vh; left: 35vw; }
+.s1000-features-4 { top: 38vh; left: 20vw; }
+
+.s2000-features-1 { top: 12vh; left: 31vw; }
+.s2000-features-2 { top: 35vh; left: 33vw; }
+.s2000-features-3 { top: 39vh; left: 19vw; }
+.s2000-features-4 { top: 52vh; left: 14vw; }
+
+.s3000-features-1 { top: 11vh; left: 32vw; }
+.s3000-features-2 { top: 25vh; left: 18vw; }
+.s3000-features-3 { top: 37vh; left: 32vw; }
+.s3000-features-4 { top: 40vh; left: 18vw; }
+
+/*-- Feature Slides --*/
+.feature-slides {
+    position: relative;
+    top: -4rem;
+}
+.feature-slides .slide-ctrl {
+    position: absolute;
+    top: -3rem;
+}
+.feature-slides .slide-ctrl .border {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 4px;
+	opacity: 0.5;
+	bottom: 6px;
+	left: 0px;
+}
+
+.feature-slides .slide-ctrl .border.oranged {
+	background: #F8AF1E !important;
+}
+.feature-slides .slide-ctrl .border.pink {
+	background: #FF7BBE !important;
+}
+.feature-slides .slide-ctrl .border .blue {
+	background: $blue-background !important;
+}
+
+.feature-slides h1:first-child { font-size: 2rem; }
+.feature-slides h1.inner {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-top: 1rem;
+}
+
+.feature-slides p { }
+
+.slide-ctrl button.circle {
+	border: none;
+	display: inline-block;
+	width: 14px !important;
+	padding: 0px 20px 0px 0px;
+	min-width: 50px;
+}
+.slide-ctrl button.circle.ion-ios-arrow-left::before{
+	padding: 1px 11px 0px 9px;
+}
+
+.slide-ctrl button.circle.button.icon-left:hover::before,
+.slide-ctrl button.circle.button.icon-left:active::before,
+.slide-ctrl button.circle.button.icon-left:focus::before,
+.slide-ctrl button.circle.button.icon-right:hover::before,
+.slide-ctrl button.circle.button.icon-right:active::before,
+.slide-ctrl button.circle.button.icon-right:focus::before {
+		 background: rgba(0, 0, 0, 0.5);
+		 color: #fff;
+}
+
+/*-- Description Popover --*/
+
+	/*-- 360 View Modal --*/
+	.rotate-view {
+		display: none;
+		position: absolute;
+		top: 90px;
+		left: 10px;
+	}
+	.rotate-view h3 {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		display: inline-block;
+
+	}
+	.rotate-view .button {
+		color: #444;
+		font-size: 1.25em;
+		font-weight: bold;
+		padding: 0px 8px;
+		background: #FFF none repeat scroll 0% 0% !important;
+		margin: 10px;
+		border-radius: 0px;
+		min-height: auto !important;
+		display: inline-block;
+		height: 35px !important;
+		line-height: 0px;
+	}
+	.rotate-view .button:hover,
+	.rotate-view .button:active,
+	.rotate-view .button:focus {
+		color: #FFF;
+		background: #333 !important;
+	}
+
+/*-- data Proof --*/
+#data-proof {
+	position: relative;
+	padding: 6em 2em;
+	font-weight: 400;
+}
+#data-proof:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:  url(../img/acuson-side-view.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+#data-proof h1 {
+	margin: 0px auto 1em auto;
+	text-align: center;
+	letter-spacing: 1px;
+	width: 60vw;
+	text-transform: uppercase;
+	font-size: 2.2em;
+	line-height: 2.5rem;
+	font-weight: 200;
+	font-family: "SiemensSerif-Roman";
+}
+#data-proof img {
+	width: 82%;
+}
+#data-proof h3 {
+	letter-spacing: 1px;
+	width: 300px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #fff;
+	line-height: 20px;
+}
+#data-proof p {
+	font-size: 15px;
+}
+#data-proof .effectiveness-img {
+    padding-top: 3rem;
+}
+#data-proof cite {
+	margin: 4em auto 0px auto;
+	font-size: 13px;
+	color: #FFF;
+	text-align: center;
+	display: block;
+}
+#data-proof .slider {
+	padding-top: 2em;
+}
+#data-proof .slider .box {
+	margin: 0 auto;
+    padding: 5px 5em;
+    max-width: 1024px;
+	text-align:center;
+	color:#fff;
+}
+#data-proof .slider-pager {
+	top: 0px;
+}
+#data-proof a	.learn-more {
+		font-size: 14px;
+		font-family: SiemensSans-Black;
+}
+.ion-record { color: #eee; font-size: 11px; }
+
+span.active .ion-record { color: #FFAD00;  }
+
+#data-proof .slider .text-side {
+	margin-left: 1em;
+    height: 60%;
+    margin-top: 10vh;
+}
+#data-proof .flush { position: relative; top: -15px;}
+
+#data-proof .arrows {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	width: 100%;
+	padding: 0px 3%;
+	z-index: 2;
+}
+#data-proof .arrows button.circle {
+    background-color: transparent;
+    border: none;
+    border-top: none;
+		width: 50%;
+		float: left;
+	}
+#data-proof .arrows button.circle.button.icon-left::before,
+#data-proof .arrows button.circle.button.icon-right::before {
+		padding-right: 13px;
+		padding-left: 11px;
+    border-radius: 1em;
+    background: rgba(255, 255, 255, 0.65) none repeat scroll 0% 0%;
+		color: #333;
+    font-size: 30px;
+    line-height: 35px;
+}
+#data-proof .arrows button.circle.button.icon-right::before {
+	padding-right: 10px;
+	padding-left: 13px;
+}
+
+/*-- Siemens Ultrasound Info --*/
+
+#siemens-ultrasound {
+	position: relative;
+	padding: 10em 2em;
+}
+#siemens-ultrasound:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/couple-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#siemens-ultrasound .col-50 {
+	padding: 0 3.5rem;
+}
+#siemens-ultrasound h1 {
+	letter-spacing: 1px;
+	font-size: 2em;
+	line-height: 1em;
+	font-family: "SiemensSerif-Roman" !important;
+	font-weight: 200;
+}
+#siemens-ultrasound p {
+	width: 102%;
+	color: #FFF;
+	line-height: 22px;
+	font-size: 15px;
+}
+#siemens-ultrasound ul {
+	display: block;
+	list-style: square;
+	padding-left: 30px;
+	position: relative;
+}
+#siemens-ultrasound ul li:before {
+	font-family: "Ionicons";
+  font-style: normal;
+  font-weight: normal;
+	position: absolute;
+	top: -2px;
+	left: -12px;
+	content: "";
+	font-size: 6px;
+}
+#siemens-ultrasound ul li{
+	position: relative;
+	list-style: square;
+	display: block;
+	width: 102%;
+	color: #FFF;
+	line-height: 22px;
+	font-size: 15px;
+}
+#siemens-ultrasound .list {
+	width: 92%;
+	text-align:left;
+}
+#siemens-ultrasound .item {
+	margin-top: 8px;
+	border-color: transparent;
+	background: rgba(8, 25, 35, 0.41) none repeat scroll 0% 0% !important;
+
+}
+#siemens-ultrasound .item .item-content {
+	border-color: transparent;
+  background-color: transparent;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	padding: 1.5em;
+	padding-right: 60px;
+}
+
+#siemens-ultrasound .icon-right::before {
+	padding: 5px 11px 5px 14px;
+	border-radius: 1em;
+	background: #2BA3BB;
+	font-size: 28px;
+	line-height: 26px;
+	position: absolute;
+	top: 40%;
+	right: 5%;
+}
+#siemens-ultrasound .item:hover  .icon-right::before,
+#siemens-ultrasound .item:active .icon-right::before,
+#siemens-ultrasound .item:focus  .icon-right::before {
+		color: #333;
+		background: #fff;
+}
+#siemens-ultrasound .vertical-bar {
+	 position: relative;
+}
+#siemens-ultrasound .vertical-bar::before {
+	 position: absolute;
+	 top: 0px;
+	 left: 50%;
+	 content: "";
+	 width: 5px;
+	 height: 400px;
+	 background: #fff !important;
+	 opacity: 0.4;
+}
+
+/*-- Workflow Simulation  --*/
+
+#workflow {
+	position: relative;
+	padding: 10em 0em;
+}
+#workflow:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/workflow-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#workflow h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+#workflow .list {
+	width: 80%;
+	margin: 20px auto;
+}
+#workflow .item {
+	border-color: transparent;
+	background: rgba(99, 131, 155, 0.4) none repeat scroll 0% 0% !important;
+	text-align: left;
+}
+#workflow .item .item-content {
+	border-color: transparent;
+  background-color: transparent;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 10px;
+	font-size: 12px;
+	display: block;
+	padding: 1.6rem 1.25rem;
+}
+
+#workflow .icon-right::before {
+	padding-right: 8px;
+	padding-left: 10px;
+	border-radius: 1em;
+	background: #2BA3BB;
+	font-size: 24px;
+	line-height: 27px;
+	position: absolute;
+	top: 30%;
+	right: 5%;
+}
+#workflow .item:hover  .icon-right::before,
+#workflow .item:active .icon-right::before,
+#workflow .item:focus  .icon-right::before {
+		color: #333;
+		background: #fff;
+}
+
+/*-- Resource library --*/
+
+#library {
+	position: relative;
+	padding: 10em 2em;
+}
+#library:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/ultrasound-worker-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#library .menu-item {
+	padding: 3rem 2rem 0rem 2rem;
+	min-height: 300px;
+}
+#library .darkest {
+	background: rgba(11, 29, 38, 0.5) none repeat scroll 0% 0% !important;
+}
+#library .menu-item button{
+	margin-top: 1rem;
+}
+#library .menu-item img{
+	margin-bottom: 1rem;
+}
+
+/*-- Library Clinical Images --*/
+
+#library-clinical {
+	position: relative;
+	padding: 10em 2em;
+}
+#library-clinical:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/ultrasound-worker-blurry-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#library-clinical .full-image {
+    width: 100%;
+}
+#library-clinical .arrows {
+	position: absolute;
+	top: 38rem;
+	left: 0px;
+	width: 100%;
+	padding: 0px 35%;
+	z-index: 2;
+}
+#library-clinical .arrows button.circle {
+    background-color: transparent;
+    border: none;
+    border-top: none;
+		width: 50%;
+		float: left;
+		z-index: 3;
+		position: relative;
+	}
+#library-clinical .arrows button.circle.button.icon-left:hover::before,
+#library-clinical .arrows button.circle.button.icon-right:hover::before {
+	color: #000;
+}
+#library-clinical .arrows button.circle.button.icon-left::before,
+#library-clinical .arrows button.circle.button.icon-right::before {
+		padding-right: 8px;
+		padding-left: 12px;
+    border-radius: 1em;
+		color: #fff;
+    font-size: 24px;
+    line-height: 35px;
+}
+#library-clinical .arrows button.circle.button.icon-right::before {
+	padding-right: 12px;
+	padding-left: 14px;
+}
+#library-clinical .slider {
+	padding-bottom: 40px;
+}
+#library-clinical .slider-pager {
+	top: 94%;
+	position: absolute;
+	z-index: 9;
+	width: 150px;
+	left: 50%;
+	margin-left: -75px;
+	height: 21px;
+}
+.clinical-left-arrow::before {
+	padding-right: 13px !important;
+	padding-left: 14px !important;
+}
+.clinical-modal {
+	background: #fff !important;
+	width: 92vw;
+		top: 0rem;
+		left: 0rem;
+		margin: 2rem;
+		padding: 2rem;
+		min-height: 92vh;
+}
+.clinical-modal .arrows {
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	padding: 0px 3%;
+	z-index: 2;
+	top: 18rem;
+	z-index: 2;
+}
+.clinical-modal  .arrows button.circle {
+    background-color: transparent;
+    border: none;
+    border-top: none;
+		width: 50%;
+		float: left;
+		z-index: 1;
+		position: relative;
+	}
+.clinical-modal .modal img {
+    margin: 0em auto;
+}
+.clinical-modal .full-image {
+	width: 75%;
+	min-height: 500px;
+	max-height: 500px;
+	position: relative;
+	z-index: 4;
+}
+.clinical-modal .button .icon:before{
+	background: #222;
+	color: #fff;
+	border-radius: 0px;
+	padding: 0px 5px;
+	position: relative;
+	right: 0px;
+	height: 38px;
+width: 35px;
+}
+.clinical-modal button.circle.button.icon-left::before {
+    padding-right: 8px !important;
+    padding-left: 11px !important;
+	}
+.clinical-modal button.circle.button.icon-right::before {
+    padding-right: 8px !important;
+    padding-left: 11px !important;
+	}
+.clinical-modal .button {
+    position: relative;
+    top: -5px;
+    right: -7px;
+}
+
+
+/*-- Library Videos --*/
+
+#library-videos {
+	position: relative;
+	padding: 10em 2em;
+}
+#library-videos:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/ultrasound-worker-blurry-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+
+/*-- Workflow Literature --*/
+
+#library-literature {
+	position: relative;
+	padding: 10em 2em;
+}
+#library-literature:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/ultrasound-worker-blurry-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+
+/*-- Resource Library Icon Links --*/
+	.icon-link {
+		position: absolute;
+		top: 45px;
+		left: 10px;
+		img {
+			width: 20px;
+		}
+	}
+	.icon-link  h3 {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 11px;
+		display: inline-block;
+	}
+	.icon-link  .button {
+		color: #444;
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 7px 8px;
+		background: #FFF none repeat scroll 0% 0% !important;
+		margin: 10px;
+		border-radius: 0px;
+		min-height: auto !important;
+		display: inline-block;
+		min-height: 35px !important;
+		line-height: 0px;
+	}
+
+	.video-link {
+		top: 45px;
+		left: 10px;
+	}
+	.literature-link {
+		top: 90px;
+		left: 10px;
+	}
+	.clinical-link {
+		top: 45px;
+		left: 10px;
+	}
+	.clinical-link2 {
+		top: 90px;
+		left: 10px;
+	}
+
+	/*-- Siemens Contact Informaiton page --*/
+
+	#contact {
+			position: relative;
+			padding: 10em 2em;
+
+		h1 {
+	 		font-size: 2.15rem;
+	 		font-weight: 200 !important;
+	 		font-family: SiemensSerif-Roman !important;
+	 		text-align: center;
+	 	}
+		a{
+			color: #fff;
+			padding: 0px 5px;
+		}
+		.row{
+			padding: 0px 8rem;
+		}
+		.row:last-child{
+			padding: 0px;
+		}
+	 	.darkest {
+			color: #fff;
+			padding: 1rem 2rem;
+			margin: 1rem;
+			font-size: 15px;
+			line-height: 22px;
+	 	}
+		.bar {
+    	display: block;
+		}
+		.bar-footer{
+			height: 275px;
+			background: rgba(255, 255, 255, 0.75);
+			color: #000 !important;
+			padding: 2rem 3rem;
+			a{
+				color: #000;
+				padding: 0px 5px;
+			}
+			p{
+				color: #000 !important;
+			}
+		}
+		a:hover{
+			color: $text-orange;
+		}
+	}
+		#contact::before {
+			position:absolute;
+			top:0px;
+			left:0px;
+			content: "";
+			background:   url(../img/quiz-bg.jpg) no-repeat center center;
+			background-size: cover;
+			width: 100%;
+			height:100%;
+			z-index: -1;
+	}
+
+
+/*-- Sales Quiz --*/
+
+#quiz {
+		position: relative;
+		padding: 5.5em 2em;
+
+		.quiz-intro {
+				padding: 10em 2em;
+		}
+}
+	#quiz:before {
+		position:absolute;
+		top:0px;
+		left:0px;
+		content: "";
+		background:   url(../img/quiz-bg.jpg) no-repeat center center;
+		background-size: cover;
+		width: 100%;
+		height:100%;
+		z-index: -1;
+}
+#quiz h1 {
+	font-size: 3.25rem;
+	font-weight: 300;
+}
+#quiz .button {
+	border-color: transparent;
+	background: #2BA3BB;
+	border-radius: 6px;
+	margin: 20px auto;
+	padding: 0px 8px;
+}
+#quiz .ranking {
+	position: absolute;
+	top: 4rem;
+	color: #FFF !important;
+	font-size: 12px;
+	left: 1rem;
+	font-family: SiemensSans-Black;
+}
+#quiz .ranking .stars {
+    float: right;
+		padding-left: 15px;
+		margin-top: -12px;
+    width: 300px;
+		font-family: SiemensSans-Black;
+}
+#quiz .ranking .stars .item {
+		background-color: transparent;
+		color: #FFF;
+		position: relative;
+		z-index: 2;
+		display: inline-block;
+		margin-right: -6px;
+		padding: 5px;
+		border-width: 0px;
+		border-style: solid;
+		border-radius: 50rem;
+		width: auto;
+}
+#quiz .score {
+	position: absolute;
+	top: 0rem;
+	color: #FFF !important;
+	font-size: 12px;
+	left: 1rem;
+	font-family: SiemensSans-Black;
+}
+#quiz .score.current {
+	top: 5.6rem;
+	.orange {
+			color: #F5851F;
+	}
+}
+#quiz .score.highest {
+	top: 7rem;
+	.blue {
+			color: #2BA3BB;
+			background: transparent;
+	}
+}
+
+#quiz .streak {
+	padding-left: 10px;
+}
+#quiz .question { }
+#quiz .question h2 {
+	font-weight: 300;
+	font-size: 1.75rem;
+}
+#quiz .answers {
+	margin: 1rem auto;
+}
+#quiz .answers .item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 46% !important;
+	margin: 6px 8px;
+	padding: 1.75rem 1rem;
+	background: rgba(200, 244, 248, 0.2) none repeat scroll 0% 0%;
+	color: #FFF;
+	width: 46%;
+	border: none;
+	font-size: 14px;
+	max-height: 85px;
+	min-height: 85px;
+}
+ #quiz .answers .item pre {
+	 color: #FFF;
+ 	text-align: center;
+ }
+#quiz .answers .item.selected {
+	background: rgba(200, 244, 248, 0.75) none repeat scroll 0% 0% !important;
+}
+#quiz .correct {
+	margin: 1rem auto;
+}
+#quiz .correct p{
+	margin: 1rem auto;
+	font-size: 1rem;
+}
+#quiz .wrong {
+	margin: 0rem auto;
+	position: relative;
+	left: -2rem;
+	top: 3rem;
+}
+#quiz .wrong p {
+	margin: 1rem auto;
+	font-size: 1rem;
+}
+#quiz .wrong .item {
+	border-color: transparent;
+	background: rgba(6, 18, 26, 0.5);
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin: 0px 1px;
+	padding: 5px;
+	border-width: 0px;
+	font-size: 13px;
+	width: 49% !important;
+}
+#quiz .wrong .button {
+	border-radius: 4px;
+	padding: 0px 13px;
+	min-height: 17px;
+	line-height: 27px;
+	margin: 0px;
+	text-transform: capitalize;
+}
+#quiz .wrong .button.icon-right::before {
+    padding: 0px 1px 0px;
+    font-size: 14px;
+    line-height: 23px;
+    position: relative;
+    right: -5px;
+}
+.unique-answers {
+    background: rgba(0, 0, 0, 0.42) none repeat scroll 0% 0%;
+    padding: 4px;
+    width: 150%;
+		position: relative;
+		left: -25%;
+}
+.wrong .streak {
+	font-family: SiemensSans-Black;
+	padding-left: 5px !important;
+}
+
+
+
+
+/*-- HELX System Family Tree --*/
+#system{
+		position: relative;
+		padding: 6em 1em;
+
+		h1 {
+			font-size: 4rem;
+			font-weight: 300;
+		}
+		small {
+			font-size: 11px;
+			font-weight: 300;
+			text-transform: lowercase;
+		}
+
+		.system-family-tree, .selector-menu { position: relative; }
+		.system-family-tree {
+			position: absolute;
+			content: "";
+			background: url(../img/tree-lg.png) no-repeat center center;
+			background-size: cover;
+			width: 20rem;
+			height: 27rem;
+			z-index: -1;
+		}
+		.steps{
+			position: relative;
+			font-size: 14px;
+			color: #416C87;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		.questionmark{
+		    position: absolute;
+				top: 20px;
+				left: 70px;
+		    color: #FFF;
+		    width: 35px;
+		    height: 35px;
+		    display: block;
+				font-size: 18px !important;
+				font-weight: bold !important;
+			.ion-ios-help-outline::before {
+
+			}
+		}
+		.uppercase{
+			letter-spacing: 1px;
+		}
+		.tree-links {
+			position: relative;
+		}
+		.tree-links a{
+		    font-size: 20px;
+		    font-weight: 700;
+		    color: rgb(255, 171, 0);
+		}
+		.row {
+			width: 87vw !important;
+		}
+		.grid {
+			background: rgba(149, 198, 216, 0.05) none repeat scroll 0% 0% !important;
+			border: 1px solid rgba(149, 198, 216, 0.5);
+			color: #fff;
+			margin: 2px;
+			padding: 0;
+			-moz-box-flex: 0;
+			flex: 0 0 16%;
+			min-width: 129px;
+			max-width: 129px;
+			height: 79px;
+			line-height: 75px;
+			opacity: 0.5;
+			display: table;
+				a	{
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 14px;
+					display: table-cell;
+				  vertical-align: middle;
+				  line-height: normal;
+				}
+		}
+		.menu-grid {
+			background: rgba(149, 198, 216, 0.05) none repeat scroll 0% 0% !important;
+			border: 1px solid rgba(149, 198, 216, 0.5);
+			flex: 0 0 16%;
+			max-width: 60%;
+			opacity: 0.5;
+			color: #fff;
+			padding: 0.35rem 0.5rem ;
+			margin: 5px 0px;
+		 		a {
+					font-size: 13px; font-weight: 600;
+				}
+				.S2000.blue {
+					 background: #0092AA !important;
+					 opacity: 1;
+			 	}
+
+	 }
+	 	.menu-grid.S1000:hover {
+			background: $text-pink !important;
+		}
+		.menu-grid.S1000.pink {
+ 			background: $text-pink !important;
+			opacity: 1;
+ 		}
+	 	.menu-grid.S2000:hover {
+			 background: #0092AA !important;
+	 	}
+		.menu-grid.S2000.blue {
+			 background: #0092AA !important;
+			 opacity: 1;
+	 	}
+
+		.menu-grid.S3000:hover {
+			 background: $text-orange !important;
+	 	}
+		.menu-grid.S3000.orange {
+			 background: $text-orange !important;
+			 opacity: 1;
+	 	}
+		.menu-grid.S1000.disabled:hover,
+		.menu-grid.S2000.disabled:hover,
+		.menu-grid.S3000.disabled:hover {
+			 background: transparent !important;
+			 opacity: 0.5;
+			 cursor: not-allowed;
+	 	}
+		.menu-grid:hover,
+		.menu-grid:focus,
+		.menu-grid.active   {
+			background: #79949E !important;
+			border: 1px solid rgba(149, 198, 216, 0.5);
+			opacity: 1;
+		}
+		.grid.enabled {
+			background: rgba(149, 198, 216, 0.5) none repeat scroll 0% 0% !important;
+			border: 1px solid rgba(149, 198, 216, 0.5);
+			opacity: 1;
+		}
+		.menu-grid.disabled {
+			position: relative;
+			z-index: 3;
+		}
+		.menu-grid.disabled:before {
+			position:absolute;
+			top: 4px;
+			left:10px;
+			content: "";
+			background:   url(../img/cross-out.png) no-repeat center center;
+			background-size: cover;
+			width: 80%;
+			height:80%;
+			z-index: 3;
+	}
+
+}
+#system:before {
+		position:absolute;
+		top:0px;
+		left:0px;
+		content: "";
+		background: url(../img/helx-system-bg.jpg) no-repeat center center;
+		background-size: cover;
+		width: 100%;
+		height:100%;
+		z-index: -1;
+}
+
+
+/*-- Product Select Footer --*/
+.has-footer{ bottom: 0px; }
+
+.bar-footer.product {
+	bottom: -110px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	height: 270px;
+	text-transform: uppercase;
+	padding: 0px !important;
+	position: absolute;
+	margin-bottom: -160px;
+}
+.bar-footer.product.rise {
+	bottom: 0px;
+}
+.bar-footer.full {
+	bottom: 0px;
+	margin-bottom: -10px;
+	-moz-animation-duration: 2s;
+	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-animation-delay: 3s;
+	-animation-iteration-count: infinite;
+}
+.bar-footer.darkest { background: rgba(13, 20, 23, 0.85) none repeat scroll 0% 0% !important; }
+.bar-footer.product .row { padding: 10px 0px;  }
+.bar-footer.product .title {
+	font-size: 0.6rem;
+	color:#fff;
+	position: absolute;
+	top: -5px;
+	height: 50px;
+	padding-top: 22px;
+}
+.bar-footer.product .title::before {
+	position: absolute;
+	content:"";
+	top: -15px;
+	background: url(../img/chevron.png) no-repeat center center;
+	width: 80px;
+	height: 75px;
+}
+.product-select-footer {
+	padding: 25px 0px !important;
+	position: relative;
+	bottom: -10px;
+ }
+.product-select-footer .content {
+	position: relative;
+	top: 30px;
+	left: 0px;
+	padding: 30px;
+}
+.product-select-footer h2 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: -1px 0px 13px;
+	line-height: 0px;
+	color:#333;
+}
+.product-select-footer p {
+	font-size: 0.6rem;
+	color:#333;
+}
+.product-select-footer .button {
+	border-radius: 6px;
+	border: none;
+	color: #fff;
+	font-weight:bold;
+	font-size: .9em;
+}
+.product-select-footer .button:hover,
+.product-select-footer .button:focus,
+.product-select-footer .button:active {
+	color: #fff;
+	background: #333;
+}
+.product-select-footer  .button.icon-right::before {
+	padding: 2px 3px 0px 6px;
+	font-size: 9px;
+}
+
+.footer-acuson-s3000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s3000::before {
+	content: "";
+	background: url(../img/footer/acuson-S3000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-size: cover;
+}
+.footer-acuson-s2000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s2000::before {
+	content: "";
+	background: url(../img/footer/acuson-S2000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-size: cover;
+}
+.footer-acuson-s1000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s1000::before {
+	content: "";
+	background: url(../img/footer/acuson-S1000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	background-size: cover;
+}
+
+.product-select-footer .footer-acuson-s1000::before,
+.product-select-footer .footer-acuson-s2000::before,
+.product-select-footer .footer-acuson-s3000::before {
+	height: 80%;
+}
+
+
+/*-- Single Product Footer --*/
+.bar-footer.single-product {
+	bottom: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	height: 164px;
+	text-transform: uppercase;
+	padding: 0px !important;
+	margin-bottom: 0px;
+}
+.bar-footer.full { bottom: -35px !important; }
+.bar-footer.single-product.darkest {
+	background: rgba(13, 20, 23, 0) none repeat scroll 0% 0% !important;
+}
+.bar-footer.single-product .row { padding:0px; }
+
+.footer-focus {
+	position: relative;
+	max-height: 144px;
+}
+.footer-focus::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 20px;
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+	top: 15px;
+	left: 0px;
+}
+.footer-focus .content {
+	margin: 0px auto;
+	width: 200px;
+	top: 35px !important;
+}
+.footer-focus .content h2 {
+	font-size: 3rem;
+	color: #fff;
+}
+
+.footer-focus .content p  {
+	font-size: 1rem;
+	color: #fff;
+	margin: 20px auto;
+}
+
+.footer-focus::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 15px;
+	background-color: rgba(13, 20, 23, 0.85);
+	top: 30px;
+	left: 0px;
+	background-size: 100%;
+}
+.footer-focus::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 163px;
+	background:  url(../img/helx-closeup.jpg) no-repeat 1px -30px;
+	top: 30px;
+	left: 0px;
+	background-size: 100% 100%;
+	z-index: -1;
+}
+
+.footer-focus .focus-bg {
+	position: absolute;
+	width: 101%;
+	display: block;
+	min-height: 80%;
+	left: -5px;
+	z-index: 1;
+ }
+.footer-focus .focus-bg::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 102%;
+	top: 40px;
+	left: 0px;
+	background-size: 100%;
+	z-index: 2;
+}
+
+/*-- Single Product Focus Background Colors --*/
+.footer-focus .focus-bg.orange-bg::before {	background: rgba(255, 108, 0, 0.8); }
+.footer-focus .focus-bg.pink-bg::before {	background: rgba(180, 0, 57, 0.8); }
+.footer-focus .focus-bg.blue-bg::before {	background: rgba(0, 165, 191, 0.7); }
+
+.footer-focus .content h2 .s {
+	font-weight: 500;
+}
+.single-product-select-footer { }
+.single-product-select-footer .content {
+	position: relative;
+	top: 30px;
+	left: 0px;
+	padding: 10px 15px 0px;
+	z-index: 2;
+}
+.single-product-select-footer h2 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: -2px -2px 12px;
+	line-height: 0px;
+	color:#333;
+}
+.single-product-select-footer p {
+	font-size: 0.6rem;
+	color:#333;
+}
+.single-product-select-footer .button {
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	font-weight:bold;
+	font-size: .8em;
+	position: relative;
+	top: -10px;
+}
+.single-product-select-footer .button:hover,
+.single-product-select-footer .button:focus,
+.single-product-select-footer .button:active {
+	color: #fff;
+	background: #333;
+}
+.single-product-select-footer  .button.icon-right::before {
+	padding: 2px 3px 0px 6px;
+	font-size: 9px;
+}
+.footer-acuson-s3000,
+.footer-acuson-s2000,
+.footer-acuson-s1000 {
+	width: 95%;
+	padding-bottom: 0px;
+	padding: 18px 0px;
+}
+
+
+ /*-- Phones 320x480px --*/
+ @media only screen and (max-width : 320px) {
+ 	.scroll-content {
+     position: fixed !important;
+ 	}
+ 	.headline {
+ 	    min-width: 200px !important;
+ 			margin-left: -35px;
+ 		}
+ 		.sub-headline, .ion-ios-information-outline, .ion-home {
+ 			display: none;
+ 		}
+ 		.headline .app-title {
+ 			left: 15px;
+ 			font-size: 12px !important;
+ 			}
+ 		.headline strong {
+ 			  font-weight: 400;
+ 			  font-size: 14px !important;
+ 			}
+ 		 .headline .siemens {
+ 			 top: 0px !important;
+ 			 left: 7px !important;
+ 			}
+ 		.siemens::before {
+ 	    left: 61px !important;
+ 			top: 7px;
+ 		}
+ 		.siemens-logo {
+ 			min-height: 60px !important;
+ 			max-width: 100px !important;
+ 			max-height: 60px !important;
+ 		}
+ 		.splash .caption {
+ 	    width: 95vw !important;
+ 		}
+ 		.splash .caption h1 {
+ 				width: 75vw !important;
+ 		    font-size: 1.5rem !important;
+ 		    font-weight: 300;
+ 		    font-family: SiemensSerif-Roman !important;
+ 		}
+ 		.splash .caption p {
+ 		    font-size: 0.9rem !important;
+ 		    font-family: SiemensSerif-Roman !important;
+ 		}
+ 		.launch h1 {
+ 			font-size: 2.5rem !important;
+ 			line-height: 2rem !important;
+ 		}
+ 		.launch p {
+     	margin-top: 2rem !important;
+ 		}
+ 		.launch .button {
+ 			margin-top: 2rem !important;
+ 		}
+ 		.helx-menu {
+ 			top: -12px;
+ 			right: -11px;
+ 			.button {
+ 		    color: #fff;
+ 		    padding: 6px 10px;
+ 		    background: transparent !important;
+ 			}
+ 		}
+ 		.popover.sub-menu {
+ 		    top: 0px !important;
+ 		    left: 0px !important;
+ 		    right: 0px;
+ 		    width: 100% !important;
+ 		    margin: 0px;
+ 				.item .item-content {
+ 			    text-align: center;
+ 			    line-height: 17px;
+ 			    font-size: 14px;
+ 			    width: 85% !important;
+ 				}
+ 		}
+ 		#main-menu {
+ 			width: 92vw !important;
+ 			height: 100vh !important;
+ 			top: 3rem !important;
+ 			.row {
+     		display: block;
+ 			}
+ 			.col {
+ 				 float: left !important;
+ 				 display: block !important;
+ 			}
+ 				.col-50, .col-25 {
+ 					min-width: 100%;
+ 					margin-bottom: -10px;
+ 				}
+ 				.large-square {
+ 					max-height: 150px !important;
+ 					min-height: 150px !important;
+ 					min-width: 100% !important;
+ 				}
+ 				.helx-info {
+ 					padding: 5vh 13vw !important;
+ 					min-height: 230px !important;
+ 				}
+ 				.small-square {
+ 				  min-height: 80px !important;
+ 				  max-height: 80px !important;
+ 				}
+ 		 }
+ 		 #main-menu .sales-quiz {
+ 			padding: 6vh 13vw !important;
+ 			min-height: 180px !important;
+ 		}
+ 		 #main-menu .data-proof,
+ 		 #main-menu .resource-lib,
+ 		 #main-menu .ultrasound,
+ 		 #main-menu .workflow {
+ 			 padding: 2vh 15vw 0vh !important;
+ 			 min-height: 185px !important;
+ 			}
+ 			#main-menu .family-tree{
+ 				padding: 3vh 17vw 0vh !important;
+ 				min-height: 375px !important;
+ 			}
+ 			#main-menu h3 {
+				font-weight: 600;
+ 	    	font-size: 14px;
+ 				line-height: 10px;
+ 				margin: 10px;
+ 			}
+ 			button.circle {
+ 	    line-height: 15px;
+ 	    font-size: 12px;
+ 	    padding: 5px 0px 0px;
+ 			}
+ 			#workflow{
+ 				.col-25 {
+ 				    -moz-box-flex: 0;
+ 				    flex: 0 0 25%;
+ 				    max-width: 15%;
+ 				}
+ 				.col-50 {
+ 			    -moz-box-flex: 0;
+ 			    flex: 0 0 80%;
+ 			    max-width: 75%;
+ 				}
+ 		 }
+ 		 #ultrasound {
+ 			 .overview-modal p {
+ 					font-size: 13px;
+ 				 	text-align: center;
+ 			 }
+ 			 .overview-modal p {
+ 			 }
+ 			 .description-popover {
+ 				 width: 70vw;
+ 				 height: 300px;
+ 			}
+ 			 .description-popover .helx-description {
+ 				 font-size: 17px;
+ 			 }
+ 			 .helx-info-slide {
+ 	     		text-align: center !important;
+ 	     		padding: 4rem 4rem;
+ 		 	 }
+ 			 .features-1 { top: 200px; left: 200px;}
+ 			 .features-2 { top: 350px; left: 450px; }
+ 			 .features-3 { top: 500px; left: 250px; }
+ 			 .features-4 { top: 550px; left: 475px;}
+ 			 .features-5 { top: 250px; left: 600px;}
+ 			 .features-6 { top: 150px; left: 450px;	}
+
+ 			 .description-popover {
+ 				 	width: 65vw;
+ 					height: 325px;
+ 		 		}
+ 				.overview-modal {
+ 	    		max-height: 350px;
+ 						h3 {
+ 					  	font-size: 18px;
+ 						}
+ 				}
+ 	 }
+ 	 .product-select-footer .content {
+ 		 padding: 12px;
+ 				 h2 {
+ 					font-size: 1.5rem !important;
+ 					margin: -3px 0px 10px;
+ 				}
+ 				.button{
+ 					margin: -0.25rem;
+ 				}
+ 		}
+
+
+ 		 .launch .caption {
+ 			 padding: 45% 2rem 1rem;
+ 		 }
+
+ 		 #acuson-S3000 {
+ 			 	.acuson-S3000-popover {
+ 				 	height: 400px !important;
+ 				}
+ 				.acuson-S3000-popover .content h1 {
+ 					 font-size: 1.75rem !important;
+ 				}
+ 		 }
+ 		 #acuson-S2000 {
+ 			 	.acuson-S2000-popover {
+ 				 	height: 400px !important;
+ 				}
+ 				.acuson-S2000-popover .content h1 {
+ 					 font-size: 1.75rem !important;
+ 				}
+ 				.s2000-features-1 {  top: 17vh;  left: 34vw;	}
+ 				.s2000-features-2 {  top: 35vh;  left: 33vw;	}
+ 				.s2000-features-3 {  top: 39vh;  left: 19vw;	}
+ 				.s2000-features-4 {  top: 52vh;  left: 14vw;  }
+ 		 }
+ 		 #acuson-S1000 {
+ 			 	.acuson-S1000-popover {
+ 				 	height: 400px !important;
+ 				}
+ 				.acuson-S1000-popover .content h1 {
+ 					 font-size: 1.75rem !important;
+ 				}
+ 		 }
+
+ 		 #acuson-S3000::after{
+ 			 background:	transparent url("../img/acuson-S3000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 		 }
+ 		 #acuson-S2000::after {
+ 			 background:	transparent url("../img/acuson-S2000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 		 }
+ 		 #acuson-S1000::after {
+ 			 background: transparent url("../img/acuson-S1000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 		 }
+
+ 		 #data-proof{
+ 			 padding: 12em 2em;
+ 				 .arrows {
+ 				    top: 50%;
+ 				    padding: 0px 2%;
+ 					}
+ 					.slider .box {
+ 				    padding: 0px 0em;
+ 					}
+ 					.row {
+ 					    max-height: 300px;
+ 					}
+ 					.slider .text-side {
+ 					    margin-left: 0.15em;
+ 					    height: 60%;
+ 					    margin-top: 3vh;
+ 					}
+ 					h3 {
+ 		    		width: 225px;
+ 						font-size: 13px;
+ 						line-height: 14px;
+ 					}
+ 		 }
+ 		 #system {
+ 			 .selector-menu {
+ 	    		max-width: 105px;
+ 	    		margin-right: 25px;
+ 			 }
+ 			 .grid {
+ 				 padding: 0.15rem;
+ 			 }
+ 			 .functions{
+ 				 display: block;
+ 				 margin: 44px -45px;
+ 				 	.row {
+ 						width: 100%;
+ 						display: block;
+ 							.grid{
+ 								float: left;
+ 								width: 102px;
+ 								min-width: 102px;
+ 							}
+ 					}
+ 			  }
+ 		 }
+ 		 #siemens-ultrasound{
+ 		 		.vertical-bar::before{  height: 100%; }
+ 	 	}
+ 		#library {
+ 			padding: 20em 2em;
+
+ 			.menu-item img {
+ 			    margin-bottom: 1rem;
+ 			    max-height: 75px !important;
+ 			}
+ 		}
+
+ }
+
+ /*-- Portrait Mode -*/
+ @media only screen and (max-width : 768px) {
+ 	.headline {
+     padding: 0px 25px  !important;
+     min-width: 275px  !important;
+ 	}
+ 	.headline .app-title {
+     left: 10px;
+ 	}
+ 	.headline strong {
+ 	  font-weight: 400;
+ 	  font-size: 14px !important;
+ 	}
+ 	.siemens::before {
+     left: 70px;
+ 	}
+
+ 	#main-menu {
+     width: 100vw;
+     height: 90vh;
+     top: 15rem;
+ 			.large-square {
+ 		    max-height: 350px;
+ 		    min-height: 350px;
+ 			}
+ 			.helx-info {
+ 		    padding: 8vh 6vw;
+ 			}
+ 			.sales-quiz {
+ 		    padding: 2vh 6vw 2vh;
+ 			}
+ 			.small-square {
+ 			  min-height: 171px;
+ 			  max-height: 170px;
+ 			}
+ 	 }
+ 	 #main-menu .data-proof,
+ 	 #main-menu .family-tree,
+ 	 #main-menu .resource-lib,
+ 	 #main-menu .ultrasound,
+ 	 #main-menu .workflow {
+ 		 padding: 1vh 1vw 0vh;
+ 		}
+ 		#main-menu h3 {
+     	font-size: 12px;
+ 			line-height: 10px;
+ 			margin: 10px;
+ 		}
+ 		button.circle {
+     line-height: 15px;
+     font-size: 12px;
+     padding: 5px 0px 0px;
+ 		}
+ 		#workflow{
+ 			.col-25 {
+ 			    -moz-box-flex: 0;
+ 			    flex: 0 0 25%;
+ 			    max-width: 15%;
+ 			}
+ 			.col-50 {
+ 		    -moz-box-flex: 0;
+ 		    flex: 0 0 80%;
+ 		    max-width: 75%;
+ 			}
+ 	 }
+ 	 #ultrasound {
+ 		 .slider-slide { padding: 0rem 1rem !important; }
+ 		 .overview-modal p {
+ 				font-size: 13px;
+ 			 	text-align: center;
+ 		 }
+ 		 .overview-modal p {
+ 		 }
+ 		 .description-popover {
+ 			 width: 70vw;
+ 			 height: 300px;
+ 		}
+ 		 .description-popover .helx-description {
+ 			 font-size: 17px;
+ 		 }
+ 		 .helx-info-slide {
+      		text-align: center !important;
+      		padding: 4rem 4rem;
+ 	 	 }
+ 		 .features-1 { top: 200px; left: 200px;}
+ 		 .features-2 { top: 350px; left: 450px; }
+ 		 .features-3 { top: 500px; left: 250px; }
+ 		 .features-4 { top: 550px; left: 475px;}
+ 		 .features-5 { top: 250px; left: 600px;}
+ 		 .features-6 { top: 150px; left: 450px;	}
+
+ 		 .description-popover {
+ 			 	width: 65vw;
+ 				height: 325px;
+ 	 		}
+ 			.overview-modal {
+     		max-height: 350px;
+ 					h3 {
+ 				  	font-size: 18px;
+ 					}
+ 			}
+
+  }
+  .product-select-footer .content {
+ 	 padding: 12px;
+ 			 h2 {
+ 				font-size: 1.5rem !important;
+ 				margin: -3px 0px 10px;
+ 			}
+ 			.button{
+ 				margin: -0.25rem;
+ 			}
+ 	}
+
+ 	 .launch .caption {
+ 		 padding: 45% 2rem 1rem;
+ 	 }
+
+ 	 #acuson-S3000 {
+ 		 	.acuson-S3000-popover {
+ 			 	height: 400px !important;
+ 			}
+ 			.acuson-S3000-popover .content h1 {
+ 				 font-size: 1.75rem !important;
+ 			}
+ 	 }
+ 	 #acuson-S2000 {
+ 		 	.acuson-S2000-popover {
+ 			 	height: 400px !important;
+ 			}
+ 			.acuson-S2000-popover .content h1 {
+ 				 font-size: 1.75rem !important;
+ 			}
+ 			.s2000-features-1 {  top: 17vh;  left: 34vw;	}
+ 			.s2000-features-2 {  top: 35vh;  left: 33vw;	}
+ 			.s2000-features-3 {  top: 39vh;  left: 19vw;	}
+ 			.s2000-features-4 {  top: 52vh;  left: 14vw;  }
+ 	 }
+ 	 #acuson-S1000 {
+ 		 	.acuson-S1000-popover {
+ 			 	height: 400px !important;
+ 			}
+ 			.acuson-S1000-popover .content h1 {
+ 				 font-size: 1.75rem !important;
+ 			}
+ 	 }
+
+ 	 #acuson-S3000::after {
+ 		 background:	transparent url("../img/acuson-S3000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 	 }
+ 	 #acuson-S2000::after {
+ 		 background:	transparent url("../img/acuson-S2000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 	 }
+ 	 #acuson-S1000::after {
+ 		 background: transparent url("../img/acuson-S1000-large.png") no-repeat scroll -5rem 7rem / 70% auto !important;
+ 	 }
+
+ 	 #data-proof {
+ 		 padding: 12em 2em;
+ 			 .arrows {
+ 			    top: 50%;
+ 			    padding: 0px 2%;
+ 				}
+ 				.slider .box {
+ 			    padding: 0px 0em;
+ 				}
+ 				.row {
+ 				    max-height: 300px;
+ 				}
+ 				.slider .text-side {
+ 				    margin-left: 0.15em;
+ 				    height: 60%;
+ 				    margin-top: 3vh;
+ 				}
+ 				h3 {
+ 	    		width: 225px;
+ 					font-size: 13px;
+ 					line-height: 14px;
+ 				}
+ 	 }
+ 	 #system {
+ 		 .selector-menu {
+     		max-width: 105px;
+     		margin-right: 25px;
+ 		 }
+ 		 .grid {
+ 			 padding: 0.15rem;
+ 		 }
+ 		 .functions{
+ 			 display: block;
+ 			 margin: 44px -45px;
+ 			 	.row {
+ 					width: 100%;
+ 					display: block;
+ 						.grid{
+ 							float: left;
+ 							width: 102px;
+ 							min-width: 102px;
+ 						}
+ 				}
+ 		  }
+ 	 }
+ 	 #siemens-ultrasound{
+ 	 		.vertical-bar::before{  height: 100%; }
+  	}
+ 	#library {
+ 		padding: 20em 2em;
+
+ 		.menu-item img {
+ 		    margin-bottom: 1rem;
+ 		    max-height: 75px !important;
+ 		}
+ 	}
+
+  }
+
+ /* -- Greater than 1200px --*/
+ @media only screen and (min-width : 1100px) {
+ 	#main-menu .helx-info { padding: 5vw; }
+ 	.modal {
+ 	    max-width: 700px !important;
+ 			left: 33%;
+ 			max-height: 375px !important;
+ 	}
+ 	#main-menu .sales-quiz { padding: 3vh 4vw 2vh;  }
+ 	#main-menu .data-proof,
+ 	#main-menu .family-tree,
+ 	#main-menu .resource-lib,
+ 	#main-menu .ultrasound,
+ 	#main-menu .workflow {
+     	padding: 3vh 1vw 2vh;
+ 	}
+ 	.product-select-footer {
+     padding: 15px 15rem !important;
+ 		position: relative;
+ 	}
+ 	.bar-footer.product {
+     height: 300px;
+     padding-top: 30px !important;
+ 		bottom: -150px;
+ 	}
+ 	.bar-footer.product .title {
+     padding-top: 25px;
+ 	}
+ 	.product-select-footer::before{
+ 		content: "";
+ 		background: transparent url("../img/footer/footer-S3000-bg.png") repeat scroll 0px center / 100% 101%;
+ 		position: absolute;
+ 		width: 32%;
+ 		height: 100%;
+ 		left: -1px;
+ 		top: 75px;
+ 		z-index: -1;
+ 	}
+ 	.product-select-footer::after{
+ 		content: "";
+ 		background: transparent url("../img/footer/footer-S1000-bg.png") repeat scroll 0px center / 100% 101%;
+ 		position: absolute;
+ 		width: 32%;
+ 		height: 100%;
+ 		right: -1px;
+ 		top: 75px;
+ 		z-index: -1;
+ 	}
+ 	.single-product-select-footer .content {
+     padding: 20px 0px 0px 42px;
+ 	}
+ 	#data-proof {
+ 			h1 {
+     		width: 48vw;
+ 			}
+ 		  .arrows {
+         padding: 0px 15%;
+ 			}
+ 		}
+ 		#library {
+     	padding: 11em 26em;
+ 			.row{
+ 				max-width: 1000px;
+ 			}
+ 		}
+ 		#library-clinical, #library-videos, #library-literature  {
+     	padding: 10em 25em;
+ 				.clinical-modal {
+ 					max-width: 1000px !important;
+ 					left: 22%;
+ 				}
+ 				.arrows {
+ 		    	top: 42rem;
+ 				}
+ 	 }
+ 	 #quiz{
+ 		 .row {
+     		padding: 0px 25rem;
+ 			}
+ 	 }
+ 	 #workflow {
+ 		 .row {
+     		padding: 0px 25rem;
+ 			}
+ 	 }
+ 	 #siemens-ultrasound {
+ 		 .row {
+     		padding: 0px 20rem;
+ 			}
+ 			.vertical-bar::before {
+ 	      height: 100%;
+ 			}
+ 		}
+ 		#system {
+ 			.selectors {
+ 				width: 100vw !important;
+ 				padding: 0px 15rem;
+ 				left: 6rem;
+ 				position: absolute;
+ 			}
+ 	 }
+ 	.description-popover {
+ 	    max-width: 525px;
+ 		}
+ 		.product-select-footer .content {
+     	padding: 35px 75px;
+ 		}
+ 		.features-1 { }
+ 		.features-2 { }
+ 		.features-3 { }
+ 		.features-4 { }
+ 		.features-5 { }
+ 		.features-6 {	}
+
+ 		#acuson-S3000::after{
+ 			background:	transparent url("../img/acuson-S3000-large.png") no-repeat scroll 10rem 0rem / auto;
+ 			background-position: 12rem 0rem;
+ 		}
+ 		#acuson-S2000::after {
+ 			background:	transparent url("../img/acuson-S2000-large.png") no-repeat scroll 10rem 0rem / auto;
+ 			background-position: 12rem 0rem;
+ 		}
+ 		#acuson-S1000::after {
+ 			background: transparent url("../img/acuson-S1000-large.png") no-repeat scroll 10rem 0rem / auto;
+ 			background-position: 12rem 0rem;
+ 		}
+ 		.feature-slides {
+ 	    max-width: 600px;
+ 		}
+ }

@@ -1,0 +1,31 @@
+<ion-modal-view class="clinical-modal" >
+  <ion-content class="text-center content" ng-controller="clinicalModalSlider">
+
+      <div class="text-right">
+        <button class="button button-clear"  ng-click="closeClinicalImageModal($closeClinicalImageModalEvent)">
+            Close <i class="icon ion-android-close text-orange"> </i>
+        </button>
+      </div>
+
+      <div class="arrows">
+        <button class="circle button icon-left ion-ios-arrow-left clinical-left-arrow" ng-click="prevSlideModal();"> </button>
+        <button class="circle button icon-right ion-ios-arrow-right " ng-click="nextSlideModal();"> </button>
+      </div>
+
+        <ion-slide-box delegate-handle="clinicalModalSlider" does-continue="true" show-pager="false" active-slide="activeSlide" on-slide-changed="slideChanged(index)"  ng-click="updateSlide()">
+          <ion-slide ng-repeat="Clinical in Clinical">
+            <div class="row responsive-sm text-center" >
+              <div class="col"  >
+                      <a id="{{Clinical.Id}}" >
+                        <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
+                      </a>
+                    <p class="text-black"> {{Clinical.Description}} </p>
+                  </div>
+              </div><!-- end of row -->
+          </ion-slide><!-- end of Slide -->
+        </ion-slide-box>
+
+    </ion-slide-box>
+
+  </ion-content>
+</ion-modal-view>

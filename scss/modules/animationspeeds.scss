@@ -1,0 +1,30 @@
+//Animation Delays by class using SASS mixins
+
+@mixin -animation-delay($delay) {
+  -moz-animation-duration: $delay;
+  -moz-animation-delay: $delay;
+  -webkit-animation-delay: $delay;
+  -animation-iteration-count: infinite;
+}
+._quater-second {  @include -animation-delay(0.25s) }
+._half-second {  @include -animation-delay(0.5s) }
+
+._1-second {  @include -animation-delay(1s) }
+._1-25seconds {  @include -animation-delay(1.25s) }
+._1-5seconds {  @include -animation-delay(1.5s) }
+._1-75seconds {  @include -animation-delay(1.75s) }
+
+
+._2-seconds {  @include -animation-delay(2s) }
+._2-25seconds {  @include -animation-delay(2.25s) }
+._2-5seconds {  @include -animation-delay(2.5s) }
+._2-75seconds {  @include -animation-delay(2.75s) }
+
+._3seconds {  @include -animation-delay(3s) }
+._4seconds {  @include -animation-delay(4s) }
+._5seconds {  @include -animation-delay(5s) }
+._6seconds {  @include -animation-delay(6s) }
+._7seconds {  @include -animation-delay(7s) }
+._8seconds {  @include -animation-delay(8s) }
+._9seconds {  @include -animation-delay(9s) }
+._10seconds {  @include -animation-delay(10s) }

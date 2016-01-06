@@ -1,0 +1,85 @@
+// All of Siemens Fonts
+
+// SiemensSans Fonts
+@font-face {
+	font-family: SiemensSans-Roman;
+	src: url('/fonts/websafe/siemenssans-roman-webfont.eot');
+	src: url('/fonts/websafe/siemenssans-roman-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('/fonts/websafe/siemenssans-roman-webfont.woff2') format('woff2'),
+			 url('/fonts/websafe/siemenssans-roman-webfont.woff') format('woff'),
+			 url('/fonts/websafe/siemenssans-roman-webfont.ttf') format('truetype'),
+			 url('/fonts/websafe/siemenssans-roman-webfont.svg#siemens_sansroman') format('svg');
+
+}
+@font-face {
+	font-family: SiemensSans-Italic;
+	src: url("/fonts/SiemensSans/SiemensSans-Italic.otf");
+}
+@font-face {
+	font-family: SiemensSans-Bold;
+	src: url("/fonts/SiemensSans/SiemensSans-Bold.otf");
+}
+@font-face {
+	font-family: SiemensSans-Black;
+	src: url("/fonts/SiemensSans/SiemensSans-Black.otf");
+}
+@font-face {
+	font-family: SiemensSans-BoldItalic;
+	src: url("/fonts/SiemensSans/SiemensSans-BoldItalic.otf");
+}
+@font-face {
+	font-family: SiemensSans-BlackItalic;
+	src: url("/fonts/SiemensSans/SiemensSans-BlackItalic.otf");
+}
+
+// SiemensSerif Fonts
+@font-face {
+	font-family: SiemensSerif-Roman;
+	src: url("/fonts/SiemensSerif/SiemensSerif-Roman.otf");
+}
+@font-face {
+	font-family: SiemensSerif-Italic;
+	src: url("/fonts/SiemensSerif/SiemensSerif-Italic.otf");
+}
+@font-face {
+	font-family: SiemensSerif-Bold;
+	src: url("/fonts/SiemensSerif/SiemensSerif-Bold.otf");
+}
+@font-face {
+	font-family: SiemensSerif-BoldItalic;
+	src: url("/fonts/SiemensSerif/SiemensSerif-BoldItalic.otf");
+}
+@font-face {
+	font-family: SiemensSerif-SemiBold;
+	src: url("/fonts/SiemensSerif/SiemensSerif-SemiBold.otf");
+}
+@font-face {
+	font-family: SiemensSerif-SemiBoldItalic;
+	src: url("/fonts/SiemensSerif/SiemensSerif-SemiBoldItalic.otf");
+}
+
+// SiemensSlab Fonts
+@font-face {
+	font-family: SiemensSlab-Roman;
+	src: url("/fonts/SiemensSlab/SiemensSlab-Roman.otf");
+}
+@font-face {
+	font-family: SiemensSlab-Italic;
+	src: url("/fonts/SiemensSlab/SiemensSlab-Italic.otf");
+}
+@font-face {
+	font-family: SiemensSlab-Bold;
+	src: url("/fonts/SiemensSlab/SiemensSlab-Bold.otf");
+}
+@font-face {
+	font-family: SiemensSlab-BoldItalic;
+	src: url("/fonts/SiemensSlab/SiemensSlab-BoldItalic.otf");
+}
+@font-face {
+	font-family: SiemensSlab-Black;
+	src: url("/fonts/SiemensSlab/SiemensSlab-Black.otf");
+}
+@font-face {
+	font-family: SiemensSlab-BlackItalic;
+	src: url("/fonts/SiemensSlab/SiemensSlab-BlackItalic.otf");
+}

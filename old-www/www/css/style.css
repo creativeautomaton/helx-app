@@ -1,0 +1,988 @@
+
+/*Siemens Fonts*/
+@font-face {
+	font-family: 'SiemensSans';
+	src: url('fonts/SiemensSans/SiemansSans.otf');
+	src:
+		local('SiemensSans'),
+		local('Lovely-Font'),
+		url('fonts/SiemensSans/SiemensSans-Roman.otf')
+		format('opentype');
+}
+/*bold version*/
+@font-face {
+	font-family: 'SiemansSans';
+	src: url('fonts/lovely_font_bold.eot');
+	src:
+		local('Lovely Font Bold'),
+		local('Lovely-Font-Bold'),
+		url('fonts/lovely_font_bold.otf')
+		format('opentype');
+	font-weight: bold;
+}
+
+body, html {
+	font-size: 100%;
+}
+h1, h2 {
+	color: #fff;
+	font-family: 'Droid Serif', serif;
+}
+p {
+	font-family: sans-serif;
+	font-size:14px;
+	color: #fff;
+}
+.full-bg {
+	position:relative;
+	width: 100%;
+	height: 100vh;
+
+}
+.overlay:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: rgba(3, 12, 15, 0.7) none repeat scroll 0% 0%;
+	width: 100%;
+	height:100%;
+	z-index: 5;
+}
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/*-- HELX Colors --*/
+		/*-- backgrounds--*/
+		.black { background: #444; }
+		.pink { background: #B4005B; }
+		.button-pink {background: #600639; }
+		.blue { background: #2BA3BB; }
+		.button-blue { background: #005679;}
+		.button-orange { background: #F5851F; }
+		/*-- Text colors --*/
+		.text-black { color: #444 !important; }
+		.text-pink { color: #B4005B; }
+		.text-blue { color: #2BA3BB; }
+		.text-dark-blue { color: #005679; }
+		.text-orange { color: #F5851F; }
+
+/*-- Vertical Content Seperator --*/
+.v-bar { position:relative; }
+.v-bar::before {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -15px;
+	width: 6px;
+	min-height: 85%;
+	background: rgba(117, 125, 127, 0.5) none repeat scroll 0% 0%;
+}
+
+/*-- Ionic Framework Overwrites --*/
+.scroll-content { top: 0px !important; }
+.transparent { background: transparent !important; border:none; }
+.dark { background: rgba(45, 65, 72, 0.3) none repeat scroll 0% 0% !important; }
+.darkest { background: rgba(0, 0, 0, 0.35) none repeat scroll 0% 0% !important; }
+.button.button-assertive, .button.button-assertive:focus, .button.button-assertive:active{ background-color: #F5851F; border-color: #F5851F; }
+
+/*-- Header --*/
+.headline {
+	font-size: 1em;
+	height: 44px;
+	margin: -5px 15px 0px -5px;
+	padding: 0px 10px !important;
+	background: rgba(0, 0, 0, 0.4) none repeat scroll 0% 0% !important!important;
+}
+.sub-headline {
+	float: left;
+	margin: 0px;
+	color: #fff;
+	font-size: 14px !important;
+	font-style:italic;
+}
+
+/*-- Nav --*/
+.helx-menu {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+}
+.helx-menu .button {
+    color: #444;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 0px 6px;
+    background: #fff !important;
+    border: 1px solid rgb(51, 51, 51);
+    margin: 10px;
+	border-radius: 0px;
+}
+.helx-menu .button:hover,
+.helx-menu .button:active,
+.helx-menu .button:focus {
+	color: #FFF;
+	background: #333 !important;
+}
+
+
+/*-- Splash Page --*/
+.splash {
+	position: relative;
+	background: #eee;
+}
+.splash:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/splash-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+.siemens-logo {
+	position: absolute;
+	width: 100%;
+	min-height: 90px;
+	max-width: 200px;
+	max-height: 100px;
+	z-index: 9;
+	top: 0px;
+	left: 5%;
+	-moz-animation-duration: 2s;
+}
+.siemens-logo:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/siemens.png) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+
+.splash .caption {
+	display: block;
+	width: 60vw;
+	height: auto;
+	padding: 2rem;
+	position: absolute;
+	right: 0px;
+	bottom: 15%;
+	background: rgba(0, 33, 51, 0.79) none repeat scroll 0% 0%;
+	color: #fff;
+	-moz-animation-duration: 2s;
+  	-moz-animation-delay: 2s;
+	-webkit-animation-delay: 2s;
+	-animation-delay: 3s;
+  	-animation-iteration-count: infinite;
+}
+.splash .caption h1 {
+	width:	60vw;
+}
+.splash .caption p {
+	color: #fff;
+}
+
+.launch {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100vw;
+	text-align: center;
+	height: 100vh;
+	vertical-align: middle;
+	-moz-animation-duration: 0.5s;
+	-moz-animation-delay: 3s;
+	-webkit-animation-delay: 3s;
+}
+.launch .caption {
+	position: relative;
+	margin: 0px auto;
+	display: block;
+	padding: 2rem;
+	color: #fff;
+	padding-top: 20%;
+	z-index: 6;
+	max-width: 670px;
+}
+.launch h1, .launch p {
+	color:#fff;
+	display: block;
+}
+.launch h1 {
+	font-size: 3rem;
+}
+
+.launch .button {
+	font-weight:bold;
+	min-height: 25px !important;
+	padding: 0px 20px;
+	line-height: 25px;
+	opacity: 0.9;
+}
+.launch .button:hover { opacity: 1; }
+
+.launch .button.icon-right::before{
+	  font-size: 18px;
+	line-height: 23px;
+	padding-left: 7px;
+}
+
+
+/*-- HELX Main Menu --*/
+.main-menu-bg {
+	position: relative;
+}
+.main-menu-bg:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background: url(../img/main-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+#main-menu {
+	width: 90vw;
+	margin: 0em auto;
+	display: block;
+	position: relative;
+	height: 90vh;
+	top: 60px;
+	color:#fff;
+	text-align: center;
+}
+#main-menu .col {
+    margin-bottom: 7px;
+}
+/*-- Navigation Item padding --*/
+#main-menu .helx-info { padding: 16vh 10vw; }
+
+#main-menu .sales-quiz { padding: 4vh 8vw 2vh 8vw;  }
+#main-menu .sales-quiz img { width: 100%; }
+
+#main-menu .workflow,
+#main-menu .data-proof,
+#main-menu .ultrasound,
+#main-menu .resource-lib,
+#main-menu .family-tree {
+	padding: 3vh 2vw 2vh 2vw;
+}
+#main-menu .small-square {
+	min-height: 200px;
+	max-height: 200px;
+}
+#main-menu .large-square {
+	max-height: 407px;
+	min-height: 407px;
+}
+#main-menu img.square-icon {
+	max-width: 60px;
+	min-width: 45px;
+}
+#main-menu h3 {
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+}
+#main-menu button {
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #eee;
+    color: #FFF;
+	line-height: 16px;
+	font-size: 12px;
+	text-align: left;
+	padding: 10px 0 0 0 ;
+	width: 100%;
+}
+#main-menu button:hover, #main-menu button:focus {
+	background-color: transparent;
+	border: none:
+	border-top: 1px solid #fff;
+	border-color: #fff;
+	color: #fff;
+	box-shadow: none ;
+}
+#main-menu button.button.icon-right::before {
+	padding-right: 8px;
+	padding-left: 10px;
+	border-radius: 1em;
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0% 0%;
+	font-size: 16px;
+	line-height: 27px;
+}
+#main-menu button.button.icon-right:hover::before,
+#main-menu button.button.icon-right:active::before,
+#main-menu button.button.icon-right:focus::before {
+		color: #333;
+		background: #fff;
+}
+
+/*-- Modals --*/
+.helx-modal {
+	text-align: center;
+	color: #fff;
+	padding: 1em;
+}
+.helx-modal img {
+	margin: 1em auto;
+	max-width: 150px;
+}
+
+
+/*-- Popovers ( like modals but no overlay on the screen ) --*/
+.popover.sub-menu {
+	top: 40px !important;
+	left: auto !important;
+	right: 20px;
+	width: 275px !important;
+	height: 500px;
+	background: rgba(5, 24, 35, 0.8);
+	padding-top: 2em;
+	-moz-animation-duration: 3s;
+ 	-moz-animation-delay: 2s;
+  	-moz-animation-iteration-count: infinite;
+}
+.popover.sub-menu .button {
+	color: #000;
+	background: #fff;
+	border-radius: 0px;
+	position: relative;
+	top: -6px;
+	right: -4px;
+	padding: 1px 8px;
+}
+.popover.sub-menu .list {
+	padding-top: 2em;
+}
+.popover.sub-menu .item {
+	padding-top: 1em;
+    border-color: transparent;
+    background-color: transparent;
+}
+.popover.sub-menu .item .item-content {
+	border-color: transparent;
+    background-color: transparent;
+	text-transform: uppercase;
+	text-align: right;
+	color: rgb(255, 255, 255);
+	line-height: 14px;
+	font-size: 12px;
+	font-weight:bold;
+	float: right;
+	width: 200px;
+	display: block;
+}
+
+	/*-- Decription Popover --*/
+		.description {
+			position: absolute;
+			top: 45px;
+			left: 10px;
+		}
+		.description h3 {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 12px;
+			font-weight: bold;
+			display: inline-block;
+		}
+		.description .button {
+			color: #444;
+			font-size: 1.5em;
+			font-weight: bold;
+			padding: 0px 8px;
+			background: #FFF none repeat scroll 0% 0% !important;
+			margin: 10px;
+			border-radius: 0px;
+			min-height: auto !important;
+			display: inline-block;
+			height: 35px !important;
+			line-height: 0px;
+		}
+		.description-popover {
+			position: absolute;
+			z-index: 9;
+			width: 50vw;
+			height: 350px;
+			display: block;
+			top: 43px;
+			left: 130px;
+			opacity: 1;
+			padding: 1em 2em;
+			background: rgba(13, 20, 23, 0.85) none repeat scroll 0% 0%;
+		}
+		.description-popover .close {
+			color: #000;
+			background: #FFF none repeat scroll 0% 0%;
+			border-radius: 0px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			min-width: 33px !important;
+			padding: 0px 6px 0px 10px;
+			min-height: 23px !important;
+			z-index: 2;
+		}
+		.description-popover .content {
+			padding: 2.5em;
+			margin: 0px;
+			float: left;
+			display: block;
+		}
+		.description-popover .content h1 {
+			font-size: 32px;
+		}
+		.description-popover .content h3 {
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 14px;
+			font-weight: bold;
+			width: 92.5%;
+		}
+		.description .button:hover,
+		.description .button:active,
+		.description .button:focus {
+			color: #FFF;
+			background: #333 !important;
+		}
+
+
+/*-- Single Product Pages
+	acuson-S3000 - acuson-S2000 - acuson-S1000
+--*/
+	.basics {
+		padding-top: 8rem;
+	}
+
+		#acuson-S3000, #acuson-S2000, #acuson-S1000 {
+			position: relative;
+			padding: 3rem 5rem;
+		}
+
+		#acuson-S3000::before, #acuson-S2000::before, #acuson-S1000::before {
+			position:absolute;
+			top:0px;
+			left:0px;
+			content: "";
+			background: #FCFCFC;
+			width: 100%;
+			height:100%;
+			z-index: -1;
+		}
+		#acuson-S3000::after, #acuson-S2000::after, #acuson-S1000::after   {
+			position:absolute;
+			top:0px;
+			left:0px;
+			content: "";
+			width: 100%;
+			height:100%;
+			z-index: -1;
+		}
+		#acuson-S3000::after{
+			background:	transparent url("../img/acuson-S3000-large.png") no-repeat scroll 5rem 20px / 38% auto;
+		}
+		#acuson-S2000::after {
+			background:	transparent url("../img/acuson-S2000-large.png") no-repeat scroll 5rem 20px / 38% auto;
+		}
+		#acuson-S1000::after {
+			background: transparent url("../img/acuson-S1000-large.png") no-repeat scroll 5rem 20px / 38% auto;
+		}
+
+
+/*-- Siemens Ultrasound --*/
+
+#ultrasound {
+	position: relative;
+	padding: 10em 2em;
+}
+#ultrasound:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:  url(../img/helix-machine-bg.jpg) no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#ultrasound h1 {
+	letter-spacing: 1px;
+	font-size: 3.5em;
+	line-height: 1em;
+}
+#ultrasound p {
+	letter-spacing: 1px;
+	width: 92.5%;
+	color: #fff;
+	line-height: 20px;
+}
+
+/*-- Product Features --*/
+
+.features-icon {
+	position: absolute;
+	opacity: 0.85;
+}
+.features-icon:hover,
+.features-icon:focus,
+.features-icon:active {
+	opacity: 1;
+}
+
+.features-icon::before {
+	position: absolute;
+	content: "";
+	top:0px;
+	left:0px;
+	background: url(../img/orange-icon.png) no-repeat;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+	z-index: 2;
+}
+.features-icon.blue-icon::before { background: url(../img/blue-icon.png) no-repeat center center; background-size: cover; }
+.features-icon.pink-icon::before { background: url(../img/pink-icon.png) no-repeat center center; background-size: cover; }
+
+.features-icon .title {
+	padding: 0px 10px;
+	background: rgba(13, 20, 23, 0.4) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	font-size: 11px;
+	position: relative;
+	top: -25px;
+	left: 20px;
+}
+.features-icon .title::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: -2px;
+	width: 2px;
+	height: 20px;
+	background: rgba(13, 20, 23, 0.4) none repeat scroll 0% 0%;
+}
+.features-icon .title.flag-left {	left: -47px;}
+.features-icon .title.flag-left::before {	left: 66px;}
+
+/*-- Fits tablets at 1024 X 768 --*/
+.features-1 { top: 10vh; left: 31vw; }
+.features-2 { top: 30vh; left: 17vw; }
+.features-3 { top: 45vh; left: 42vw; }
+.features-4 { top: 54vh; left: 60vw; }
+.features-5 { top: 35vh; left: 78vw; }
+
+/*-- Fits tablets at 1024 X 768 --*/
+.s2000-features-1 { top: 10vh; left: 31vw; }
+.s2000-features-2 { top: 33vh; left: 30vw; }
+.s2000-features-3 { top: 37vh; left: 18vw; }
+.s2000-features-4 { top: 52vh; left: 15vw; }
+
+/*-- Description Popover --*/
+
+
+	/*-- 360 View Modal --*/
+	.rotate-view {
+		position: absolute;
+		top: 90px;
+		left: 10px;
+	}
+	.rotate-view h3 {
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 12px;
+		font-weight: bold;
+		display: inline-block;
+
+	}
+	.rotate-view .button {
+		color: #444;
+		font-size: 1.25em;
+		font-weight: bold;
+		padding: 0px 8px;
+		background: #FFF none repeat scroll 0% 0% !important;
+		margin: 10px;
+		border-radius: 0px;
+		min-height: auto !important;
+		display: inline-block;
+		height: 35px !important;
+		line-height: 0px;
+	}
+	.rotate-view .button:hover,
+	.rotate-view .button:active,
+	.rotate-view .button:focus {
+		color: #FFF;
+		background: #333 !important;
+	}
+
+
+/*-- data Proof --*/
+#data-proof {
+	position: relative;
+	padding: 6em 2em;
+}
+#data-proof:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:  url(../img/acuson-side-view.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+}
+#data-proof h1 {
+	margin: 0px auto 2em auto;
+	text-align: center;
+	letter-spacing: 1px;
+	width: 35vw;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 30px;
+}
+#data-proof img {
+	width: 85%;
+}
+#data-proof h3 {
+	letter-spacing: 1px;
+	width: 300px;
+	font-weight:bold;
+	text-transform: uppercase;
+	font-size:16px;
+	color: #fff;
+	line-height: 20px;
+}
+#data-proof cite {
+	margin: 5em auto 0px auto;
+	font-size: 11px;
+	color: #FFF;
+	text-align: center;
+	display: block;
+}
+#data-proof .slider {
+	padding-top: 2em;
+}
+#data-proof .slider .box {
+	margin: 0 auto;
+    padding: 5px 5em;
+    max-width: 1024px;
+	text-align:center;
+	color:#fff;
+}
+#data-proof .slider-pager {
+	top: 0px;
+}
+.ion-record { color: #eee; font-size: 11px; }
+
+span.active .ion-record { color: #FFAD00;  }
+
+#data-proof .slider .text-side {
+	margin-left: 1em;
+    height: 60%;
+    margin-top: 10vh;
+}
+
+/*-- Resource Library --*/
+
+#library {
+	position: relative;
+	padding: 10em 2em;
+}
+#library:before {
+	position:absolute;
+	top:0px;
+	left:0px;
+	content: "";
+	background:   url(../img/couple-bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+#library h1 {
+	letter-spacing: 1px;
+	font-size: 3.5em;
+	line-height: 1em;
+}
+#library p {
+	letter-spacing: 1px;
+	width: 92.5%;
+	color: #fff;
+	line-height: 20px;
+}
+#library#library .list {
+	float: right;
+	width: 75%;
+	text-align:left;
+}
+#library .item {
+	margin-top: 8px;
+	border-color: transparent;
+	background: rgba(0, 0, 0, 0.35) none repeat scroll 0% 0% !important;
+
+}
+#library .item .item-content {
+	border-color: transparent;
+    background-color: transparent;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 14px;
+	font-size: 12px;
+	font-weight:bold;
+	display: block;
+	padding: 1.5em;
+}
+
+#library .icon-right::before {
+	padding: 0px 8px 0px 10px;
+	border-radius: 1em;
+	background: #2BA3BB;
+	font-size: 15px;
+	line-height: 26px;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+#library .item:hover .icon-right::before,
+#library .item:active .icon-right::before,
+#library .item:focus .icon-right::before {
+		color: #333;
+		background: #fff;
+}
+
+/*-- Product Select Footer --*/
+.has-footer{ bottom: 0px; }
+
+.bar-footer.product {
+	bottom: -175px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	height: 260px;
+	text-transform: uppercase;
+	padding: 0px !important;
+	font-family: sans-serif;
+}
+.bar-footer.full { bottom: -45px; }
+.bar-footer.darkest { background: rgba(13, 20, 23, 0.85) none repeat scroll 0% 0% !important; }
+.bar-footer.product .row { padding: 10px 0px; }
+.bar-footer.product .title {
+	font-size: 0.6rem;
+	color:#fff;
+	position: absolute;
+	top: -30px;
+	height: 50px;
+	padding-top: 22px;
+}
+.bar-footer.product .title::before {
+	position: absolute;
+	content:"";
+	top: -20px;
+	background: url(../img/chevron.png) no-repeat center center;
+	width: 90px;
+	height: 75px;
+}
+.product-select-footer { }
+.product-select-footer .content {
+	position: relative;
+	top: 60px;
+	left: 30px;
+}
+.product-select-footer h2 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: 0px 0px 10px 0px;
+	line-height: 0px;
+	color:#333;
+}
+.product-select-footer p {
+	font-size: 0.6rem;
+	color:#333;
+}
+.product-select-footer .button {
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	font-weight:bold;
+	font-size: .9em;
+}
+.product-select-footer .button:hover,
+.product-select-footer .button:focus,
+.product-select-footer .button:active {
+	color: #fff;
+	background: #333;
+}
+.product-select-footer  .button.icon-right::before {
+	padding: 2px 3px 0px 6px;
+	font-size: 9px;
+}
+
+.footer-acuson-s3000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s3000::before {
+	content: "";
+	background: url(../img/footer/acuson-S3000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-size: cover;
+}
+.footer-acuson-s2000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s2000::before {
+	content: "";
+	background: url(../img/footer/acuson-S2000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-size: cover;
+}
+.footer-acuson-s1000 { position: relative; padding: 15px 0px; }
+.footer-acuson-s1000::before {
+	content: "";
+	background: url(../img/footer/acuson-S1000.png) top center;
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	background-size: cover;
+}
+
+/*-- Single Product Footer --*/
+.bar-footer.single-product {
+	bottom: -175px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	height: 200px;
+	text-transform: uppercase;
+	padding: 0px !important;
+	font-family: sans-serif;
+}
+.bar-footer.full { bottom: -45px; }
+.bar-footer.single-product.darkest {
+	background: rgba(13, 20, 23, 0) none repeat scroll 0% 0% !important; }
+.bar-footer.single-product .row { padding:0px; }
+
+.footer-focus {
+	position: relative;
+	max-height: 144px;
+}
+.footer-focus::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 20px;
+	background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+	top: 15px;
+	left: 0px;
+}
+.footer-focus .content {
+	margin: 0px auto;
+	width: 200px;
+	top: 35px !important;
+}
+.footer-focus .content h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3rem;
+	color: #fff;
+}
+
+.footer-focus .content p  {
+	font-size: 1rem;
+	color: #fff;
+	margin: 20px auto;
+}
+
+.footer-focus::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 15px;
+	background-color: rgba(13, 20, 23, 0.85);
+	top: 30px;
+	left: 0px;
+	background-size: 100%;
+}
+.footer-focus::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background:  url(../img/helx-closeup.jpg) no-repeat 1px -30px;
+	top: 30px;
+	left: 0px;
+	background-size: 100%;
+	z-index: -1;
+}
+
+.footer-focus .focus-bg {
+	position: absolute;
+	width: 101%;
+	display: block;
+	min-height: 97%;
+	left: -5px;
+	z-index: 1;
+ }
+.footer-focus .focus-bg::before{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 40px;
+	left: 0px;
+	background-size: 100%;
+	z-index: 2;
+}
+
+/*-- Single Product Focus Background Colors --*/
+.footer-focus .focus-bg.orange-bg::before {	background: rgba(255, 108, 0, 0.8); }
+.footer-focus .focus-bg.pink-bg::before {	background: rgba(180, 0, 57, 0.8); }
+.footer-focus .focus-bg.blue-bg::before {	background: rgba(0, 165, 191, 0.7); }
+
+.single-product-select-footer { }
+.single-product-select-footer .content {
+	position: relative;
+	top: 43px;
+	left: 20px;
+	z-index: 2;
+}
+.single-product-select-footer h2 {
+	font-size: 2rem;
+	padding: 0px;
+	margin: 0px 0px 8px 0px;
+	line-height: 0px;
+	color:#333;
+}
+.single-product-select-footer p {
+	font-size: 0.6rem;
+	color:#333;
+}
+.single-product-select-footer .button {
+	border-radius: 8px;
+	border: none;
+	color: #fff;
+	font-weight:bold;
+	font-size: .8em;
+	position: relative;
+	top: -10px;
+}
+.single-product-select-footer .button:hover,
+.single-product-select-footer .button:focus,
+.single-product-select-footer .button:active {
+	color: #fff;
+	background: #333;
+}
+.single-product-select-footer  .button.icon-right::before {
+	padding: 2px 3px 0px 6px;
+	font-size: 9px;
+}
+.footer-acuson-s3000,
+.footer-acuson-s2000,
+.footer-acuson-s1000 {
+	width: 95%;
+}

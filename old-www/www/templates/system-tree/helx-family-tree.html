@@ -1,0 +1,220 @@
+<ion-view view-title="HELX System Family Tree" >
+     <ion-content>
+       <div class="full-bg" id="system" ng-controller="systemCtrl">
+
+         <!-- App Offline -->
+         <div class="app-offline hide" ng-class="{ 'show' : show.Offline }"></div>
+
+         <!-- wrapper to hide selectors-->
+         <div class="row selectors hide" ng-class="{ 'hide' : hide.Background}">
+
+          <!-- left side menu selctors -->
+           <div class="col col-20 selector-menu"  >
+             <span class="steps"> Step 1
+               <span class="questionmark ion-ios-help-outline" ng-click="instructionsModal($instructionsModalEvent)"> </span>
+             </span>
+
+             <p class="bold uppercase"> Release <br />
+               <small class="italic"> (Select one) </small>
+             </p>
+
+                <!-- system version menu -->
+                <div class="text-center uppercase" >
+                     <div class=" menu-grid" ng-class="{ 'active' : active.vc31 }" ng-click="clear_enabled(); vc31(); " >
+                         <a>3.1X</a>
+                      </div>
+                      <div class="menu-grid" ng-class="{ 'active' : menu_enabled2.vc20a }" ng-click="clear_enabled(); vc20a();" >
+                        <a>vc20X</a>
+                      </div>
+                      <div class="menu-grid" ng-class="{ 'active' : active.vc25a }" ng-click="clear_enabled(); vc25a();" >
+                          <a>vc25X</a>
+                      </div>
+                      <div class="menu-grid" ng-class="{ 'active' : active.vc30a }" ng-click="clear_enabled(); vc30a();" >
+                           <a>vc30X</a>
+                      </div>
+                      <div class="menu-grid" ng-class="{ 'active' : active.vc31a }" ng-click="clear_enabled(); vc31a();" >
+                           <a>vc31X</a>
+                      </div>
+                      <div class="menu-grid" ng-class="{ 'active' : active.vd10a }" ng-click="clear_enabled(); vd10a();" >
+                          <a>vd10X</a>
+                      </div>
+                </div><!-- end of row -->
+                <br />
+                <br />
+                <span class="steps"> Step 2
+
+                  <span class="questionmark ion-ios-help-outline" ng-click="instructionsModal($instructionsModalEvent)"> </span>
+                </span>
+                <p class="bold uppercase"> System <br />
+                  <small class="italic"> (Select one) </small>
+                </p>
+
+                <!-- system class menu -->
+                <div class="text-center uppercase" >
+                     <div class=" menu-grid S1000" ng-class="{ 'pink' : enabled1000.S1000, 'disabled' : disabledS1000.S1000 }" ng-click="clear_enabled(); S1000();" >
+                         <a>S1000</a>
+                      </div>
+                      <div class="menu-grid S2000" ng-class="{ 'blue' : enabled2000.S2000, 'disabled' : disabledS2000.S2000 }" ng-click="clear_enabled(); S2000();" >
+                        <a>S2000</a>
+                      </div>
+                      <div class="menu-grid S3000" ng-class="{ 'orange' : enabled3000.S3000, 'disabled' : disabledS3000.S3000  }"  ng-click="clear_enabled(); S3000();" >
+                          <a>S3000</a>
+                      </div>
+                </div><!-- end of row -->
+
+          </div><!-- End of left side selector menu -->
+
+
+          <!-- right side items -->
+           <div class="col col-80 functions" >
+
+<!-- Row 1 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled1.Classic_systems }" ng-click="" >
+                   <a>All ACUSON S Family™ Ultrasound Systems (Classic Systems)</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled2.Helx_evolution }" ng-click="" >
+                   <a>All ACUSON S Family™ Ultrasound Systems (HELX Evolution) </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled3.Linear_release }" ng-click="" >
+                   <a>All ACUSON S Family™ Ultrasound Systems (HELX Evolution Linear Release) </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled4.Helx_touch_control }" ng-click="" >
+                   <a>All ACUSON S Family™ Ultrasound Systems (HELX Evolution with Touch Control)</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled5.Abvs }" ng-click="" >
+                   <a>ABVS</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled6.Mmr }" ng-click="" >
+                   <a>MMR</a>
+               </div>
+             </div><!-- end of row -->
+
+<!-- Row 2 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled7.Vt_imaging }" ng-click="" >
+                   <a> Virtual Touch™ Imaging </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled8.Vt_quantification }" ng-click="" >
+                   <a> Virtual Touch™ Quantification</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled9.Vt_iq }" ng-click="" >
+                   <a> Virtual Touch™ IQ</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled10.Esie_fusion }" ng-click="" >
+                   <a> eSieFusion™ </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled11.Esie_guide }" ng-click="" >
+                   <a> eSieGuide™ </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled12.Mr_package }" ng-click="" >
+                   <a> M&R Package </a>
+               </div>
+             </div><!-- end of row -->
+
+<!-- Row 3 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled13.Sie_stream }" ng-click="" >
+                   <a> SieStream™ Architecture </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled14.Sie_stream_hd }" ng-click="" >
+                   <a> SieStream™ HD Architecture </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled15.Cadence_contrast }" ng-click="" >
+                   <a>Cadence™ Contrast Harmonic Imaging (CHI)</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled16.Esie_image_6c1d_mc94 }" ng-click="" >
+                   <a> eSieImage™ Multi-parametric Optimization (6C1D & MC9-4) </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled17.Esie_image_8c3_hd }" ng-click="" >
+                   <a> eSieImage™ Multi-parametric Optimization (8C3HD) </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled18.Image_6c1_18l6_4v1c }" ng-click="" >
+                   <a> Image Optimization (6C1, 18L6, 4V1C) </a>
+               </div>
+             </div><!-- end of row -->
+
+<!-- Row 4 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled19.Helx_8c3_hd }" ng-click="" >
+                   <a> 8C3 HD </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled20.Helx_7cf1 }" ng-click="" >
+                   <a> 7CF1 </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled21.Helx_mc94 }" ng-click="" >
+                   <a> MC9-4 </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled22.Optimized_18l6_hd }" ng-click="" >
+                   <a> Optimized 18L6 HD </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled23.Helx_8l6_hd }" ng-click="" >
+                   <a> 18L6 HD </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled24.Color_doppler_9l4 }" ng-click="" >
+                   <a> Color Doppler improved on 9L4 </a>
+               </div>
+             </div><!-- end of row -->
+
+<!-- Row 5 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled25.Helx_12l4_transducer }" ng-click="" >
+                   <a> 12L4 Transducer </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled26.Hud }" ng-click="" >
+                   <a> HUD </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled27.Sw_vc31a }" ng-click="" >
+                   <a>SW Upgradeable to VC31A</a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled28.Hw_sw_vc30a_vc31a }" ng-click="" >
+                   <a> HW + SW Upgradeable to VC30A or VC31A </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled29.Sw_hw_vd10a }" ng-click="" >
+                   <a> SW + HW Upgradeable to VD10A </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled30.Sw_vd10a }" ng-click="" >
+                   <a> SW Upgradeable to VD10A </a>
+               </div>
+             </div><!-- end of row -->
+
+<!-- Row 6 -->
+             <div class="row responsive-sm text-center" >
+               <div class="grid" ng-class="{ 'enabled' : enabled31.Led_monitor }" ng-click="" >
+                   <a> LED Monitor </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled32.Wireless_dicom }" ng-click="" >
+                   <a> Wireless DICOM report </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled33.Cti_standard }" ng-click="" >
+                   <a> CTI as standard </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled34.Windows_7 }" ng-click="" >
+                   <a> Windows 7 </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled35.New_control_panel }" ng-click="" >
+                   <a> New Control Panel </a>
+               </div>
+               <div class="grid" ng-class="{ 'enabled' : enabled36.Touch_display }" ng-click="" >
+                   <a> Touch-display </a>
+               </div>
+             </div><!-- end of row -->
+
+
+             <!-- Row 7 -->
+                <div class="row responsive-sm text-center" >
+                  <div class="grid" ng-class="{ 'enabled' : enabled37.Powerscribe_360 }" ng-click="" >
+                      <a> Nuance Powerscribe® 360 </a>
+                  </div>
+                </div><!-- end of row -->
+
+          </div><!-- End of right Side items -->
+
+
+
+
+          </div><!-- end of hide selector wrapper -->
+
+      </div>
+    </ion-content>
+  </ion-view>

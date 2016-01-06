@@ -1,0 +1,194 @@
+<ion-view view-title="HELX Ultrasound" hide-footer-bar="true" has-footer="false">
+   <ion-content >
+     <div class="full-bg" id="ultrasound"  >
+
+          <div ng-controller="HelxOverviewCtrl">
+
+            <div class="hide" ng-class="{ 'show' : close.Modal }">
+              		<div class="description " ng-controller="DescriptionCtrl"  >
+                     	<button class="button button-icon ion-plus" ng-click="Description($descriptionEvent)" > </button>
+                         <h3> Description </h3>
+                   	</div>
+           </div>
+
+                <script id="templates/description.html" type="text/ng-template">
+           				<ion-popover-view  class="description-popover" >
+           				<button class="close button button-clear icon icon-left ion-close" ng-click="closeDescription()"> </button>
+           				  <ion-content class="content">
+           					<h1 class="helx-description"> Intuitive ultrasound technology at your fingertips </h1>
+           					<p>
+                      The ACUSON S Family™ of ultrasound systems, HELX™ Evolution with Touch Control is powered by
+                      intuitive, user-focused technologies and provides streamlined processes for improving exam
+                      quality with less effort. These systems are also designed for continuous upgradeability and
+                      offer enhanced imaging technologies.
+           					</p>
+           					<h3><span class="energized">
+           						With this intelligent design, healthcare providers are empowered to effectively manage their caseloads and clinical processes.
+           					</span> </h3>
+           				  </ion-content>
+           				</ion-popover-view>
+                </script>
+
+              <script id="templates/helx-overview.html" type="text/ng-template">
+        				<ion-modal-view class="overview-modal">
+                    <div class="row">
+        				      <button class="button button-clear close-button"  ng-click="closeOverView($OverViewEvent)" on-touch="onTouch($OverViewEvent)">
+                         <i class="icon ion-close"> </i>
+                      </button>
+                    </div>
+                  <ion-content class="content">
+        				   <ion-slide-box ng-init="lockSlide()" delegate-handle="OverViewSlider" active-slide="activeSlide" on-slide-changed="slideChanged(index)" show-pager="false" does-continue="true"  ng-click="updateSlide()">
+
+                   <ion-slide repeat-done="repeatDone()">
+                     <div class="helx-info-slide">
+                          <img class="small-square" src="../img/helx-logo-touch-control.png" alt="HELX Evolution with Touch Control" />
+                           <p class="text-center">
+                              If you could design your own ultrasound system, what would you do? That’s precisely what we asked nearly 400
+                              healthcare providers in more than 150 usability sessions. We conducted studies with ultrasound users all over
+                              the world to find what you really want out of an ultrasound system.
+                           </p>
+                           <div class="text-center">
+                             <p>The result is the ACUSON S Family™ of ultrasound systems, HELX™ Evolution with Touch Control. </p>
+                             <p>It’s ultrasound designed by you.</p>
+                          </div >
+                        </div>
+                     </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Intuitive Touch Display </h3>
+                                <p class="text-black">
+                                  The touch display features a 12.1-inch, high-resolution screen with Instant
+                                  Response technology for rapid key selections. It also includes tab folder
+                                  browsing, which improves operating and learning speeds by eliminating hidden
+                                  menus and swipe searching.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/HELX_TouchDisplay.jpg" class="full-image" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Gel Warmer </h3>
+                                <p class="text-black">
+                                  The integrated gel warmer with customizable positions
+                                  provides easy access and increased patient comfort
+                                  during the exam.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/HELX_GelWarmer.jpg" class="full-image" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Advanced Control Panel </h3>
+                                <p class="text-black">
+                                  The control panel includes a simplified home-base control with 33% fewer
+                                  tactical keys and a streamlined, user-friendly design that optimizes exam
+                                  workflows. The digital and tactile keyboards allow for flexibility in various
+                                  clinical settings and supports varying user preference.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/HELX_ControlPanel.jpg" class="full-image" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Workflow Innovations </h3>
+                                <p class="text-black">
+                                  Context-sensitive body markers with newly designed pictograms, transducer markers,
+                                  and supportive protocols create a clean, intuitively structured desktop that displays
+                                  only necessary procedural information.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/HELX_WorkflowInnovation.jpg" class="full-image" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Laser-Optical Trackball </h3>
+                                <p class="text-black">
+                                  The laser-optical trackball promotes measurement sensitivity and accuracy,
+                                  helping to reduce repetitive stress injuries.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/HELX_Trackball.jpg" class="full-image" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <div class="row">
+                            <div class="col col-50">
+                                <h3 class="text-orange"> Windows Operating System </h3>
+                                <p class="text-black">
+                                  The Microsoft® Windows® 7 operating system features a stable system
+                                  architecture and is compatible with your current electronic medical systems.
+                                </p>
+                            </div>
+                            <div class="col col-50">
+                                <img src="../img/helx-details/software.jpg" class="full-image windows-7" />
+                            </div>
+                        </div>
+                      </ion-slide>
+
+        				   </ion-slide-box>
+        				  </ion-content>
+        				</ion-modal-view>
+              </script>
+
+           		<!-- Features Modals -->
+           		    <a class="features-1 features-icon fadeIn animated _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature1(); OverView($OverViewEvent);" >
+                    <div class="title-left text-right">
+                      <span class="title left-bar"> INTUITIVE TOUCH DISPLAY </span>
+                    </div>
+                  </a>
+                  <a class="features-5 features-icon animated fadeIn _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature2(); OverView($OverViewEvent); " >
+                    <div class="title-right text-left">
+                      <span class="title right-bar"> GEL WARMER </span>
+                    </div>
+                  </a>
+                  <a class="features-3 features-icon animated fadeIn _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature3(); OverView($OverViewEvent); " >
+                    <div class="title-right text-left">
+                      <span class="title right-bar"> ADVANCED CONTROL PANEL </span>
+                    </div>
+                  </a>
+                  <a class="features-2 features-icon animated fadeIn _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature4(); OverView($OverViewEvent);  " >
+                    <div class="title-left text-right">
+                      <span class="title left-bar"> WORKFLOW INNOVATIONS </span>
+                    </div>
+                  </a>
+                  <a class="features-4 features-icon animated fadeIn _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature5(); OverView($OverViewEvent);  " >
+                    <div class="title-right text-left">
+                      <span class="title right-bar"> LASER-OPTICAL TRACKBALL </span>
+                    </div>
+                  </a>
+                  <a class="features-6 features-icon animated fadeIn _half-second hide" ng-class="{ 'show' : close.Modal }" ng-click="feature6(); OverView($OverViewEvent);  " >
+                    <div class="title-right text-left">
+                      <span class="title right-bar"> WINDOWS OPERATING SYSTEM </span>
+                    </div>
+                  </a>
+
+            </div>
+
+   </div>
+  </ion-content>
+</ion-view>

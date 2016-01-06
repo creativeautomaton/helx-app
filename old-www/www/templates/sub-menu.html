@@ -1,0 +1,15 @@
+<ion-popover-view  class="sub-menu">
+  <ion-content >
+    <button class="button button-clear icon icon-right ion-close" ng-click="closesubMenu()"> </button>
+ <ion-list>
+         <ion-item  ng-click="closesubMenu()" href="{{helx_touch}}" nav-transition="none" >  Helx Evolution <br /> with Touch Control </ion-item>
+         <ion-item  ng-click="closesubMenu()" href="{{siemens_information}}" nav-transition="none" >  Siemens Ultrasound  </ion-item>
+         <ion-item  class="disabled" href="{{resource_library}}" nav-transition="none" >  Resource Library   </ion-item>
+         <ion-item  ng-click="closesubMenu()" href="{{workflow}}" nav-transition="none" >  Workflow Simulation </ion-item>
+         <ion-item  ng-click="closesubMenu()" href="{{sales_quiz}}" nav-transition="none" >  Sales Quiz  </ion-item>
+         <ion-item  nav-transition="none" class="disabled" href="{{data_proof}}"  >  Data Proof   </ion-item>
+         <ion-item  ng-click="closesubMenu()" href="{{system_tree}}" nav-transition="none" >  System Family Tree  </ion-item>
+         <ion-item  ng-click="closesubMenu()" href="{{helx_test}}" nav-transition="none" >  Test  </ion-item>
+ </ion-list>
+  </ion-content>
+</ion-popover-view>
