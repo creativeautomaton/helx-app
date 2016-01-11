@@ -18,7 +18,7 @@ var paths = {
   templatecache: ['./www/templates/**/*.html'],
   ng_annotate: ['./www/js/*.js'],
   useref: ['./www/*.html'],
-  uglify: ['./www/js/*.js']
+  //uglify: ['./www/js/*.js']
 };
 
 gulp.task('templatecache', function (done) {
@@ -31,7 +31,7 @@ gulp.task('templatecache', function (done) {
  gulp.task('ng_annotate', function (done) {
     gulp.src('./www/js/*.js')
       .pipe(ngAnnotate({single_quotes: true}))
-      // .pipe(gulp.dest('./www/dist/dist_js/app'))
+      //.pipe(gulp.dest('./www/dist/dist_js/app'))
       .on('end', done);
   });
 
@@ -41,7 +41,7 @@ gulp.task('templatecache', function (done) {
      .pipe(assets)
      .pipe(assets.restore())
      .pipe(useref())
-     // .pipe(gulp.dest('./www/dist'))
+     //.pipe(gulp.dest('./www/dist'))
      .on('end', done);
  });
 
@@ -72,8 +72,8 @@ gulp.task('sass', function(done) {
 });
 
 gulp.task('uglify', function() {
-  return gulp.src('./www/js/*.js')
-    .pipe(uglify())
+  //return gulp.src('./www/js/*.js')
+    //.pipe(uglify())
     //.pipe(gulp.dest('./www/js/uglified'));
 });
 

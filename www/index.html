@@ -7,9 +7,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="HELX">
 
-    <link rel="shortcut icon" sizes="16x16" href="img/icon-16x16.png">
-    <link rel="shortcut icon" sizes="196x196" href="img/icon-196x196.png">
-    <link rel="apple-touch-icon" href="img/icon-196x196.png"/>
+    <link rel="shortcut icon" sizes="16x16" href="/img/icon-16x16.png">
+    <link rel="shortcut icon" sizes="196x196" href="/img/icon-196x196.png">
+    <link rel="apple-touch-icon" href="/img/icon-196x196.png"/>
 
     <title> HELX Evolution with Touch Control </title>
 
@@ -19,11 +19,7 @@
       <link href="css/ionic.app.min.css" rel="stylesheet">
       <!-- endbuild -->
 
-      <!-- build:js dist_js/app.js
-       <script src="dist/dist_js/app.js"></script>
-       <script src="dist/dist_js/app/controllers.js"></script>
-
-      --><!-- endbuild -->
+      <!-- build:js({www,www-dist/partials}) js/app.build.js -->
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.min.js"></script>
@@ -54,6 +50,10 @@
     <script src="components/ios6-timers.js"></script>
     <script src="components/TouchTimerWorkaround.js"></script>
 
+
+        <!-- inject:partials -->
+     <!-- endinject -->
+     <!-- endbuild -->
 
     <!-- Image Cache  /compression scripting
 

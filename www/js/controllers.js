@@ -8,7 +8,7 @@ angular.module('helx.controllers', ['ngCookies'])
   $scope, $ionicSlideBoxDelegate, $cookieStore,
   $cookies, $filter, $http, $location, $timeout,
   $ionicGesture, $ionicModal, $ionicPopover,
-  $state, $ImageCacheFactory, onlineStatus, $ionicViewSwitcher
+  $state, $ImageCacheFactory, /*onlineStatus,*/ $ionicViewSwitcher
 
   ) {
 
@@ -29,7 +29,7 @@ $scope.hiddenElement = function(){
   }
 }
 
-$cookieStore.put('system_instructions', false);
+//$cookieStore.put('system_instructions', false);
 
 $scope.slide={Up:false};
 $scope.rotate={Flip:false};
@@ -49,35 +49,29 @@ $scope.ultrasoundTapCount = [];
        if(!$scope.ultrasoundTapCount['1']){
          $scope.slide.Up=true;
          $scope.rotate={Flip:true};
-         console.log('Hey you tapped me up. Great!');
          $scope.ultrasoundTapCount['1'] = 1;
        }else{
          $scope.slide.Up=false;
          $scope.rotate={Flip:false};
-         console.log('Then you tapped me Down. Even better!');
          $scope.ultrasoundTapCount['1'] = 0;
        }
    }
     $scope.onSwipeUp = function(){
       $scope.slide.Up=true;
       $scope.rotate={Flip:true};
-      console.log('You Swiped Up.');
     }
     $scope.onSwipeLeft = function(){
       $scope.slide.Up=true;
       $scope.rotate={Flip:true};
-      console.log('You Swiped Left.');
     }
     $scope.onSwipeRight = function(){
       $scope.slide.Up=true;
       $scope.rotate={Flip:true};
-      console.log('You Swiped Right.');
     }
     // Drag up Product animation
     $scope.onDragDown = function(){
       $scope.slide.Up=false;
       $scope.rotate={Flip:false};
-      console.log('You Draged it Down!');
     }
 
     $scope.hoverItem = function(hovered){
@@ -130,7 +124,7 @@ $scope.ultrasoundTapCount = [];
 	  $scope.workflow = '#/app/workflow';
 
     // Resource library Page
-    //$scope.resource_library = '#/app/library';
+    $scope.resource_library = '#/app/library';
     $scope.library_clinical = '#/app/clinical-images';
     $scope.library_videos = '#/app/clinical-videos';
     $scope.library_literature = '#/app/clinical-literature';
@@ -182,6 +176,8 @@ $scope.ultrasoundTapCount = [];
     });
 
 
+    // online check
+    /*
     $scope.isOnline = function () {
       var isConnected = false;
       var networkConnection = navigator.connection;
@@ -210,7 +206,7 @@ $scope.ultrasoundTapCount = [];
       $log.log('isOnline? '+ isConnected);
       return isConnected;
     };
-
+    */
 
 })
 
@@ -399,7 +395,6 @@ $scope.ultrasoundTapCount = [];
         $scope.activeSlide = index = 6 ;
       };
         $scope.activeSlide = index;
-      console.log("This slide is " + index);
     }
 
     setTimeout(function() {
@@ -409,13 +404,15 @@ $scope.ultrasoundTapCount = [];
     $scope.slideChanged = Slides;
 })
 
-.controller('FeaturesCtrl', function($scope, $ionicPopover) { })
+.controller('FeaturesCtrl', function($scope, $ionicPopover) { } )
 
 .controller('ClinicalImagesCtrl', function($scope, $http, $location, $timeout, $ionicModal ) {
 
   $http.get('data/library.json').then(function (res) {
+    var start = 0;
+    var end = 32;
       $scope.Clinical = res.data.Clinical;
-      $scope.filteredSlides = $scope.Clinical.slice(begin, end);
+      $scope.filteredSlides = $scope.Clinical.slice(start, end);
   });
 
   // Description Popover Controller
@@ -512,7 +509,6 @@ $scope.ultrasoundTapCount = [];
                       $scope.hide={Background:true};
                       console.log('Online: false');
               });
-              console.log("Interval")
             }, 100, true);
     });
     $scope.close={Modal:false};
@@ -954,7 +950,6 @@ $scope.ultrasoundTapCount = [];
         $scope.nextButton={Ctrl:false};
 
         $scope.featureSlide={Ctrl:true};
-        console.log("This slide is " + index);
 
 				// Remove class "current"
 				if (null !== oldElm) {
@@ -1039,7 +1034,6 @@ $scope.ultrasoundTapCount = [];
 .controller( 'HideCtrl', function($scope, $state, $stateParams ) {
   $scope.$on('$ionicView.enter', function(e) {
       $scope.hideMenu = true;
-      console.log('Sub Menu button was removed, sucka!');
    });
 })
 
@@ -1133,14 +1127,13 @@ $scope.ultrasoundTapCount = [];
          "../img/helx-details/S3000_Tranducer.jpg"
 
 
-
      ]).then(function(){
          console.log("Images done loading!");
      },function(failed){
-         console.log("An image cahce failed: "+failed);
+         console.log("An image cache failed: "+failed);
      });
 
-
+/*
      $rootScope.online = navigator.onLine ? 'online' : 'offline';
      $rootScope.$apply();
 
@@ -1167,7 +1160,7 @@ $scope.ultrasoundTapCount = [];
          console.log('offline');
        };
      }
-
+*/
 
     })
 });

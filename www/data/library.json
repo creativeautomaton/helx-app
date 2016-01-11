@@ -2,93 +2,244 @@
   "Clinical": [
                 {
                     "Id": 1,
-                    "Image": "../img/library/clinical/1.jpg",
+                    "Image": "../img/library/S Family Clinical Images/ACUSON_S_Family_Cadence_Contrast_Harmonic_Imaging_CHI_of_liver_metastasis.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "ACUSON S Family Cadence Contrast Harmonic Imaging CHI of liver metastasis."
                 },
                 {
                     "Id": 2,
-                    "Image": "../img/library/clinical/2.jpg",
+                    "Image": "../img/library/S Family Clinical Images/ACUSON_S_Family_Clarify_VE_technology_of_midline_abdominal_vasculature.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "ACUSON S Family Clarify VE technology of midline abdominal vasculature."
                 },
                 {
                     "Id": 3,
-                    "Image": "../img/library/clinical/3.jpg",
+                    "Image": "../img/library/S Family Clinical Images/ACUSON_S_Family_eSieFusion_imaging_of_liver_with_color_Doppler.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "ACUSON S Family eSieFusion imaging of liver with color Doppler."
                 },
                 {
                     "Id": 4,
-                    "Image": "../img/library/clinical/4.jpg",
+                    "Image": "../img/library/S Family Clinical Images/ACUSON_S_Family_HELX_Evolution_with_Touch_Control_Virtual_Touch_IQ_of_breast_mass.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "ACUSON S Family HELX Evolution with Touch Control Virtual Touch IQ of breast mass."
                 },
                 {
                     "Id": 5,
-                    "Image": "../img/library/clinical/5.jpg",
+                    "Image": "../img/library/S Family Clinical Images/Color_Doppler_of_carotid_artery_with_intimal_thickening_and_plaque_US_Page.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "Color Doppler of carotid artery with intimal thickening and plaque US Page."
                 },
                 {
                     "Id": 6,
-                    "Image": "../img/library/clinical/6.jpg",
+                    "Image": "../img/library/S Family Clinical Images/Imaging_Performance_Kideny_with_color_dopller.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "Imaging Performance Kidney with color doppler."
                 },
                 {
                     "Id": 7,
-                    "Image": "../img/library/clinical/7.jpg",
+                    "Image": "../img/library/S1000 Clinical Images/Clarify_vascular_enhancement_technology.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "Clarify vascular enhancement technology."
                 },
                 {
                     "Id": 8,
-                    "Image": "../img/library/clinical/8.jpg",
+                    "Image": "../img/library/S1000 Clinical Images/Color_Doppler_of_testicle_with_hydrocele.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "Color Doppler of testicle with hydrocele."
                 },
                 {
                     "Id": 9,
-                    "Image": "../img/library/clinical/9.jpg",
+                    "Image": "../img/library/S1000 Clinical Images/Color-and-pulse-wave-doppler-of-brachial-artery.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "Color and pulse wave doppler of brachial artery."
                 },
                 {
                     "Id": 10,
-                    "Image": "../img/library/clinical/10.jpg",
+                    "Image": "../img/library/S1000 Clinical Images/eSie-Touch-imaging-of-breast-fibroadenoma.jpg",
                     "Title": "1st Clinical Image",
-                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                    "Description": "eSieTouch imaging of breast fibroadenoma."
+                },
+                {
+                    "Id": 11,
+                    "Image": "../img/library/S1000 Clinical Images/Focal-nodular-hyperplasia-with-CHI.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Focal nodular hyperplasia with CHI."
                 },
               {
-                  "Id": 11,
-                  "Image": "../img/library/clinical/11.jpg",
-                  "Title": "1st Clinical Image",
-                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
-              },
-              {
                   "Id": 12,
-                  "Image": "../img/library/clinical/12.jpg",
+                  "Image": "../img/library/S1000 Clinical Images/Four_chamber_view_of_the_heart.jpg",
                   "Title": "1st Clinical Image",
-                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                  "Description": "Four chamber view of the heart."
               },
               {
                   "Id": 13,
-                  "Image": "../img/library/clinical/13.jpg",
+                  "Image": "../img/library/S1000 Clinical Images/Kidney_with_color_Doppler.jpg",
                   "Title": "1st Clinical Image",
-                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                  "Description": "Kidney with color Doppler."
               },
               {
                   "Id": 14,
-                  "Image": "../img/library/clinical/14.jpg",
+                  "Image": "../img/library/S1000 Clinical Images/Median_Nerve.jpg",
                   "Title": "1st Clinical Image",
-                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                  "Description": "Median Nerve."
               },
               {
                   "Id": 15,
-                  "Image": "../img/library/clinical/15.jpg",
+                  "Image": "../img/library/S1000 Clinical Images/Multimodality-review-of-lateral-meniscus-with-MRI.jpg",
                   "Title": "1st Clinical Image",
-                  "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+                  "Description": "Multimodality review of lateral meniscus with MRI."
+              },
+              {
+                  "Id": 16,
+                  "Image": "../img/library/S1000 Clinical Images/Prostate_with_eSieTouch_elasticity_imaging.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "Prostate with eSieTouch elasticity imaging."
+              },
+                            {
+                  "Id": 17,
+                  "Image": "../img/library/S2000 Clinical Images/4D_visualization_of_fetal_face.jpg",
+                  "Title": "1st Clinical Image",
+                  "Description": "4D visualization of fetal face."
+              },
+              {
+                    "Id": 18,
+                    "Image": "../img/library/S2000 Clinical Images/ACUSON_S_Family_3D_ABVS_image_of_the_breast_using_Multislice_visualization.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "ACUSON S Family 3D ABVS image of the breast using Multislice visualization."
+              },
+              {
+                    "Id": 19,
+                    "Image": "../img/library/S2000 Clinical Images/ACUSON_S_Family_Cadence_CHI_of_splenic_granuloma.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "ACUSON S Family Cadence CHI of splenic granuloma."
+              },
+              {
+                    "Id": 20,
+                    "Image": "../img/library/S2000 Clinical Images/ACUSON_S_Family_Liver_kidney_interface.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "ACUSON S Family Liver kidney interface."
+              },
+              {
+                    "Id": 21,
+                    "Image": "../img/library/S2000 Clinical Images/ACUSON_S_Family_Virtual_Touch_quantification_of_cirrhotic_liver.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "ACUSON S Family Virtual Touch quantification of cirrhotic liver."
+              },
+              {
+                    "Id": 22,
+                    "Image": "../img/library/S2000 Clinical Images/Color_and_pulse_ed_wave_Doppler_of_carotid_with_intimal_thickening_and_plaque.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Color and pulse ed wave Doppler of carotid with intimal thickening and plaque."
+              },
+              {
+                    "Id": 23,
+                    "Image": "../img/library/S2000 Clinical Images/ .jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Curabitur elementum mi  magna. Fusce eu augue porta, eu congue mauris."
+              },
+              {
+                    "Id": 24,
+                    "Image": "../img/library/S2000 Clinical Images/Ductal_carcinoma_of_the_breast_with_color.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Ductal carcinoma of the breast with color."
+              },
+              {
+                    "Id": 25,
+                    "Image": "../img/library/S2000 Clinical Images/Endovaginal_scan_of_the_uterus_with_color.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Endovaginal scan of the uterus with color."
+              },
+              {
+                    "Id": 26,
+                    "Image": "../img/library/S2000 Clinical Images/Kidney_with_color_Doppler_2.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Kidney with color Doppler."
+              },
+              {
+                    "Id": 28,
+                    "Image": "../img/library/S2000 Clinical Images/S2000_p8-9_6C1-HD.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "S2000 6C1-HD."
+              },
+              {
+                    "Id": 29,
+                    "Image": "../img/library/S2000 Clinical Images/S2000_p8-9_7CF1.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "S2000 7CF1."
+              },
+              {
+                    "Id": 30,
+                    "Image": "../img/library/S2000 Clinical Images/S2000_p8-9_18L6-HD.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "S2000 18L6-HD."
+              },
+              {
+                    "Id": 31,
+                    "Image": "../img/library/S3000 Clinical Images/Continuous-wave-Doppler-demonstrating-aortic_regurgitation.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Continuous wave Doppler demonstrating aortic regurgitation."
+              },
+              {
+                    "Id": 32,
+                    "Image": "../img/library/S3000 Clinical Images/eSieFusion_imaging_and_eSieGuide_needle_tracking_of_radio_frequency_ablation_of_liver_metastasis.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "eSieFusion imaging and eSieGuide needle tracking of radio frequency ablation of liver metastasis."
+              },
+              {
+                    "Id": 33,
+                    "Image": "../img/library/S3000 Clinical Images/eSieFusion_imaging_of_liver_with_color_Doppler.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "eSieFusion imaging of liver with color Doppler."
+              },
+              {
+                    "Id": 34,
+                    "Image": "../img/library/S3000 Clinical Images/eSieFusion_imaging_with_Cadence_CHI_of_liver_cirrhosis.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "eSieFusion imaging with Cadence CHI of liver cirrhosis."
+              },
+              {
+                    "Id": 35,
+                    "Image": "../img/library/S3000 Clinical Images/eSieTouch_elasticity_imaging_of_prostate_mass.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "eSieTouch elasticity imaging of prostate mass."
+              },
+              {
+                    "Id": 36,
+                    "Image": "../img/library/S3000 Clinical Images/Liver_and_kidney_with_color_Doppler.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Liver and kidney with color Doppler."
+              },
+              {
+                    "Id": 37,
+                    "Image": "../img/library/S3000 Clinical Images/Multi-modality_review_of_lateral_meniscus.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Multi-modality review of lateral meniscus."
+              },
+              {
+                    "Id": 38,
+                    "Image": "../img/library/S3000 Clinical Images/Nuchal_translucency_thickness_of_10-week_fetus.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Nuchal translucency thickness of 10-week fetus."
+              },
+              {
+                    "Id": 39,
+                    "Image": "../img/library/S3000 Clinical Images/Popliteal_vein_valve_with_spontaneous_flow.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Popliteal vein valve with spontaneous flow."
+              },
+              {
+                    "Id": 40,
+                    "Image": "../img/library/S3000 Clinical Images/Virtual_Touch_IQ_of_solid_thyroid_mass.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "Virtual Touch IQ of solid thyroid mass."
+              },
+              {
+                    "Id": 41,
+                    "Image": "../img/library/S3000 Clinical Images/VTIQ_of_liver_mass_measured_with_syngo_eSieCalcs_native_tracing_software.jpg",
+                    "Title": "1st Clinical Image",
+                    "Description": "VTIQ of liver mass measured with syngo eSieCalcs native tracing software."
               }
+
       ]
 }

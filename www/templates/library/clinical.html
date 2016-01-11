@@ -27,14 +27,14 @@
           <ion-slide-box delegate-handle="ClinicalSlider" active-slide="activeSlide" on-slide-changed="slideChanged(index)"  ng-click="updateSlide()">
             <ion-slide >
                 <div class="row responsive-sm text-center" >
-                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(0,5)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(0,6)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
                       <a id="{{Clinical.Id}}" >
                         <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
                       </a>
                   </div>
                   </div><!-- end of row -->
                   <div class="row responsive-sm text-center" >
-                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(6,11)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(5,11)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
                         <a id="{{Clinical.Id}}" >
                           <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
                         </a>
@@ -50,21 +50,21 @@
             </ion-slide><!-- end of Slide -->
             <ion-slide >
                 <div class="row responsive-sm text-center" >
-                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(0,5)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                  <div class="col col-20" ng-repeat="Clinical in Clinical.slice(15,21)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
                       <a id="{{Clinical.Id}}" >
                         <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
                       </a>
                   </div>
                   </div><!-- end of row -->
                   <div class="row responsive-sm text-center" >
-                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(6,11)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
+                    <div class="col col-20" ng-repeat="Clinical in Clinical.slice(21,26)" ng-click="image{{Clinical.Id}}(); clinicalImageModal($clinicalImageModalEvent);" >
                         <a id="{{Clinical.Id}}" >
                           <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
                         </a>
                     </div>
                     </div><!-- end of row -->
                     <div class="row responsive-sm text-center" >
-                      <div class="col col-20" ng-repeat="Clinical in Clinical.slice(10,16)" ng-click="image1(); clinicalImageModal($clinicalImageModalEvent);" >
+                      <div class="col col-20" ng-repeat="Clinical in Clinical.slice(26,31)" ng-click="image1(); clinicalImageModal($clinicalImageModalEvent);" >
                           <a id="{{Clinical.Id}}" >
                             <img class="full-image" src="{{Clinical.Image}}" alt="{{Clinical.Title}}"  />
                           </a>

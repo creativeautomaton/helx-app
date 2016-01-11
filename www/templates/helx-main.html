@@ -6,14 +6,14 @@
 
             <!-- Left column -->
               <div class="col col-50"  >
-                  <a href="{{helx_touch}}" ng-mouseenter="hover1 = true"  ng-mouseleave="hover1 = false"  nav-transition="ios" >
+                  <a href="{{::helx_touch}}" ng-mouseenter="hover1 = true"  ng-mouseleave="hover1 = false"  nav-transition="ios" >
                   	<div class="helx-info col col-100 large-square darkest slideInLeft animated _quater-second" >
                     	<img class="full-image" style="max-height: 250px;"  src="../img/helx-logo-touch-control.png" alt="HELX Evolution with Touch Control" />
                         	<button ng-class="{circle_active: hover1}" class="circle button icon-right ion-ios-arrow-right"> Get to know the ACUSON S Family™ of ultrasound systems, HELX™ Evolution with Touch Control. </button>
                   	</div>
                   </a>
 
-                  <a href="{{sales_quiz}}" ng-mouseenter="hover2 = true"  ng-mouseleave="hover2 = false" nav-transition="none" >
+                  <a href="{{::sales_quiz}}" ng-mouseenter="hover2 = true"  ng-mouseleave="hover2 = false" nav-transition="none" >
                     <div class="sales-quiz col col-100 small-square darkest slideInUp animated _quater-second" >
                   		<img src="../img/sales-icons.png" alt="HELX Sales Quiz " />
                         <h3> Sales Quiz </h3>
@@ -26,21 +26,21 @@
 
             <!-- Center Column -->
               <div class="col col-25">
-                  <a href="{{workflow}}" ng-mouseenter="hover3 = true"  ng-mouseleave="hover3 = false" nav-transition="none" >
+                  <a href="{{::workflow}}" ng-mouseenter="hover3 = true"  ng-mouseleave="hover3 = false" nav-transition="none" >
                     	<div class="workflow col col-100  small-square darkest slideInDown animated _quater-second">
                       	<img class="square-icon" src="../img/workflow.png" alt="HELX workflow Simulation " />
                           <h3> Workflow <br />simulation </h3>
                           	<button ng-class="{circle_active: hover3}"class="circle button icon-right ion-ios-arrow-right"> See the HELX Evolution with Touch Control in action. </button>
                     	</div>
                  </a>
-                 <a href="{{data_proof}}" ng-mouseenter="hover4 = true"  ng-mouseleave="hover4 = false" nav-transition="none">
+                 <a href="{{::data_proof}}" ng-mouseenter="hover4 = true"  ng-mouseleave="hover4 = false" nav-transition="none">
                       <div class="disabled data-proof col col-100  small-square darkest slideInUp animated _quater-second">
                     		<img class="square-icon"  src="../img/data-proof.png" alt="HELX Data Proof " />
                           <h3> Data Proof </h3>
                         		<button ng-class="{circle_active: hover4}"class=" disabled circle button icon-right ion-ios-arrow-right"> Discover what HELX Evolution with Touch Control can do. </button>
                     	</div>
                 </a>
-                <a href="{{siemens_information}}" ng-mouseenter="hover5 = true"  ng-mouseleave="hover5 = false" nav-transition="none">
+                <a href="{{::siemens_information}}" ng-mouseenter="hover5 = true"  ng-mouseleave="hover5 = false" nav-transition="none">
                       <div class="ultrasound col col-100  small-square darkest slideInUp animated _half-second">
                     		<img class="square-icon"  src="../img/ultrasound.png" alt="Siemens Ultrasound " />
                           <h3> Siemens Ultrasound</h3>
@@ -51,16 +51,16 @@
 
              <!-- Right Column -->
               <div class="col col-25">
-                  <a  ng-mouseenter="hover6 = true"  ng-mouseleave="hover6 = false" nav-transition="none" >
-                    	<div class="disabled resource-lib col small-square col-100 darkest slideInRight animated _half-second">
+                  <a href="{{::resource_library}}" ng-mouseenter="hover6 = true"  ng-mouseleave="hover6 = false" nav-transition="none" >
+                    	<div class="  resource-lib col small-square col-100 darkest slideInRight animated _half-second">
                     		<img class="square-icon"  src="../img/resource.png" alt="HELX Resource Library " />
                           <h3> Resource Library </h3>
-                          	<button ng-class="{circle_active: hover6}"class="disabled circle button icon-right ion-ios-arrow-right">
+                          	<button ng-class="{circle_active: hover6}"class=" circle button icon-right ion-ios-arrow-right">
                                Get equipped with videos, images, and more for the HELX Evolution with Touch Control.
                              </button>
                     	</div>
                   </a>
-                  <a href="{{system_tree}}" ng-mouseenter="hover7 = true"  ng-mouseleave="hover7 = false" nav-transition="none" >
+                  <a href="{{::system_tree}}" ng-mouseenter="hover7 = true"  ng-mouseleave="hover7 = false" nav-transition="none" >
                         <div class="family-tree col c0ol-100 large-square darkest slideInUp animated _half-second">
                       		<img class="retangle-icon" style="max-height: 280px; margin-top: 14px;"  src="../img/tree.png" alt="HELX System family Tree " />
                             <h3> System Family Tree </h3>

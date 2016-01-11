@@ -33,7 +33,23 @@ angular.module('HELX',
     })
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider ) {
+
+  //$httpProvider.interceptors.push('xmlHttpInterceptor');
+    if (!$httpProvider.defaults.headers.get) {
+        $httpProvider.defaults.headers.get = {};
+    }
+
+    //disable caching globally.
+    $httpProvider.defaults.headers.get['If-Modified-Since'] = 'Mon, 26 Jul 1997 05:00:00 GMT';
+    // extra
+    $httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache';
+    $httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
+    $httpProvider.defaults.useXDomain = true;
+    //$httpProvider.defaults.withCredentials = true;
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+
   $stateProvider
 
   .state('app', {
@@ -174,7 +190,8 @@ angular.module('HELX',
       views: {
         'headerContent': {
           templateUrl: 'library/library-main.html',
-          controller: function($scope, $http, $interval) {
+
+            /*controller: function($scope, $http, $interval) {
               $interval( function(){
                   $http({
                     method: 'GET',
@@ -191,7 +208,10 @@ angular.module('HELX',
                           console.log('Online: false');
                   });
               }, 100, true);
-          }
+          },
+          */
+          cache: false
+
         }
       }
     })
@@ -247,7 +267,8 @@ angular.module('HELX',
         views: {
         'headerContent': {
             templateUrl: 'system-tree/helx-family-tree.html',
-            controller: function($scope, $http, $timeout) {
+
+            /*  controller: function($scope, $http, $timeout) {
 
                 setTimeout(function(){
                   $http({
@@ -264,10 +285,10 @@ angular.module('HELX',
                           $scope.online_status_string = 'online';
                           console.log('Online: false');
                   });
-                  console.log("Interval")
 
                 }, 100, true);
             }
+            */
           }
         }
     })
@@ -276,8 +297,9 @@ angular.module('HELX',
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/');
 
-})
+});
 
+/*
 .factory('onlineStatus', ["$window", "$rootScope", function ($window, $rootScope) {
     var onlineStatus = {};
 
@@ -301,3 +323,4 @@ angular.module('HELX',
 
     return onlineStatus;
 }]);
+*/

@@ -13244,6 +13244,9 @@ span.active .ion-record {
   height: 100%;
   z-index: -1; }
 
+#library-literature .full-image {
+  height: 215px; }
+
 /*-- Resource Library Icon Links --*/
 .icon-link {
   position: absolute;
@@ -13425,6 +13428,13 @@ span.active .ion-record {
   color: #2BA3BB;
   background: transparent; }
 
+#quiz .score.timelimit {
+  top: 9rem; }
+
+#quiz .score.timelimit .blue {
+  color: #2BA3BB;
+  background: transparent; }
+
 #quiz .streak {
   padding-left: 10px; }
 
@@ -13511,6 +13521,12 @@ span.active .ion-record {
 .wrong .streak {
   font-family: SiemensSans-Black;
   padding-left: 5px !important; }
+
+#quiz .timesup {
+  margin: 0rem auto;
+  position: relative;
+  left: -2rem;
+  top: 3rem; }
 
 /*-- HELX System Family Tree --*/
 #system {
@@ -13936,6 +13952,21 @@ span.active .ion-record {
   padding-bottom: 0px;
   padding: 18px 0px; }
 
+.functions {
+  position: absolute;
+  left: 12rem;
+  display: block;
+  margin: 44px -45px; }
+
+.functions .row {
+  width: 100%;
+  display: block; }
+
+.functions .row .grid {
+  float: left;
+  width: 102px;
+  min-width: 102px; }
+
 /*-- Phones 320x480px --*/
 @media only screen and (max-width: 320px) {
   .scroll-content {
@@ -14142,6 +14173,8 @@ span.active .ion-record {
   #system .grid {
     padding: 0.15rem; }
   #system .functions {
+    position: absolute;
+    left: 10rem;
     display: block;
     margin: 44px -45px; }
   #system .functions .row {
@@ -14384,11 +14417,28 @@ span.active .ion-record {
     padding: 0px 20rem; }
   #siemens-ultrasound .vertical-bar::before {
     height: 100%; }
+  #system .selector-menu, #system .system-family-tree {
+    position: absolute; }
   #system .selectors {
     width: 100vw !important;
     padding: 0px 15rem;
     left: 6rem;
     position: absolute; }
+  #system .selector-menu {
+    position: absolute; }
+  #system .functions {
+    position: absolute;
+    left: 12rem;
+    display: block;
+    margin: 44px -45px;
+    top: 5rem; }
+  #system .functions .row {
+    width: 100%;
+    display: block; }
+  #system .functions .row .grid {
+    float: left;
+    width: 102px;
+    min-width: 102px; }
   .description-popover {
     max-width: 525px; }
   .product-select-footer .content {

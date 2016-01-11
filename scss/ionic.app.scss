@@ -1801,6 +1801,9 @@ width: 35px;
 	height:100%;
 	z-index: -1;
 }
+#library-literature .full-image {
+	height: 215px;
+}
 
 /*-- Resource Library Icon Links --*/
 	.icon-link {
@@ -1992,6 +1995,14 @@ width: 35px;
 	}
 }
 
+#quiz .score.timelimit {
+	top: 9rem;
+	.blue {
+			color: #2BA3BB;
+			background: transparent;
+	}
+}
+
 #quiz .streak {
 	padding-left: 10px;
 }
@@ -2080,7 +2091,12 @@ width: 35px;
 	font-family: SiemensSans-Black;
 	padding-left: 5px !important;
 }
-
+#quiz .timesup {
+	margin: 0rem auto;
+	position: relative;
+	left: -2rem;
+	top: 3rem;
+}
 
 
 
@@ -2515,6 +2531,22 @@ width: 35px;
 	padding: 18px 0px;
 }
 
+.functions{
+	position: absolute;
+	left: 12rem;
+	display: block;
+	margin: 44px -45px;
+			 .row {
+				 width: 100%;
+				 display: block;
+								 .grid{
+									 float: left;
+									 width: 102px;
+									 min-width: 102px;
+								 }
+			 }
+ }
+
 
  /*-- Phones 320x480px --*/
  @media only screen and (max-width : 320px) {
@@ -2783,20 +2815,24 @@ width: 35px;
  			 .grid {
  				 padding: 0.15rem;
  			 }
- 			 .functions{
- 				 display: block;
- 				 margin: 44px -45px;
- 				 	.row {
- 						width: 100%;
- 						display: block;
- 							.grid{
- 								float: left;
- 								width: 102px;
- 								min-width: 102px;
- 							}
- 					}
- 			  }
+			 .functions{
+				 position: absolute;
+				 left: 10rem;
+				 display: block;
+				 margin: 44px -45px;
+							.row {
+								width: 100%;
+								display: block;
+												.grid{
+													float: left;
+													width: 102px;
+													min-width: 102px;
+												}
+							}
+				}
+
  		 }
+
  		 #siemens-ultrasound{
  		 		.vertical-bar::before{  height: 100%; }
  	 	}
@@ -3120,6 +3156,9 @@ width: 35px;
  	      height: 100%;
  			}
  		}
+		#system .selector-menu, #system .system-family-tree {
+		    position: absolute;
+		}
  		#system {
  			.selectors {
  				width: 100vw !important;
@@ -3127,6 +3166,25 @@ width: 35px;
  				left: 6rem;
  				position: absolute;
  			}
+			.selector-menu {
+			    position: absolute;
+			}
+			.functions{
+				position: absolute;
+				left: 12rem;
+				display: block;
+				margin: 44px -45px;
+				top: 5rem;
+						 .row {
+							 width: 100%;
+							 display: block;
+											 .grid{
+												 float: left;
+												 width: 102px;
+												 min-width: 102px;
+											 }
+						 }
+			 }
  	 }
  	.description-popover {
  	    max-width: 525px;
